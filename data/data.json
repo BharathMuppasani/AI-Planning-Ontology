@@ -1,0 +1,43 @@
+{
+    "agricola": {
+        "requirements": [
+            ":typing",
+            ":action-costs",
+            ":negative-preconditions"
+        ],
+        "predicates": [
+            "(NEXT_STAGE ?s1 ?s2 - stage)",
+            "(current_stage ?s - stage)",
+            "(harvest_phase ?s - stage ?hclass - phaseclass)",
+            "(NEXT_ROUND ?r1 ?r2 - round)",
+            "(hold_round ?r - round ?p - roundparts)",
+            "(current_round ?r - round)",
+            "(CATEGORY_ROUND ?r - round ?t - roundclass)",
+            "(NEXT_WORKER ?w1 ?w2 - worker)",
+            "(current_worker ?w - worker)",
+            "(max_worker ?w - worker)",
+            "(newborn)",
+            "(plowed_fields)",
+            "(stored_veg ?v - vegetable)",
+            "(sown_veg ?v - vegetable)",
+            "(can_harvest ?v - vegetable)",
+            "(fences_for ?a - animal)",
+            "(owned_animals ?a - animal)",
+            "(can_breed ?a - animal)",
+            "(NEXT_NUM ?i1 ?i2 - num)",
+            "(NEXT2_NUM ?i1 ?i2 - num)",
+            "(NUM_SUBSTRACT ?it - num ?iminus - num ?isol - num)",
+            "(FOOD_REQUIRED ?w - worker ?i - num)",
+            "(open_action ?a - actiontag)",
+            "(available_action ?a - actiontag)",
+            "(DRAWCARD_ROUND ?a - actiontag ?r - round)",
+            "(num_food ?i - num)",
+            "(stored_resource ?r - resource)",
+            "(SUPPLY_RESOURCE ?s - buildtag ?r - resource)",
+            "(space_rooms ?r - room)",
+            "(built_rooms ?r - room ?w - worker)",
+            "(ok)",
+            "(home_improvement ?imp - improvement)"
+        ]
+    }
+}
