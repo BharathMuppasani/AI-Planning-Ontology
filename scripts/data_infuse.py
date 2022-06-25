@@ -1,8 +1,13 @@
+from asyncio import constants
 import numpy as np
 import os
 import sys
 import glob
 import json
+import re
+import domain_functions as df
+import problem_functions as pf
+
 
 def write_to_json(data,path):
 
@@ -11,24 +16,6 @@ def write_to_json(data,path):
     # writing dictionary data into json file
     with open(path,"w") as out:
         out.write(json_object)
-
-def find_parens(s):
-    toret = {}
-    pstack = []
-    flag = 0
-    for i, c in enumerate(s):
-
-        if flag == 1 and len(pstack) == 0:
-            return toret
-
-        if c == '(':
-            pstack.append(i)
-            flag = 1
-        elif c == ')':
-            toret[pstack.pop()] = i
-
-    return toret
-
 
 def search_file(file_path,string):
     with open(file_path, 'r') as f:
@@ -40,44 +27,6 @@ def search_file(file_path,string):
     
     return -1
 
-
-def get_domain_name(file):
-    with open(file,'r') as f:
-        for line in f:
-            if '(domain' in line:
-                ind = line.index('(domain')
-                return line[ind:-1].strip('(domain')[:-1]
-            if '(domain'.upper() in line:
-                ind = line.index('(domain'.upper())
-                return line[ind:-1].strip('(domain'.upper())[:-1]
-
-def get_requirements(file):
-
-    with open(file) as f:
-        file_data = f.read()
-        requirement_index = file_data.index('(:requirements')
-        present_text = file_data[requirement_index:requirement_index + find_parens(file_data[requirement_index:])[0]]
-
-        return present_text.split()[1:]
-
-def get_predicates(file):
-
-    with open(file) as f:
-        file_data = f.read()
-        predicate_index = file_data.index('(:predicates')
-        predicate_closing_ind = find_parens( file_data[predicate_index:] )[0]
-
-        file_data = file_data[predicate_index: predicate_index + predicate_closing_ind+1]
-
-        predicates_list = []
-        for ind in range(1, len(file_data)):
-            if file_data[ind] == "(":
-                # print(ind,file_data[ind])
-                closing_ind = find_parens( file_data[ind:] )[0]
-                present_text = file_data[ ind : ind + closing_ind+1 ]
-                predicates_list.append(present_text)
-
-        return predicates_list
 
 data_file_path = "data/data.json"
 
@@ -96,16 +45,90 @@ for f in glob.iglob(file_path + '/**/*.pddl', recursive=True):
 
 
 for file in domain_files:
-    name = get_domain_name(file).strip()
-    requirements = get_requirements(file)
-    predicates = get_predicates(file)
-    
+    name = df.get_domain_name(file).strip()
+
+    str_file = open(file).read()
+
+    if '(:requirements' in str_file:
+        requirements = df.get_requirements(file)
+    else:
+        requirements = []
+
+    if '(:types' in str_file:
+        types = df.get_types(file)
+    else:
+        types = {}
+
+    if '(:constants' in str_file:
+        constants = df.get_constants(file)
+    else:
+        constants = {}
+
+    if '(:predicates' in str_file:
+        predicates = df.get_predicates(file)
+    else:
+        predicates = []
+
+    if '(:action' in str_file:
+        actions = df.get_actions(file)
+    else:
+        actions = {}
+
     if name not in data.keys():
+        print("Adding ",name," domain file")
         data[name] = {}
         data[name]["requirements"] = requirements
+        data[name]["types"] = types
+        data[name]["constants"] = constants
         data[name]["predicates"] = predicates
+        data[name]["actions"] = actions
 
-    write_to_json(data,data_file_path)
+for file in problem_files:
+    problem_name, domain_name = pf.get_problem_name(file)
+
+    problem_name = problem_name.strip()
+    domain_name = domain_name.strip()
+
+    str_file = open(file).read()
+
+    if '(:objects' in str_file:
+        objects = pf.get_objects(file)
+    else:
+        objects = []
+
+    if '(:init' in str_file:
+        init = pf.get_initialState(file)
+    else:
+        init = {}
+
+    if '(:goal' in str_file:
+        goal = pf.get_goalState(file)
+    else:
+        goal = []
+
+    if domain_name not in data.keys():
+        print("Adding ",problem_name," problem file for ",domain_name," domain file")
+        data[domain_name] = {}
+        data[domain_name]["Problems"] = {}
+        data[domain_name]["Problems"][problem_name] = {}
+        data[domain_name]["Problems"][problem_name]["objects"] = objects
+        data[domain_name]["Problems"][problem_name]["init"] = init
+        data[domain_name]["Problems"][problem_name]["goal"] = goal
+    else:
+        print("Adding ",problem_name," problem file for ",domain_name," domain file")
+        if "Problems" not in data[domain_name].keys():
+            data[domain_name]["Problems"] = {}
+            data[domain_name]["Problems"][problem_name] = {}
+            data[domain_name]["Problems"][problem_name]["objects"] = objects
+            data[domain_name]["Problems"][problem_name]["init"] = init
+            data[domain_name]["Problems"][problem_name]["goal"] = goal
+        else:
+            data[domain_name]["Problems"][problem_name] = {}
+            data[domain_name]["Problems"][problem_name]["objects"] = objects
+            data[domain_name]["Problems"][problem_name]["init"] = init
+            data[domain_name]["Problems"][problem_name]["goal"] = goal
+
+write_to_json(data,data_file_path)
 
 
     

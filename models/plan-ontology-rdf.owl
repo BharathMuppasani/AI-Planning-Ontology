@@ -112,11 +112,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Planner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Planning_Type"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofType -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofType">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Planner"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Planning_Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#objects"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
     </owl:ObjectProperty>
     
 
@@ -238,6 +256,12 @@
     <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
     
 
 
