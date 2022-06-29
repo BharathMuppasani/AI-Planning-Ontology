@@ -150,7 +150,7 @@ def add_actions( class_name, property_name, itemURI, data ):
          if item == 'preconditions':
             add_preconditions( planOntology.precondition, planOntology.hasPrecondition, value_URI, data[action][item] )
 
-         if item == 'effects':
+         if item == 'effect':
             add_effects( planOntology.effect, planOntology.hasEffect, value_URI, data[action][item] )
    
 
