@@ -48,7 +48,7 @@ def get_objects(file):
         start_index = file_data.index('(:objects')
         closing_ind = find_parens( file_data[start_index:] )[0]
 
-        file_data = file_data[start_index+8: start_index + closing_ind]
+        file_data = file_data[start_index+10: start_index + closing_ind]
 
         # print(file_data)
         instances_list = [item for item in file_data.split(' ') if item]
@@ -88,13 +88,13 @@ def get_objects(file):
             else:
 
                 if flag:
-                    instances["type_instances"] = []
+                    instances = []
                     flag = 0
 
                 if '\n' in item:
-                    instances["type_instances"].append(item.replace('\n',''))
+                    instances.append(item.replace('\n',''))
                 else:
-                    instances["type_instances"].append(item)
+                    instances.append(item)
 
 
     return instances

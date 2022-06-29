@@ -85,13 +85,13 @@ def get_types(file):
             else:
 
                 if flag:
-                    types["types"] = []
+                    types = []
                     flag = 0
 
                 if '\n' in item:
-                    types["types"].append(item.replace('\n',''))
+                    types.append(item.replace('\n',''))
                 else:
-                    types["types"].append(item)
+                    types.append(item)
 
 
     return types
@@ -143,13 +143,13 @@ def get_constants(file):
             else:
 
                 if flag:
-                    constants["constants"] = []
+                    constants = []
                     flag = 0
 
                 if '\n' in item:
-                    constants["constants"].append(item.replace('\n',''))
+                    constants.append(item.replace('\n',''))
                 else:
-                    constants["constants"].append(item)
+                    constants.append(item)
 
         return_dict = {}
         return_dict["constants"] = constants

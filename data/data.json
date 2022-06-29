@@ -939,7 +939,6 @@
             "opt01-3-4": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -1248,7 +1247,6 @@
             "opt02-3-5": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -1564,7 +1562,6 @@
             "opt03-3-6": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -1887,7 +1884,6 @@
             "opt04-4-4": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -2206,7 +2202,6 @@
             "opt05-4-5": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -2532,7 +2527,6 @@
             "opt06-4-6": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -2865,7 +2859,6 @@
             "opt07-5-4": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -3194,7 +3187,6 @@
             "opt08-5-5": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -3530,7 +3522,6 @@
             "opt09-5-6": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -3873,7 +3864,6 @@
             "opt10-6-4": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -4208,7 +4198,6 @@
             "opt11-6-5": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -4550,7 +4539,6 @@
             "opt12-6-6": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -4899,7 +4887,6 @@
             "opt13-7-4": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -5240,7 +5227,6 @@
             "opt14-7-5": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -5588,7 +5574,6 @@
             "opt15-7-6": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -5943,7 +5928,6 @@
             "opt16-8-4": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -6290,7 +6274,6 @@
             "opt17-8-5": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -6644,7 +6627,6 @@
             "opt18-8-6": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -7005,7 +6987,6 @@
             "opt19-9-4": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -7358,7 +7339,6 @@
             "opt20-9-5": {
                 "objects": {
                     "num": [
-                        "s",
                         "num1",
                         "num2",
                         "num3",
@@ -8125,7 +8105,6 @@
             "p2_hosts_trial_15": {
                 "objects": {
                     "num": [
-                        "s",
                         "num__21",
                         "num__20",
                         "num__28",
@@ -8272,7 +8251,6 @@
             "p2_hosts_trial_12": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_bischtask",
                         "id_bjschtask"
                     ],
@@ -8423,7 +8401,6 @@
             "p2_hosts_trial_5": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observeddomaincredential": [
@@ -8546,7 +8523,6 @@
             "p2_hosts_trial_3": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observedshare": [
@@ -8695,7 +8671,6 @@
             "p3_hosts_trial_9": {
                 "objects": {
                     "num": [
-                        "s",
                         "num__85",
                         "num__92",
                         "num__98",
@@ -9084,7 +9059,6 @@
             "p3_hosts_trial_8": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "num": [
@@ -9407,7 +9381,6 @@
             "p3_hosts_trial_13": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_bbtimedelta",
                         "id_bptimedelta",
                         "id_bitimedelta"
@@ -9611,7 +9584,6 @@
             "p3_hosts_trial_16": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_bitimedelta",
                         "id_bbtimedelta",
                         "id_bptimedelta"
@@ -9806,7 +9778,6 @@
             "p4_hosts_trial_10": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_ccschtask",
                         "id_caschtask",
                         "id_cbschtask",
@@ -10036,7 +10007,6 @@
             "p4_hosts_trial_1": {
                 "objects": {
                     "observeddomaincredential": [
-                        "s",
                         "id_ddomaincredential"
                     ],
                     "observeddomainuser": [
@@ -10190,7 +10160,6 @@
             "p4_hosts_trial_13": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_coschtask",
                         "id_cmschtask",
                         "id_cpschtask",
@@ -10451,7 +10420,6 @@
             "p4_hosts_trial_15": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_cetimedelta",
                         "id_bxtimedelta",
                         "id_bqtimedelta",
@@ -10704,7 +10672,6 @@
             "p5_hosts_trial_1": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observeddomaincredential": [
@@ -10882,7 +10849,6 @@
             "p5_hosts_trial_15": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_deschtask",
                         "id_dbschtask",
                         "id_dcschtask",
@@ -11187,7 +11153,6 @@
             "p5_hosts_trial_12": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_djschtask",
                         "id_dgschtask",
                         "id_dhschtask",
@@ -11492,7 +11457,6 @@
             "p5_hosts_trial_4": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_bstimedelta",
                         "id_betimedelta",
                         "id_bltimedelta",
@@ -11732,7 +11696,6 @@
             "p6_hosts_trial_15": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observeddomaincredential": [
@@ -12083,7 +12046,6 @@
             "p6_hosts_trial_6": {
                 "objects": {
                     "observedfile": [
-                        "s",
                         "id_cifile",
                         "id_clfile",
                         "id_cgfile",
@@ -12311,7 +12273,6 @@
             "p6_hosts_trial_2": {
                 "objects": {
                     "observeddomaincredential": [
-                        "s",
                         "id_hdomaincredential",
                         "id_ddomaincredential"
                     ],
@@ -12538,7 +12499,6 @@
             "p6_hosts_trial_1": {
                 "objects": {
                     "observeddomaincredential": [
-                        "s",
                         "id_ddomaincredential"
                     ],
                     "observedfile": [
@@ -13517,7 +13477,6 @@
             "p2_hosts_trial_15": {
                 "objects": {
                     "num": [
-                        "s",
                         "num__21",
                         "num__20",
                         "num__28",
@@ -13667,7 +13626,6 @@
             "p2_hosts_trial_12": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_bischtask",
                         "id_bjschtask"
                     ],
@@ -13821,7 +13779,6 @@
             "p2_hosts_trial_5": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observeddomaincredential": [
@@ -13947,7 +13904,6 @@
             "p2_hosts_trial_3": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observedshare": [
@@ -14099,7 +14055,6 @@
             "p3_hosts_trial_9": {
                 "objects": {
                     "num": [
-                        "s",
                         "num__85",
                         "num__92",
                         "num__98",
@@ -14491,7 +14446,6 @@
             "p3_hosts_trial_8": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "num": [
@@ -14817,7 +14771,6 @@
             "p3_hosts_trial_13": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_bbtimedelta",
                         "id_bptimedelta",
                         "id_bitimedelta"
@@ -15024,7 +14977,6 @@
             "p3_hosts_trial_16": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_bitimedelta",
                         "id_bbtimedelta",
                         "id_bptimedelta"
@@ -15222,7 +15174,6 @@
             "p4_hosts_trial_10": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_ccschtask",
                         "id_caschtask",
                         "id_cbschtask",
@@ -15455,7 +15406,6 @@
             "p4_hosts_trial_1": {
                 "objects": {
                     "observeddomaincredential": [
-                        "s",
                         "id_ddomaincredential"
                     ],
                     "observeddomainuser": [
@@ -15612,7 +15562,6 @@
             "p4_hosts_trial_13": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_coschtask",
                         "id_cmschtask",
                         "id_cpschtask",
@@ -15876,7 +15825,6 @@
             "p4_hosts_trial_15": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_cetimedelta",
                         "id_bxtimedelta",
                         "id_bqtimedelta",
@@ -16132,7 +16080,6 @@
             "p5_hosts_trial_1": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observeddomaincredential": [
@@ -16313,7 +16260,6 @@
             "p5_hosts_trial_15": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_deschtask",
                         "id_dbschtask",
                         "id_dcschtask",
@@ -16621,7 +16567,6 @@
             "p5_hosts_trial_12": {
                 "objects": {
                     "observedschtask": [
-                        "s",
                         "id_djschtask",
                         "id_dgschtask",
                         "id_dhschtask",
@@ -16929,7 +16874,6 @@
             "p5_hosts_trial_4": {
                 "objects": {
                     "observedtimedelta": [
-                        "s",
                         "id_bstimedelta",
                         "id_betimedelta",
                         "id_bltimedelta",
@@ -17172,7 +17116,6 @@
             "p6_hosts_trial_15": {
                 "objects": {
                     "observeddomain": [
-                        "s",
                         "id_adomain"
                     ],
                     "observeddomaincredential": [
@@ -17526,7 +17469,6 @@
             "p6_hosts_trial_6": {
                 "objects": {
                     "observedfile": [
-                        "s",
                         "id_cifile",
                         "id_clfile",
                         "id_cgfile",
@@ -17757,7 +17699,6 @@
             "p6_hosts_trial_2": {
                 "objects": {
                     "observeddomaincredential": [
-                        "s",
                         "id_hdomaincredential",
                         "id_ddomaincredential"
                     ],
@@ -17987,7 +17928,6 @@
             "p6_hosts_trial_1": {
                 "objects": {
                     "observeddomaincredential": [
-                        "s",
                         "id_ddomaincredential"
                     ],
                     "observedfile": [
@@ -18199,14 +18139,12 @@
             ":equality",
             ":action-costs"
         ],
-        "types": {
-            "types": [
-                "data",
-                "script",
-                "server",
-                "numbers"
-            ]
-        },
+        "types": [
+            "data",
+            "script",
+            "server",
+            "numbers"
+        ],
         "constants": {},
         "predicates": [
             "(SCRIPT-IO ?s - script ?in1 - data ?in2 - data ?out - data)",
@@ -18400,7 +18338,6 @@
             "p5-3-10-tiny-network-0": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-3",
                         "data-0-5",
                         "data-1-2",
@@ -18597,7 +18534,6 @@
             "p6-3-11-tiny-network-1": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-3",
                         "data-0-5",
@@ -18824,7 +18760,6 @@
             "p7-3-12-tiny-network-2": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-5",
                         "data-0-6",
                         "data-1-1",
@@ -19038,7 +18973,6 @@
             "p8-3-23-tiny-network-3": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-7",
                         "data-0-8",
                         "data-1-1",
@@ -19332,7 +19266,6 @@
             "p9-3-15-tiny-network-4": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-3",
                         "data-0-4",
                         "data-0-6",
@@ -19590,7 +19523,6 @@
             "p10-3-20-tiny-network-5": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-4",
                         "data-0-6",
@@ -19872,7 +19804,6 @@
             "p11-3-27-tiny-network-6": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-2",
                         "data-0-5",
                         "data-0-6",
@@ -20214,7 +20145,6 @@
             "p12-3-17-tiny-network-7": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-3",
                         "data-0-4",
                         "data-0-5",
@@ -20510,7 +20440,6 @@
             "p5-3-10-small-network-8": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-2",
                         "data-0-3",
                         "data-0-5",
@@ -20765,7 +20694,6 @@
             "p6-3-11-small-network-9": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-3",
                         "data-0-5",
@@ -21031,7 +20959,6 @@
             "p7-3-15-small-network-10": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-3",
                         "data-0-5",
                         "data-0-6",
@@ -21322,7 +21249,6 @@
             "p8-3-14-small-network-11": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-3",
                         "data-0-7",
@@ -21636,7 +21562,6 @@
             "p9-3-16-small-network-12": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-4",
                         "data-0-7",
                         "data-0-9",
@@ -21964,7 +21889,6 @@
             "p10-3-27-small-network-13": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-4",
                         "data-0-6",
                         "data-0-9",
@@ -22364,7 +22288,6 @@
             "p5-3-10-ring-network-14": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-2",
                         "data-0-3",
                         "data-0-5",
@@ -22797,7 +22720,6 @@
             "p6-3-13-ring-network-15": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-5",
                         "data-1-3",
@@ -23168,7 +23090,6 @@
             "p7-3-16-ring-network-16": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-3",
                         "data-0-5",
@@ -23569,7 +23490,6 @@
             "p8-3-14-ring-network-17": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-7",
                         "data-0-8",
@@ -23957,7 +23877,6 @@
             "p9-3-16-ring-network-18": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-4",
                         "data-0-9",
                         "data-1-1",
@@ -24410,7 +24329,6 @@
             "p10-3-20-ring-network-19": {
                 "objects": {
                     "data": [
-                        "s",
                         "data-0-1",
                         "data-0-4",
                         "data-0-9",
@@ -25090,7 +25008,6 @@
             "random-3x3-2": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -25159,7 +25076,6 @@
             "random-3x3-10": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -25228,7 +25144,6 @@
             "random-4x4-19": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -25337,7 +25252,6 @@
             "random-4x4-28": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -25449,7 +25363,6 @@
             "random-5x5-56": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -25610,7 +25523,6 @@
             "random-5x5-61": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -25778,7 +25690,6 @@
             "random-6x6-66": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -26010,7 +25921,6 @@
             "random-6x6-72": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -26250,7 +26160,6 @@
             "random-7x7-77": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -26563,7 +26472,6 @@
             "random-7x7-81": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -26878,7 +26786,6 @@
             "random-8x8-83": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -27285,7 +27192,6 @@
             "random-8x8-87": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -27698,7 +27604,6 @@
             "random-9x9-101": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -28209,7 +28114,6 @@
             "random-9x9-107": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -28723,7 +28627,6 @@
             "random-10x10-252": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -29361,7 +29264,6 @@
             "random-10x10-266": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -29993,7 +29895,6 @@
             "random-11x11-345": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -30754,7 +30655,6 @@
             "random-11x11-499": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -31518,7 +31418,6 @@
             "random-12x12-820": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -32430,7 +32329,6 @@
             "random-12x12-1244": {
                 "objects": {
                     "cell": [
-                        "s",
                         "pos-0-0",
                         "pos-0-1",
                         "pos-0-2",
@@ -34091,7 +33989,6 @@
             "alkene_p07": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c016",
                         "c032",
                         "c033",
@@ -34229,7 +34126,6 @@
             "alkene_p17": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c007",
                         "c008",
                         "c009",
@@ -34403,7 +34299,6 @@
             "mit_p03": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al1"
                     ],
                     "carbon": [
@@ -34515,7 +34410,6 @@
             "mit_p06": {
                 "objects": {
                     "bromine": [
-                        "s",
                         "br1",
                         "br4",
                         "br5",
@@ -34630,7 +34524,6 @@
             "mit_p02": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c1",
                         "c2",
                         "c3",
@@ -34765,7 +34658,6 @@
             "mit_p14": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al2"
                     ],
                     "bromine": [
@@ -34905,7 +34797,6 @@
             "mit_p04": {
                 "objects": {
                     "bromine": [
-                        "s",
                         "br1",
                         "br2"
                     ],
@@ -35068,7 +34959,6 @@
             "mit_p11": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al1"
                     ],
                     "bromine": [
@@ -35238,7 +35128,6 @@
             "alkene_p02": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c017",
                         "c018",
                         "c019",
@@ -35410,7 +35299,6 @@
             "alkene_p18": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c016",
                         "c019",
                         "c020",
@@ -35591,7 +35479,6 @@
             "alkene_p09": {
                 "objects": {
                     "boron": [
-                        "s",
                         "b071"
                     ],
                     "carbon": [
@@ -35761,7 +35648,6 @@
             "alkene_p01": {
                 "objects": {
                     "boron": [
-                        "s",
                         "b071"
                     ],
                     "carbon": [
@@ -35938,7 +35824,6 @@
             "mit_p13": {
                 "objects": {
                     "bromine": [
-                        "s",
                         "br1",
                         "br2"
                     ],
@@ -36138,7 +36023,6 @@
             "alkene_p16": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c007",
                         "c008",
                         "c009",
@@ -36400,7 +36284,6 @@
             "mit_p10": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al1"
                     ],
                     "boron": [
@@ -36632,7 +36515,6 @@
             "mit_p05": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c1",
                         "c10",
                         "c17",
@@ -36862,7 +36744,6 @@
             "p5arommodi2": {
                 "objects": {
                     "sodium": [
-                        "s",
                         ";",
                         "setup",
                         "for",
@@ -37133,7 +37014,6 @@
             "initialbonds10arom": {
                 "objects": {
                     "carbon": [
-                        "s",
                         ";",
                         "setup",
                         "for",
@@ -37390,7 +37270,6 @@
             "initialbonds2arom": {
                 "objects": {
                     "hydrogen": [
-                        "s",
                         ";",
                         "setup",
                         "for",
@@ -37573,7 +37452,6 @@
             "initialbonds19": {
                 "objects": {
                     "carbon": [
-                        "s",
                         ";",
                         "ethanol",
                         "c1",
@@ -42468,7 +42346,6 @@
             "alkene_p07": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c016",
                         "c032",
                         "c033",
@@ -42609,7 +42486,6 @@
             "alkene_p17": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c007",
                         "c008",
                         "c009",
@@ -42786,7 +42662,6 @@
             "mit_p03": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al1"
                     ],
                     "carbon": [
@@ -42901,7 +42776,6 @@
             "mit_p06": {
                 "objects": {
                     "bromine": [
-                        "s",
                         "br1",
                         "br4",
                         "br5",
@@ -43019,7 +42893,6 @@
             "mit_p02": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c1",
                         "c2",
                         "c3",
@@ -43157,7 +43030,6 @@
             "mit_p14": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al2"
                     ],
                     "bromine": [
@@ -43300,7 +43172,6 @@
             "mit_p04": {
                 "objects": {
                     "bromine": [
-                        "s",
                         "br1",
                         "br2"
                     ],
@@ -43466,7 +43337,6 @@
             "mit_p11": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al1"
                     ],
                     "bromine": [
@@ -43639,7 +43509,6 @@
             "alkene_p02": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c017",
                         "c018",
                         "c019",
@@ -43814,7 +43683,6 @@
             "alkene_p18": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c016",
                         "c019",
                         "c020",
@@ -43998,7 +43866,6 @@
             "alkene_p09": {
                 "objects": {
                     "boron": [
-                        "s",
                         "b071"
                     ],
                     "carbon": [
@@ -44171,7 +44038,6 @@
             "alkene_p01": {
                 "objects": {
                     "boron": [
-                        "s",
                         "b071"
                     ],
                     "carbon": [
@@ -44351,7 +44217,6 @@
             "mit_p13": {
                 "objects": {
                     "bromine": [
-                        "s",
                         "br1",
                         "br2"
                     ],
@@ -44554,7 +44419,6 @@
             "alkene_p16": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c007",
                         "c008",
                         "c009",
@@ -44819,7 +44683,6 @@
             "mit_p10": {
                 "objects": {
                     "aluminium": [
-                        "s",
                         "al1"
                     ],
                     "boron": [
@@ -45054,7 +44917,6 @@
             "mit_p05": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c1",
                         "c10",
                         "c17",
@@ -45287,7 +45149,6 @@
             "p5arommodi2": {
                 "objects": {
                     "sodium": [
-                        "s",
                         "na"
                     ],
                     "oxygen": [
@@ -45532,7 +45393,6 @@
             "initialbonds10arom": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c1",
                         "c2",
                         "c3",
@@ -45765,7 +45625,6 @@
             "initialbonds2arom": {
                 "objects": {
                     "hydrogen": [
-                        "s",
                         "h1",
                         "h2",
                         "h3",
@@ -45925,7 +45784,6 @@
             "initialbonds19": {
                 "objects": {
                     "carbon": [
-                        "s",
                         "c1",
                         "c2",
                         "c5",
@@ -46118,12 +45976,10 @@
             ":typing",
             ":equality"
         ],
-        "types": {
-            "types": [
-                "place",
-                "event"
-            ]
-        },
+        "types": [
+            "place",
+            "event"
+        ],
         "constants": {
             "place": [
                 "nts",
@@ -56825,7 +56681,6 @@
             "popt-tiny-01-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -57214,7 +57069,6 @@
             "popt-tiny-02-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -57617,7 +57471,6 @@
             "popt-tiny-02-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -58038,7 +57891,6 @@
             "popt-tiny-03-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -58486,7 +58338,6 @@
             "popt-tiny-03-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -58972,7 +58823,6 @@
             "popt-tiny-04-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -59429,7 +59279,6 @@
             "popt-tiny-04-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -59960,7 +59809,6 @@
             "popt-tiny-05-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -60488,7 +60336,6 @@
             "popt-tiny-05-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -61046,7 +60893,6 @@
             "popt-tiny-06-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2"
@@ -61591,7 +61437,6 @@
             "popt-small-01-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -62024,7 +61869,6 @@
             "popt-small-02-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -62449,7 +62293,6 @@
             "popt-small-02-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -62889,7 +62732,6 @@
             "popt-small-03-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -63359,7 +63201,6 @@
             "popt-small-03-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -63868,7 +63709,6 @@
             "popt-small-04-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -64351,7 +64191,6 @@
             "popt-small-04-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -64908,7 +64747,6 @@
             "popt-small-05-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -65455,7 +65293,6 @@
             "popt-small-05-easy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -66037,7 +65874,6 @@
             "popt-small-06-veryeasy": {
                 "objects": {
                     "place": [
-                        "s",
                         "p0",
                         "p1",
                         "p2",
@@ -66626,12 +66462,10 @@
             ":negative-preconditions"
         ],
         "types": {},
-        "constants": {
-            "constants": [
-                "nts",
-                "dummypoint"
-            ]
-        },
+        "constants": [
+            "nts",
+            "dummypoint"
+        ],
         "predicates": [
             "(ISADJACENT ?x ?y)",
             "(tailsnake ?x)",
@@ -66728,36 +66562,33 @@
         },
         "Problems": {
             "snake-empty-5x5-1-5-10-11170": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -66880,36 +66711,33 @@
                 ]
             },
             "snake-empty-5x5-1-5-14-11185": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -67040,36 +66868,33 @@
                 ]
             },
             "snake-empty-5x5-1-5-17-11199": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -67206,36 +67031,33 @@
                 ]
             },
             "snake-empty-5x5-1-5-3-11140": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -67344,36 +67166,33 @@
                 ]
             },
             "snake-empty-5x5-1-5-6-11155": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -67488,41 +67307,38 @@
                 ]
             },
             "snake-empty-6x5-1-5-14-11270": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -67671,41 +67487,38 @@
                 ]
             },
             "snake-empty-6x5-1-5-18-11285": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -67862,41 +67675,38 @@
                 ]
             },
             "snake-empty-6x5-1-5-23-112100": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -68063,41 +67873,38 @@
                 ]
             },
             "snake-empty-6x5-1-5-5-11240": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -68228,41 +68035,38 @@
                 ]
             },
             "snake-empty-6x5-1-5-9-11255": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -68401,47 +68205,44 @@
                 ]
             },
             "snake-empty-6x6-1-5-12-11355": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -68608,47 +68409,44 @@
                 ]
             },
             "snake-empty-6x6-1-5-18-11370": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -68827,47 +68625,44 @@
                 ]
             },
             "snake-empty-6x6-1-5-23-11385": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -69056,47 +68851,44 @@
                 ]
             },
             "snake-empty-6x6-1-5-29-113100": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -69297,47 +69089,44 @@
                 ]
             },
             "snake-empty-6x6-1-5-7-11340": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -69494,53 +69283,50 @@
                 ]
             },
             "snake-empty-6x7-1-5-16-11455": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos0-6",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos1-6",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos2-6",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos3-6",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos4-6",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5",
-                        "pos5-6"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos0-6",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos1-6",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos2-6",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos3-6",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos4-6",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5",
+                    "pos5-6"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -69737,53 +69523,50 @@
                 ]
             },
             "snake-empty-6x7-1-5-22-11470": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos0-6",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos1-6",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos2-6",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos3-6",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos4-6",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5",
-                        "pos5-6"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos0-6",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos1-6",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos2-6",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos3-6",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos4-6",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5",
+                    "pos5-6"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -69992,53 +69775,50 @@
                 ]
             },
             "snake-empty-6x7-1-5-28-11485": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos0-6",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos1-6",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos2-6",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos3-6",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos4-6",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5",
-                        "pos5-6"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos0-6",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos1-6",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos2-6",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos3-6",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos4-6",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5",
+                    "pos5-6"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -70259,53 +70039,50 @@
                 ]
             },
             "snake-empty-6x7-1-5-35-114100": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos0-6",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos1-6",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos2-6",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos3-6",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos4-6",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5",
-                        "pos5-6"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos0-6",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos1-6",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos2-6",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos3-6",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos4-6",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5",
+                    "pos5-6"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -70540,53 +70317,50 @@
                 ]
             },
             "snake-empty-6x7-1-5-9-11440": {
-                "objects": {
-                    "type_instances": [
-                        "s",
-                        "pos0-0",
-                        "pos0-1",
-                        "pos0-2",
-                        "pos0-3",
-                        "pos0-4",
-                        "pos0-5",
-                        "pos0-6",
-                        "pos1-0",
-                        "pos1-1",
-                        "pos1-2",
-                        "pos1-3",
-                        "pos1-4",
-                        "pos1-5",
-                        "pos1-6",
-                        "pos2-0",
-                        "pos2-1",
-                        "pos2-2",
-                        "pos2-3",
-                        "pos2-4",
-                        "pos2-5",
-                        "pos2-6",
-                        "pos3-0",
-                        "pos3-1",
-                        "pos3-2",
-                        "pos3-3",
-                        "pos3-4",
-                        "pos3-5",
-                        "pos3-6",
-                        "pos4-0",
-                        "pos4-1",
-                        "pos4-2",
-                        "pos4-3",
-                        "pos4-4",
-                        "pos4-5",
-                        "pos4-6",
-                        "pos5-0",
-                        "pos5-1",
-                        "pos5-2",
-                        "pos5-3",
-                        "pos5-4",
-                        "pos5-5",
-                        "pos5-6"
-                    ]
-                },
+                "objects": [
+                    "pos0-0",
+                    "pos0-1",
+                    "pos0-2",
+                    "pos0-3",
+                    "pos0-4",
+                    "pos0-5",
+                    "pos0-6",
+                    "pos1-0",
+                    "pos1-1",
+                    "pos1-2",
+                    "pos1-3",
+                    "pos1-4",
+                    "pos1-5",
+                    "pos1-6",
+                    "pos2-0",
+                    "pos2-1",
+                    "pos2-2",
+                    "pos2-3",
+                    "pos2-4",
+                    "pos2-5",
+                    "pos2-6",
+                    "pos3-0",
+                    "pos3-1",
+                    "pos3-2",
+                    "pos3-3",
+                    "pos3-4",
+                    "pos3-5",
+                    "pos3-6",
+                    "pos4-0",
+                    "pos4-1",
+                    "pos4-2",
+                    "pos4-3",
+                    "pos4-4",
+                    "pos4-5",
+                    "pos4-6",
+                    "pos5-0",
+                    "pos5-1",
+                    "pos5-2",
+                    "pos5-3",
+                    "pos5-4",
+                    "pos5-5",
+                    "pos5-6"
+                ],
                 "init": [
                     "(ISADJACENT pos0-0 pos1-0)",
                     "(ISADJACENT pos0-0 pos0-1)",
@@ -71292,7 +71066,6 @@
             "spider-1-4-3-3-2-1400": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -71435,7 +71208,6 @@
             "spider-1-4-4-3-2-1548": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -71618,7 +71390,6 @@
             "spider-1-4-5-4-2-1601": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -71844,7 +71615,6 @@
             "spider-1-4-6-4-2-1700": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -72110,7 +71880,6 @@
             "spider-1-4-7-5-2-1800": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -72419,7 +72188,6 @@
             "spider-1-4-8-6-2-1901": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -72771,7 +72539,6 @@
             "spider-2-2-3-3-2-700": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -72924,7 +72691,6 @@
             "spider-2-2-4-3-2-801": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -73120,7 +72886,6 @@
             "spider-2-2-5-4-2-900": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -73362,7 +73127,6 @@
             "spider-2-2-6-4-2-1000": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -73649,7 +73413,6 @@
             "spider-2-2-7-5-2-1100": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -73982,7 +73745,6 @@
             "spider-2-2-8-6-2-1200": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -74363,7 +74125,6 @@
             "spider-2-2-9-6-2-1300": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -74788,7 +74549,6 @@
             "spider-4-1-3-3-2-0": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -74957,7 +74717,6 @@
             "spider-4-1-4-3-2-100": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -75176,7 +74935,6 @@
             "spider-4-1-5-4-2-200": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -75453,7 +75211,6 @@
             "spider-4-1-6-4-2-300": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -75779,7 +75536,6 @@
             "spider-4-1-7-5-2-400": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -76160,7 +75916,6 @@
             "spider-4-1-8-6-2-500": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -76596,7 +76351,6 @@
             "spider-4-1-9-6-2-600": {
                 "objects": {
                     "card": [
-                        "s",
                         "card-d0-s0-v0",
                         "card-d0-s0-v1",
                         "card-d0-s0-v2",
@@ -77282,7 +77036,6 @@
             "termes-00038-0036-4x3x3-random_towers_4x3_3_1_3": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -77375,7 +77128,6 @@
             "termes-00112-0036-4x3x3-random_towers_4x3_3_2_8": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -77468,7 +77220,6 @@
             "termes-00072-0048-4x3x4-random_towers_4x3_4_1_12": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -77563,7 +77314,6 @@
             "termes-00102-0048-4x3x4-random_towers_4x3_4_2_15": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -77658,7 +77408,6 @@
             "termes-00154-0060-4x3x5-random_towers_4x3_5_1_20": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -77755,7 +77504,6 @@
             "termes-00176-0060-4x3x5-random_towers_4x3_5_2_24": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -77852,7 +77600,6 @@
             "termes-00276-0072-4x3x6-random_towers_4x3_6_1_25": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -77951,7 +77698,6 @@
             "termes-00404-0072-4x3x6-random_towers_4x3_6_2_29": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78050,7 +77796,6 @@
             "termes-00420-0084-4x3x7-random_towers_4x3_7_1_34": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78151,7 +77896,6 @@
             "termes-00358-0084-4x3x7-random_towers_4x3_7_2_39": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78252,7 +77996,6 @@
             "termes-00090-0036-4x3x3-random_towers_4x3_3_3_44": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78345,7 +78088,6 @@
             "termes-00092-0036-4x3x3-random_towers_4x3_3_4_46": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78438,7 +78180,6 @@
             "termes-00128-0048-4x3x4-random_towers_4x3_4_3_52": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78533,7 +78274,6 @@
             "termes-00118-0048-4x3x4-random_towers_4x3_4_4_56": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78628,7 +78368,6 @@
             "termes-00214-0060-4x3x5-random_towers_4x3_5_3_59": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78725,7 +78464,6 @@
             "termes-00274-0060-4x3x5-random_towers_4x3_5_4_63": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78822,7 +78560,6 @@
             "termes-00166-0036-4x3x3-random_towers_4x3_3_5_68": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -78915,7 +78652,6 @@
             "termes-00108-0036-4x3x3-random_towers_4x3_3_6_69": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -79008,7 +78744,6 @@
             "termes-00120-0048-4x3x4-random_towers_4x3_4_5_76": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",
@@ -79103,7 +78838,6 @@
             "termes-00164-0048-4x3x4-random_towers_4x3_4_6_78": {
                 "objects": {
                     "numb": [
-                        "s",
                         "n0",
                         "n1",
                         "n2",

@@ -129,12 +129,3 @@ for file in problem_files:
             data[domain_name]["Problems"][problem_name]["goal"] = goal
 
 write_to_json(data,data_file_path)
-
-
-    
-
-
-
-    
-
-
