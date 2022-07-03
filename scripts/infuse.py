@@ -99,7 +99,7 @@ def add_parameters( class_name, property_name, itemURI, data):
    if len(data["values"]) == len(data["types"]):
 
       for idx in range(len(data["values"])):
-         value_URI = URIRef( planOntology + itemURI.split('#')[-1] + '_parameter_' + str(idx+1) )
+         value_URI = URIRef( planOntology + data["values"][idx] )
          type_URI = URIRef( planOntology + data["types"][idx] )
          g.add((value_URI, RDF.type, class_name))
          g.add((value_URI, RDFS.label, Literal(data["values"][idx])))
@@ -111,7 +111,7 @@ def add_parameters( class_name, property_name, itemURI, data):
          g.add((itemURI, property_name, value_URI))
    else:
       for idx in range(len(data["values"])):
-         value_URI = URIRef( planOntology + itemURI.split('#')[-1] + '_parameter_' + str(idx+1) )
+         value_URI = URIRef( planOntology + data["values"][idx] )
          g.add((value_URI, RDF.type, class_name))
          g.add((value_URI, RDFS.label, Literal(data["values"][idx])))
          g.add((itemURI, property_name, value_URI))
@@ -138,7 +138,7 @@ def add_effects( class_name, property_name, itemURI, data ):
 
 def add_actions( class_name, property_name, itemURI, data ):
    for action in data.keys():
-      value_URI = URIRef( planOntology + itemURI.split('#')[-1] + '_action_' + action )
+      value_URI = URIRef( planOntology + action )
       g.add((value_URI, RDF.type, class_name))
       g.add((value_URI, RDFS.label, Literal(action)))
       g.add((itemURI, property_name, value_URI))
@@ -164,7 +164,7 @@ def add_objects( class_name, property_name, itemURI, domain_name, data ):
          g.add(( URIRef(planOntology + domain_name), planOntology.hasType, type_URI ))
          for value in data[item_type]:
             count += 1
-            value_URI = URIRef( planOntology + itemURI.split('#')[-1] + '_object_' + str(count))
+            value_URI = URIRef( planOntology + value)
             g.add((value_URI, RDF.type, class_name))
             g.add((value_URI, RDFS.label, Literal(value)))
             g.add((itemURI, property_name, value_URI))
@@ -173,7 +173,7 @@ def add_objects( class_name, property_name, itemURI, domain_name, data ):
       count = 0
       for value in data:
          count += 1
-         value_URI = URIRef( planOntology + itemURI.split('#')[-1] + '_object_' + str(count))
+         value_URI = URIRef( planOntology + value)
          g.add((value_URI, RDF.type, class_name))
          g.add((value_URI, RDFS.label, Literal(value)))
          g.add((itemURI, property_name, value_URI))   
@@ -199,7 +199,7 @@ def add_goal_state( class_name, property_name, itemURI, data):
 
 def add_problem( class_name, property_name, itemURI, data ):
    for problem in data.keys():
-      value_URI = URIRef( planOntology + itemURI.split('#')[-1] + '_problem_' + problem )
+      value_URI = URIRef( planOntology + problem )
       g.add((value_URI, RDF.type, class_name))
       g.add((value_URI, RDFS.label, Literal(problem)))
       g.add((itemURI, property_name, value_URI))
