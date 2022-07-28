@@ -12,5 +12,5 @@ Contents:
     - infuse.py - to infuse the data from JSON file into the ontology based on the relations between different entities.
         > python3 infuse.py
 
-To run the website on localhost, please install Flask and run the following command.
-    > python3 .\scripts\website.py
+To run the website on localhost, please install Flask and run the following command:
+> python3 .\scripts\website.py
