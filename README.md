@@ -11,3 +11,6 @@ Contents:
         > python3 get_data.py <\folder_path>
     - infuse.py - to infuse the data from JSON file into the ontology based on the relations between different entities.
         > python3 infuse.py
+
+To run the website on localhost, please install Flask and run
+    > python3 .\scripts\website.py
