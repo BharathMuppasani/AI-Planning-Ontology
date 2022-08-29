@@ -8,7 +8,7 @@ from rdflib.namespace import RDF, RDFS, OWL
 from regex import P
 from uritemplate import variables
 
-def graph_query(sql_query, g):
+def graph_query(sql_query, g, namespace):
     
     list = sql_query.split('\n')
 
@@ -36,14 +36,24 @@ def graph_query(sql_query, g):
     new_query = '\n'.join(new_query_list)
     results = g.query(new_query)
     
-    output_dict = {}
-    for output in results:
-        for idx in range(len(output)):
-            if variables[idx] not in output_dict:
-                output_dict[variables[idx]] = [output[idx].split("#")[-1]]
-            else:
-                output_dict[variables[idx]].append(output[idx].split("#")[-1])
-    
+    if namespace == None:
+        output_dict = {}
+        for output in results:
+            for idx in range(len(output)):
+                if output[idx] != None:
+                    if variables[idx] not in output_dict:
+                        output_dict[variables[idx]] = [output[idx].split("#")[-1]]
+                    else:
+                        output_dict[variables[idx]].append(output[idx].split("#")[-1])
+    else:
+        output_dict = {}
+        for output in results:
+            for idx in range(len(output)):
+                if variables[idx] not in output_dict:
+                    output_dict[variables[idx]] = [output[idx]]
+                else:
+                    output_dict[variables[idx]].append(output[idx])
+
     all_headers = output_dict.keys()
     all_rows = zip(*output_dict.values())
     

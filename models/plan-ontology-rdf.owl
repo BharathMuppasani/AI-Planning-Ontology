@@ -49,11 +49,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasHighRelevancePlanner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasHighRelevancePlanner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#initial_state"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasLowRelevancePlanner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasLowRelevancePlanner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMediumRelevancePlanner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMediumRelevancePlanner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
     </owl:ObjectProperty>
     
 

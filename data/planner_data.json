@@ -1,0 +1,261 @@
+{
+    "agricola": {
+        "high": [
+            "Delfi1",
+            "Complementary1",
+            "symb_Bi_dir",
+            "Delfi2",
+            "FDMS2"
+        ],
+        "medium": [
+            "Complementary2",
+            "Planning_PDBs",
+            "FDMS1",
+            "MSP"
+        ],
+        "low": [
+            "Scorpion",
+            "DecStar",
+            "Metis1",
+            "Metis2",
+            "Blind",
+            "Symple_2",
+            "Symple_1",
+            "maplan_2",
+            "maplan_1"
+        ]
+    },
+    "caldera": {
+        "high": [
+            "Delfi1",
+            "Complementary2",
+            "Planning_PDBs",
+            "Scorpion",
+            "FDMS2",
+            "FDMS1",
+            "Metis1",
+            "Metis2"
+        ],
+        "medium": [
+            "Complementary1",
+            "symb_Bi_dir",
+            "Delfi2",
+            "DecStar",
+            "MSP",
+            "Blind",
+            "Symple_2",
+            "Symple_1"
+        ],
+        "low": [
+            "maplan_2",
+            "maplan_1"
+        ]
+    },
+    "data-net": {
+        "high": [
+            "Delfi1",
+            "Complementary1",
+            "Planning_PDBs",
+            "symb_Bi_dir",
+            "Scorpion",
+            "Delfi2",
+            "DecStar",
+            "MSP"
+        ],
+        "medium": [
+            "Complementary2",
+            "FDMS1",
+            "Metis1",
+            "Metis2",
+            "maplan_1"
+        ],
+        "low": [
+            "FDMS2",
+            "Blind",
+            "Symple_2",
+            "Symple_1",
+            "maplan_2"
+        ]
+    },
+    "nurikabe": {
+        "high": [
+            "Delfi1",
+            "Complementary2",
+            "Complementary1",
+            "Planning_PDBs",
+            "symb_Bi_dir",
+            "Scorpion",
+            "Delfi2",
+            "FDMS2",
+            "FDMS1",
+            "DecStar",
+            "Metis1",
+            "Metis2",
+            "Blind"
+        ],
+        "medium": [
+            "MSP",
+            "Symple_2",
+            "Symple_1"
+        ],
+        "low": [
+            "maplan_2",
+            "maplan_1"
+        ]
+    },
+    "organinc synthesis": {
+        "high": [
+            "Delfi1",
+            "Complementary2",
+            "Complementary1",
+            "Planning_PDBs",
+            "symb_Bi_dir",
+            "Scorpion",
+            "Delfi2",
+            "FDMS2",
+            "FDMS1",
+            "DecStar",
+            "Metis1",
+            "MSP",
+            "Metis2",
+            "Symple_2",
+            "Symple_1"
+        ],
+        "medium": [
+            "Blind"
+        ],
+        "low": [
+            "maplan_2",
+            "maplan_1"
+        ]
+    },
+    "petri net align": {
+        "high": [
+            "Delfi1",
+            "Complementary2",
+            "Complementary1",
+            "Planning_PDBs",
+            "symb_Bi_dir"
+        ],
+        "medium": [
+            "Delfi2",
+            "DecStar",
+            "Metis1",
+            "MSP",
+            "Metis2",
+            "Blind"
+        ],
+        "low": [
+            "Scorpion",
+            "FDMS2",
+            "FDMS1",
+            "Symple_2",
+            "Symple_1",
+            "maplan_2",
+            "maplan_1"
+        ]
+    },
+    "settlers": {
+        "high": [
+            "Delfi1",
+            "Complementary2",
+            "Complementary1",
+            "Planning_PDBs",
+            "symb_Bi_dir",
+            "Scorpion",
+            "Delfi2",
+            "FDMS2",
+            "FDMS1",
+            "DecStar",
+            "Metis1",
+            "Blind"
+        ],
+        "medium": [],
+        "low": [
+            "MSP",
+            "Metis2",
+            "Symple_2",
+            "Symple_1",
+            "maplan_2",
+            "maplan_1"
+        ]
+    },
+    "snake": {
+        "high": [
+            "Delfi1",
+            "Complementary2",
+            "Complementary1",
+            "Planning_PDBs",
+            "Scorpion",
+            "FDMS2",
+            "FDMS1",
+            "DecStar",
+            "MSP",
+            "Blind",
+            "maplan_2"
+        ],
+        "medium": [
+            "Delfi2",
+            "Metis1",
+            "Metis2",
+            "maplan_1"
+        ],
+        "low": [
+            "symb_Bi_dir",
+            "Symple_2",
+            "Symple_1"
+        ]
+    },
+    "spider": {
+        "high": [
+            "Scorpion",
+            "DecStar"
+        ],
+        "medium": [
+            "Delfi1",
+            "Complementary2",
+            "Complementary1",
+            "Planning_PDBs",
+            "symb_Bi_dir",
+            "Delfi2",
+            "FDMS2",
+            "FDMS1",
+            "Metis1",
+            "Metis2",
+            "Blind",
+            "maplan_1"
+        ],
+        "low": [
+            "MSP",
+            "Symple_2",
+            "Symple_1",
+            "maplan_2"
+        ]
+    },
+    "termes": {
+        "high": [
+            "Complementary2",
+            "Complementary1",
+            "Planning_PDBs",
+            "symb_Bi_dir",
+            "Scorpion",
+            "Delfi2",
+            "MSP"
+        ],
+        "medium": [
+            "Delfi1",
+            "FDMS2",
+            "FDMS1",
+            "DecStar",
+            "Blind",
+            "Symple_2",
+            "Symple_1",
+            "maplan_2"
+        ],
+        "low": [
+            "Metis1",
+            "Metis2",
+            "maplan_1"
+        ]
+    }
+}

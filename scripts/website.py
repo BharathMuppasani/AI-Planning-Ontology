@@ -9,17 +9,19 @@ from rdflib.term import URIRef
 from rdflib.plugins import sparql
 from rdflib.namespace import RDF, RDFS, OWL
 
-g = Graph().parse('models/plan-ontology-rdf-instances.owl')
+g = Graph().parse('models/plan-ontology-rdf-instances-planner-info.owl')
 
 app = Flask(__name__)
 @app.route('/', methods=["GET", "POST"])
 def mainPage():
     if request.method == "POST":
         sql_query = request.form["sql_editor"]
-        headers, rows = graph_query(sql_query,g)
-        return render_template('index.html', sql_input=sql_query, headers=headers, rows=list(rows))
+        namespace = request.form.get("namespace")
+        headers, rows = graph_query(sql_query,g,namespace)
+        return render_template('index.html', sql_input=sql_query, headers=headers, rows=list(rows), namespace=namespace)
     else:
-        return render_template('index.html', sql_input=None, headers=None, rows=None)
+        namespace = request.form.get("namespace")
+        return render_template('index.html', sql_input=None, headers=None, rows=None, namespace=namespace)
 
 if __name__ == '__main__':
     app.run(debug=True)
