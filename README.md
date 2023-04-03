@@ -8,9 +8,9 @@ Contents:
 4. *queries* - contains .docx file with sample SPARQL queries performed on the KG and their results.
 5. *scripts* - contains the scripts required 
     - get_data.py - to build the JSON data file of the IPC domains from the location specified as command line argument.
-        > python3 get_data.py <\folder_path>
+        > python3 .\script\get_data.py <\folder_path>
     - infuse.py - to infuse the data from JSON file into the ontology based on the relations between different entities.
-        > python3 infuse.py
+        > python3 .\script\infuse.py
 
 To run the website on localhost, please install Flask and run the following command:
 > python3 .\scripts\website.py
