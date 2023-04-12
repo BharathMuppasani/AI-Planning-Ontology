@@ -14,3 +14,21 @@ Contents:
 
 To run the website on localhost, please install Flask and run the following command:
 > python3 .\scripts\website.py
+
+
+# Citations
+If you are using our work, please cite.
+```
+@inproceedings{planning-ontology,
+
+author = {Bharath Muppasani and Vishal Pallagani  and Biplav Srivastava  and Raghava Mutharaju},
+
+title = {Building and using a planning ontology from past data for performance efficiency},
+
+booktitle = {Proc. ICAPS'23 Workshop PLanning And onTology wOrkshop (PLATO)},
+year = {2023},
+keywords = {  Ontology, Automated Planning, Planner Improvement},
+copyright = {Creative Commons Attribution Non Commercial No Derivatives 4.0 International}
+
+}
+```
