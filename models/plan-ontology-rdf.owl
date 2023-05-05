@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/ai4s/plan-ontology"
-     xml:base="http://www.semanticweb.org/ai4s/plan-ontology"
+<rdf:RDF xmlns="https://purl.org/ai4s/ontology/planning"
+     xml:base="https://purl.org/ai4s/ontology/planning"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:plan-ontology="http://www.semanticweb.org/ai4s/plan-ontology#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ai4s/plan-ontology">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology/v2.0"/>
+     xmlns:plan-ontology="https://purl.org/ai4s/ontology/planning#">
+    <owl:Ontology rdf:about="https://purl.org/ai4s/ontology/planning">
+        <owl:versionIRI rdf:resource="https://purl.org/ai4s/ontology/planning/v2.0"/>
     </owl:Ontology>
     
 
@@ -24,237 +24,237 @@
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#addsPredicate -->
+    <!-- https://purl.org/ai4s/ontology/planning#addsPredicate -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#addsPredicate">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#addsPredicate">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#deletesPredicate -->
+    <!-- https://purl.org/ai4s/ontology/planning#deletesPredicate -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#deletesPredicate">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#deletesPredicate">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasConstant -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasConstant -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasConstant">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainConstant"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasConstant">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainConstant"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasCost -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasCost -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasCost">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Plan"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanCost"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasCost">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanCost"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasEffect -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasEffect -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasEffect">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ActionEffect"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasEffect">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasExtractedAction -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasExtractedAction -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasExtractedAction">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#MacroAction"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasExtractedAction">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasGoalState -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasGoalState -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasGoalState">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#GoalState"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasGoalState">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasHighRelevancePlanner -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasHighRelevancePlanner">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Planner"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasInitialState -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasInitialState -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasInitialState">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#InitialState"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasInitialState">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasLowRelevancePlanner -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasLowRelevancePlanner">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Planner"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasMediumRelevancePlanner -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasMediumRelevancePlanner">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Planner"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasMove -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasMove -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasMove">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasMove">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasObject -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasObject -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasObject">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ProblemObject"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasObject">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasParameter -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasParameter -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasParameter">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ActionParameter"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasParameter">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasPlan -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasPlan -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasPlan">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Plan"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasPlan">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasPrecondition -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasPrecondition -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasPrecondition">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ActionPrecondition"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasPrecondition">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasPredicate -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasPredicate -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasPredicate">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasPredicate">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasProblem -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasProblem -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasProblem">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasProblem">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasRequirement -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasRequirement -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasRequirement">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasRequirement">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasTag -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasTag -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasTag">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Type"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#TypeTag"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasTag">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#TypeTag"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasType -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasType">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Type"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasType">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#hasTypeInstance -->
+    <!-- https://purl.org/ai4s/ontology/planning#hasTypeInstance -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#hasTypeInstance">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Type"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ProblemObject"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasTypeInstance">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#ofPlanningType -->
+    <!-- https://purl.org/ai4s/ontology/planning#ofPlanningType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#ofPlanningType">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Planner"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningType"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#ofPlanningType">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#ofType -->
+    <!-- https://purl.org/ai4s/ontology/planning#ofType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#ofType">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ActionParameter"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Type"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#ofType">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#solvedBy -->
+    <!-- https://purl.org/ai4s/ontology/planning#solvedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#solvedBy">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#solvesRequirement"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Planner"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#solvedBy">
+        <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#solvesRequirement"/>
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#solvesRequirement -->
+    <!-- https://purl.org/ai4s/ontology/planning#solvesRequirement -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#solvesRequirement">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Planner"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#solvesRequirement">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
     </owl:ObjectProperty>
     
 
@@ -270,202 +270,202 @@
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#Action -->
+    <!-- https://purl.org/ai4s/ontology/planning#Action -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#Action">
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#Action">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasEffect"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ActionEffect"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasEffect"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasParameter"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ActionParameter"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasParameter"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasPrecondition"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ActionPrecondition"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#ActionEffect -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#ActionEffect"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#ActionParameter -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#ActionParameter"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#ActionPrecondition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#ActionPrecondition"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#DomainConstant -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#DomainConstant"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#GoalState -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#GoalState">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#State"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#InitialState -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#InitialState">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#State"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#MacroAction -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#MacroAction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#Plan -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#Plan">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasCost"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanCost"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasPrecondition"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#PlanCost -->
+    <!-- https://purl.org/ai4s/ontology/planning#ActionEffect -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#PlanCost"/>
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#Planner -->
+    <!-- https://purl.org/ai4s/ontology/planning#ActionParameter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#Planner">
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#ActionPrecondition -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#DomainConstant -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#DomainConstant"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#DomainPredicate -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#DomainRequirement -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#GoalState -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#GoalState">
+        <rdfs:subClassOf rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#InitialState -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#InitialState">
+        <rdfs:subClassOf rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#MacroAction -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#MacroAction">
+        <rdfs:subClassOf rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#Plan -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#Plan">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ofPlanningType"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#PlanningType"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasCost"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#PlanCost"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain -->
+    <!-- https://purl.org/ai4s/ontology/planning#PlanCost -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain">
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanCost"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#Planner -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#Planner">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasMove"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#Action"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasPredicate"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasRequirement"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#ofPlanningType"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem -->
+    <!-- https://purl.org/ai4s/ontology/planning#PlanningDomain -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem">
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanningDomain">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasGoalState"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#GoalState"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasMove"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#Action"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasInitialState"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#InitialState"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasPredicate"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#hasObject"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#ProblemObject"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#PlanningType -->
+    <!-- https://purl.org/ai4s/ontology/planning#PlanningProblem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#PlanningType"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#ProblemObject -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#ProblemObject"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#State -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#State"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#Type -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#Type">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology#TypeTag"/>
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanningProblem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasGoalState"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasInitialState"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasObject"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ai4s/plan-ontology#TypeTag -->
+    <!-- https://purl.org/ai4s/ontology/planning#PlanningType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ai4s/plan-ontology#TypeTag"/>
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanningType"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#ProblemObject -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#State -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#State"/>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#Type -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#Type">
+        <rdfs:subClassOf rdf:resource="https://purl.org/ai4s/ontology/planning#TypeTag"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#TypeTag -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#TypeTag"/>
 </rdf:RDF>
 
 
