@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:plan-ontology="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPrecondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    <rdfs:label>unstack</rdfs:label>
+    <plan-ontology:hasParameter rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?x"/>
+    <plan-ontology:hasParameter rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?y"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_precondition_1"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_precondition_2"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_precondition_3"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_1"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_2"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_3"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_4"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (clear ?x))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    <rdfs:label>pick-up</rdfs:label>
+    <plan-ontology:hasParameter rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?x"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_precondition_1"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_precondition_2"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_precondition_3"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_1"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_2"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_3"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(clear ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type_tag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    <rdfs:label>stack</rdfs:label>
+    <plan-ontology:hasParameter rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?x"/>
+    <plan-ontology:hasParameter rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?y"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_precondition_1"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_precondition_2"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_1"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_2"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_3"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_4"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_precondition_3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(handempty)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasRequirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasHighRelevancePlanner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_precondition_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(clear ?y)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (clear ?x))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMove">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#blocksworld">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:label>blocksworld</rdfs:label>
+    <plan-ontology:hasMove rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up"/>
+    <plan-ontology:hasMove rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down"/>
+    <plan-ontology:hasMove rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack"/>
+    <plan-ontology:hasMove rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvesRequirement"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(ontable ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPredicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (handempty))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(handempty)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasParameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planning_type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_precondition_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(holding ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasLowRelevancePlanner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?x">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+    <rdfs:label>?x</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(clear ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (handempty))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (clear ?y))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (ontable ?x))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    <rdfs:label>put-down</rdfs:label>
+    <plan-ontology:hasParameter rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?x"/>
+    <plan-ontology:hasPrecondition rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_precondition_1"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_1"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_2"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_3"/>
+    <plan-ontology:hasEffect rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#goal_state">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (holding ?x))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasProblem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTypeInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvesRequirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#initial_state">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#initial_state"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_precondition_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(on ?x ?y)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#put-down_effect_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (holding ?x))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMediumRelevancePlanner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_precondition_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(ontable ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(handempty)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#?y">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+    <rdfs:label>?y</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasConstant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#constant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasGoalState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#goal_state"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_effect_5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(on ?x ?y)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(clear ?y)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_effect_4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(holding ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#predicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_precondition_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(clear ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type_tag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(holding ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#stack_precondition_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(holding ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type_tag">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_precondition_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(clear ?x)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#unstack_effect_5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    <rdfs:label>(not (on ?x ?y))</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#constant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#pick-up_precondition_3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    <rdfs:label>(handempty)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planning_type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
