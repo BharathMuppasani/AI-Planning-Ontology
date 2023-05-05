@@ -1,7 +1,7 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
   "header" : {
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/ai4s/plan-ontology" ],
     "prefixList" : {
       "owl" : "http://www.w3.org/2002/07/owl#",
       "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -11,309 +11,309 @@
       "plan-ontology" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#",
       "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
     },
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology"
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology"
   },
   "namespace" : [ ],
   "class" : [ {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
+    "id" : "30",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ProblemObject",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ProblemObject"
-    },
-    "id" : "3"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Plan",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Plan"
-    },
-    "id" : "7"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#State",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "State"
-    },
-    "subClasses" : [ "2", "9" ],
-    "id" : "8"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanningDomain",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PlanningDomain"
-    },
-    "id" : "5"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Type",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Type"
-    },
-    "id" : "14",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanningProblem",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PlanningProblem"
-    },
-    "id" : "1"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#DomainConstant",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DomainConstant"
-    },
-    "id" : "22"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#DomainPredicate",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DomainPredicate"
-    },
-    "id" : "24"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#DomainRequirement",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DomainRequirement"
-    },
-    "id" : "11"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanCost",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PlanCost"
-    },
-    "id" : "25"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Action",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Action"
-    },
-    "subClasses" : [ "21" ],
-    "id" : "18"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#TypeTag",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TypeTag"
-    },
-    "subClasses" : [ "14" ],
-    "id" : "15"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#MacroAction",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MacroAction"
-    },
-    "id" : "21",
-    "superClasses" : [ "18" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ActionParameter",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ActionParameter"
-    },
-    "id" : "28"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanningType",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PlanningType"
-    },
-    "id" : "37"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Planner",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Planner"
-    },
-    "id" : "6"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ActionEffect",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ActionEffect"
-    },
-    "id" : "19"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ActionPrecondition",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ActionPrecondition"
-    },
-    "id" : "45"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#InitialState",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "InitialState"
-    },
-    "id" : "2",
-    "superClasses" : [ "8" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#GoalState",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#GoalState",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "GoalState"
     },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainPredicate"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#Type",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type"
+    },
     "id" : "9",
-    "superClasses" : [ "8" ]
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#ProblemObject",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProblemObject"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#State",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "3", "14" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#Plan",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plan"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanningDomain"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanningProblem"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#Action",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "subClasses" : [ "19" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#ActionPrecondition",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionPrecondition"
+    },
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#ActionEffect",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionEffect"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#InitialState",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "id" : "14",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#Planner",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Planner"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#PlanCost",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanCost"
+    },
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#ActionParameter",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionParameter"
+    },
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#DomainConstant",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainConstant"
+    },
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainRequirement"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#MacroAction",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MacroAction"
+    },
+    "id" : "19",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#TypeTag",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeTag"
+    },
+    "subClasses" : [ "9" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#PlanningType",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanningType"
+    },
+    "id" : "30"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "4",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "10",
+    "id" : "6",
     "type" : "owl:objectProperty"
   }, {
     "id" : "12",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "13",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "16",
+    "id" : "15",
     "type" : "owl:objectProperty"
   }, {
     "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "20",
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
     "id" : "23",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
     "type" : "owl:objectProperty"
   }, {
     "id" : "27",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "31",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "32",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "33",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "34",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "35",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "36",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "38",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "40",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "41",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
     "id" : "43",
@@ -321,6 +321,9 @@
   }, {
     "id" : "44",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "46",
     "type" : "owl:someValuesFrom"
@@ -334,9 +337,6 @@
     "id" : "49",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "50",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "51",
     "type" : "owl:someValuesFrom"
   }, {
@@ -344,16 +344,16 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "53",
-    "type" : "owl:objectProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "54",
-    "type" : "owl:objectProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "55",
     "type" : "owl:objectProperty"
   }, {
     "id" : "56",
-    "type" : "owl:objectProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "57",
     "type" : "owl:objectProperty"
@@ -368,394 +368,394 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasLowRelevancePlanner",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
     "range" : "2",
     "label" : {
-      "IRI-based" : "hasInitialState"
+      "IRI-based" : "hasLowRelevancePlanner"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
     "id" : "0"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMediumRelevancePlanner",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "6",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasEffect",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "8",
     "label" : {
-      "IRI-based" : "hasMediumRelevancePlanner"
+      "IRI-based" : "hasEffect"
     },
-    "domain" : "5",
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "4"
+    "id" : "6"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasRequirement",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "11",
-    "label" : {
-      "IRI-based" : "hasRequirement"
-    },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "10"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvesRequirement",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "11",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#solvesRequirement",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "13",
     "label" : {
       "IRI-based" : "solvesRequirement"
     },
-    "domain" : "6",
+    "domain" : "2",
     "attributes" : [ "object" ],
     "id" : "12"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTag",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "15",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasTag",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "10",
     "label" : {
       "IRI-based" : "hasTag"
     },
-    "domain" : "14",
+    "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "13"
+    "id" : "15"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTypeInstance",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "3",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasMediumRelevancePlanner",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "2",
     "label" : {
-      "IRI-based" : "hasTypeInstance"
+      "IRI-based" : "hasMediumRelevancePlanner"
     },
-    "domain" : "14",
-    "attributes" : [ "object" ],
-    "id" : "16"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "hasEffect"
-    },
-    "domain" : "18",
+    "domain" : "1",
     "attributes" : [ "object" ],
     "id" : "17"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasExtractedAction",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "21",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasExtractedAction",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "19",
     "label" : {
       "IRI-based" : "hasExtractedAction"
     },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "20"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasLowRelevancePlanner",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "hasLowRelevancePlanner"
-    },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "23"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasObject",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "hasObject"
-    },
     "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "26"
+    "id" : "18"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofType",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "14",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasTypeInstance",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "11",
     "label" : {
-      "IRI-based" : "ofType"
+      "IRI-based" : "hasTypeInstance"
     },
-    "domain" : "28",
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasProblem",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasProblem"
-    },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "29"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#addsPredicate",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "addsPredicate"
-    },
-    "domain" : "18",
-    "attributes" : [ "object" ],
-    "id" : "30"
-  }, {
-    "range" : "15",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "31"
-  }, {
-    "range" : "18",
-    "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "32"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMove",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "hasMove"
-    },
-    "domain" : "5",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "33"
-  }, {
-    "range" : "8",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "34"
-  }, {
-    "range" : "8",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasConstant",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "22",
-    "label" : {
-      "IRI-based" : "hasConstant"
-    },
-    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "21"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "2",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasInitialState",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "14",
     "label" : {
       "IRI-based" : "hasInitialState"
     },
-    "domain" : "1",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "38"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "37",
-    "label" : {
-      "IRI-based" : "ofPlanningType"
-    },
-    "domain" : "6",
+    "domain" : "20",
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "22"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasCost",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasCost"
-    },
-    "domain" : "7",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "40"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "hasEffect"
-    },
-    "domain" : "18",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "41"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasType",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "hasType"
-    },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "42"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasParameter",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "hasParameter"
-    },
-    "domain" : "18",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "43"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPrecondition",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "hasPrecondition"
-    },
-    "domain" : "18",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "44"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "37",
-    "label" : {
-      "IRI-based" : "ofPlanningType"
-    },
-    "domain" : "6",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "46"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasRequirement",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "11",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasRequirement",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "13",
     "label" : {
       "IRI-based" : "hasRequirement"
     },
-    "domain" : "5",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "47"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPredicate",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "hasPredicate"
-    },
-    "domain" : "5",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "48"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPredicate",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "hasPredicate"
-    },
-    "domain" : "5",
+    "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "49"
+    "id" : "23"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPlan",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "7",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#deletesPredicate",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "5",
     "label" : {
-      "IRI-based" : "hasPlan"
+      "IRI-based" : "deletesPredicate"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasHighRelevancePlanner",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasHighRelevancePlanner"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "50"
+    "id" : "25"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasGoalState",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "9",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasPrecondition",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasPrecondition"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasMove",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasMove"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#ofPlanningType",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "ofPlanningType"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasGoalState",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "3",
     "label" : {
       "IRI-based" : "hasGoalState"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "7",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#ofPlanningType",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "ofPlanningType"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasCost",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasCost"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#addsPredicate",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addsPredicate"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasType",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasParameter",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasParameter"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasParameter",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasParameter"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasPrecondition",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasPrecondition"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasProblem",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasProblem"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasGoalState",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasGoalState"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasObject",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasObject"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasInitialState",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasInitialState"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasConstant",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasConstant"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasRequirement",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasRequirement"
     },
     "domain" : "1",
     "attributes" : [ "object", "someValues" ],
     "id" : "51"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasObject",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "3",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasPredicate",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "5",
     "label" : {
-      "IRI-based" : "hasObject"
+      "IRI-based" : "hasPredicate"
     },
     "domain" : "1",
     "attributes" : [ "object", "someValues" ],
     "id" : "52"
   }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasParameter",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "hasParameter"
-    },
-    "domain" : "18",
-    "attributes" : [ "object" ],
-    "id" : "53"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvedBy",
-    "inverse" : "12",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "solvedBy"
-    },
-    "domain" : "11",
-    "attributes" : [ "object" ],
-    "id" : "54"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPrecondition",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "hasPrecondition"
-    },
-    "domain" : "18",
-    "attributes" : [ "object" ],
-    "id" : "55"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasCost",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasCost"
-    },
-    "domain" : "7",
-    "attributes" : [ "object" ],
-    "id" : "56"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasGoalState",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "hasGoalState"
-    },
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "57"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#deletesPredicate",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "deletesPredicate"
-    },
-    "domain" : "18",
-    "attributes" : [ "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasHighRelevancePlanner",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "hasHighRelevancePlanner"
-    },
-    "domain" : "5",
-    "attributes" : [ "object" ],
-    "id" : "59"
-  }, {
-    "iri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMove",
-    "baseIri" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
-    "range" : "18",
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasMove",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "7",
     "label" : {
       "IRI-based" : "hasMove"
     },
-    "domain" : "5",
+    "domain" : "1",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasCost",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasCost"
+    },
+    "domain" : "16",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#ofType",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "ofType"
+    },
+    "domain" : "42",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasEffect",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasEffect"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasObject",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasObject"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasPlan",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasPlan"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#hasPredicate",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasPredicate"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/ai4s/plan-ontology#solvedBy",
+    "inverse" : "12",
+    "baseIri" : "http://www.semanticweb.org/ai4s/plan-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "solvedBy"
+    },
+    "domain" : "13",
     "attributes" : [ "object" ],
     "id" : "60"
   } ]
