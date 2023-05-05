@@ -22,6 +22,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#addsPredicate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#addsPredicate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#predicate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#deletesPredicate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#deletesPredicate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#predicate"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasConstant -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasConstant">
@@ -31,11 +49,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasCost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#plan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#plan_cost"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasExtractedAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasExtractedAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#macro_action"/>
     </owl:ObjectProperty>
     
 
@@ -108,6 +144,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasParameter">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPlan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#plan"/>
     </owl:ObjectProperty>
     
 
@@ -259,6 +304,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#macro_action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#macro_action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object"/>
@@ -268,6 +321,18 @@
     <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#plan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#plan_cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#plan_cost"/>
     
 
 
