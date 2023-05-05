@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology"
+     xml:base="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:plan-ontology="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasConstant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasConstant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#constant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasGoalState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasGoalState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#goal_state"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasHighRelevancePlanner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasHighRelevancePlanner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#initial_state"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasLowRelevancePlanner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasLowRelevancePlanner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMediumRelevancePlanner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMediumRelevancePlanner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMove -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMove">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPrecondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPrecondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPredicate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPredicate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#predicate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasProblem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasProblem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasRequirement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTag">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type_tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTypeInstance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTypeInstance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planning_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvesRequirement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvesRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvesRequirement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#constant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#constant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#effect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#goal_state -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#goal_state"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#initial_state -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#initial_state"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#parameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planning_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#planning_type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#precondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#predicate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#predicate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#problem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#requirement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type_tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type_tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#type_tag"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
