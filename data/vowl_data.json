@@ -6,9 +6,9 @@
       "owl" : "http://www.w3.org/2002/07/owl#",
       "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "xsd" : "http://www.w3.org/2001/XMLSchema#",
-      "" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology",
+      "" : "http://www.semanticweb.org/ai4s/plan-ontology",
       "xml" : "http://www.w3.org/XML/1998/namespace",
-      "plan-ontology" : "http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#",
+      "plan-ontology" : "http://www.semanticweb.org/ai4s/plan-ontology#",
       "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
     },
     "iri" : "http://www.semanticweb.org/ai4s/plan-ontology"

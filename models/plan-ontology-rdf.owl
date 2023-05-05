@@ -1,13 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology"
-     xml:base="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology"
+<rdf:RDF xmlns="http://www.semanticweb.org/ai4s/plan-ontology"
+     xml:base="http://www.semanticweb.org/ai4s/plan-ontology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:plan-ontology="http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ai4s/plan-ontology"/>
+     xmlns:plan-ontology="http://www.semanticweb.org/ai4s/plan-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ai4s/plan-ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/ai4s/plan-ontology/v2.0"/>
+    </owl:Ontology>
     
 
 

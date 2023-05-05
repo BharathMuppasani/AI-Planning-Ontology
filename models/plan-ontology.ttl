@@ -1,185 +1,171 @@
-@prefix : <http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology> .
+@prefix : <http://www.semanticweb.org/ai4s/plan-ontology> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix plan-ontology: <http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#> .
+@prefix plan-ontology: <http://www.semanticweb.org/ai4s/plan-ontology#> .
+@base <http://www.semanticweb.org/ai4s/plan-ontology> .
 
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix sdo: <https://schema.org/> .
-@prefix plan-ontology: <http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#> .
-@base <http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology> .
-
-<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology> rdf:type owl:Ontology .
-
-#################################################################
-
-<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology> rdf:type owl:Ontology ;
-                                            dcterms:contributor "Bharath Muppasani, Vishal Pallagani" ;
-                                            dcterms:license "https://www.apache.org/licenses/LICENSE-2.0" ;
-                                            rdfs:label "Ontology to model Automated Planning domain" ;
-                                            rdfs:seeAlso "https://github.com/BharathMuppasani/AI-Planning-Ontology" ;
-                                            owl:versionInfo 2.0 ;
-                                            :Authors "Bharath Muppasani, Vishal Pallagani" .
-#################################################################
+<http://www.semanticweb.org/ai4s/plan-ontology> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <http://www.semanticweb.org/ai4s/plan-ontology/v2.0> .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#addsPredicate
+###  http://www.semanticweb.org/ai4s/plan-ontology#addsPredicate
 plan-ontology:addsPredicate rdf:type owl:ObjectProperty ;
                             rdfs:domain plan-ontology:Action ;
                             rdfs:range plan-ontology:DomainPredicate .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#deletesPredicate
+###  http://www.semanticweb.org/ai4s/plan-ontology#deletesPredicate
 plan-ontology:deletesPredicate rdf:type owl:ObjectProperty ;
                                rdfs:domain plan-ontology:Action ;
                                rdfs:range plan-ontology:DomainPredicate .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasConstant
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasConstant
 plan-ontology:hasConstant rdf:type owl:ObjectProperty ;
                           rdfs:domain plan-ontology:PlanningDomain ;
                           rdfs:range plan-ontology:DomainConstant .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasCost
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasCost
 plan-ontology:hasCost rdf:type owl:ObjectProperty ;
                       rdfs:domain plan-ontology:Plan ;
                       rdfs:range plan-ontology:PlanCost .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasEffect
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasEffect
 plan-ontology:hasEffect rdf:type owl:ObjectProperty ;
                         rdfs:domain plan-ontology:Action ;
                         rdfs:range plan-ontology:ActionEffect .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasExtractedAction
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasExtractedAction
 plan-ontology:hasExtractedAction rdf:type owl:ObjectProperty ;
                                  rdfs:domain plan-ontology:PlanningDomain ;
                                  rdfs:range plan-ontology:MacroAction .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasGoalState
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasGoalState
 plan-ontology:hasGoalState rdf:type owl:ObjectProperty ;
                            rdfs:domain plan-ontology:PlanningProblem ;
                            rdfs:range plan-ontology:GoalState .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasHighRelevancePlanner
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasHighRelevancePlanner
 plan-ontology:hasHighRelevancePlanner rdf:type owl:ObjectProperty ;
                                       rdfs:domain plan-ontology:PlanningDomain ;
                                       rdfs:range plan-ontology:Planner .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasInitialState
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasInitialState
 plan-ontology:hasInitialState rdf:type owl:ObjectProperty ;
                               rdfs:domain plan-ontology:PlanningProblem ;
                               rdfs:range plan-ontology:InitialState .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasLowRelevancePlanner
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasLowRelevancePlanner
 plan-ontology:hasLowRelevancePlanner rdf:type owl:ObjectProperty ;
                                      rdfs:domain plan-ontology:PlanningDomain ;
                                      rdfs:range plan-ontology:Planner .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMediumRelevancePlanner
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasMediumRelevancePlanner
 plan-ontology:hasMediumRelevancePlanner rdf:type owl:ObjectProperty ;
                                         rdfs:domain plan-ontology:PlanningDomain ;
                                         rdfs:range plan-ontology:Planner .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasMove
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasMove
 plan-ontology:hasMove rdf:type owl:ObjectProperty ;
                       rdfs:domain plan-ontology:PlanningDomain ;
                       rdfs:range plan-ontology:Action .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasObject
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasObject
 plan-ontology:hasObject rdf:type owl:ObjectProperty ;
                         rdfs:domain plan-ontology:PlanningProblem ;
                         rdfs:range plan-ontology:ProblemObject .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasParameter
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasParameter
 plan-ontology:hasParameter rdf:type owl:ObjectProperty ;
                            rdfs:domain plan-ontology:Action ;
                            rdfs:range plan-ontology:ActionParameter .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPlan
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasPlan
 plan-ontology:hasPlan rdf:type owl:ObjectProperty ;
                       rdfs:domain plan-ontology:PlanningProblem ;
                       rdfs:range plan-ontology:Plan .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPrecondition
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasPrecondition
 plan-ontology:hasPrecondition rdf:type owl:ObjectProperty ;
                               rdfs:domain plan-ontology:Action ;
                               rdfs:range plan-ontology:ActionPrecondition .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasPredicate
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasPredicate
 plan-ontology:hasPredicate rdf:type owl:ObjectProperty ;
                            rdfs:domain plan-ontology:PlanningDomain ;
                            rdfs:range plan-ontology:DomainPredicate .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasProblem
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasProblem
 plan-ontology:hasProblem rdf:type owl:ObjectProperty ;
                          rdfs:domain plan-ontology:PlanningDomain ;
                          rdfs:range plan-ontology:PlanningProblem .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasRequirement
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasRequirement
 plan-ontology:hasRequirement rdf:type owl:ObjectProperty ;
                              rdfs:domain plan-ontology:PlanningDomain ;
                              rdfs:range plan-ontology:DomainRequirement .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTag
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasTag
 plan-ontology:hasTag rdf:type owl:ObjectProperty ;
                      rdfs:domain plan-ontology:Type ;
                      rdfs:range plan-ontology:TypeTag .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasType
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasType
 plan-ontology:hasType rdf:type owl:ObjectProperty ;
                       rdfs:domain plan-ontology:PlanningDomain ;
                       rdfs:range plan-ontology:Type .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#hasTypeInstance
+###  http://www.semanticweb.org/ai4s/plan-ontology#hasTypeInstance
 plan-ontology:hasTypeInstance rdf:type owl:ObjectProperty ;
                               rdfs:domain plan-ontology:Type ;
                               rdfs:range plan-ontology:ProblemObject .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofPlanningType
+###  http://www.semanticweb.org/ai4s/plan-ontology#ofPlanningType
 plan-ontology:ofPlanningType rdf:type owl:ObjectProperty ;
                              rdfs:domain plan-ontology:Planner ;
                              rdfs:range plan-ontology:PlanningType .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ofType
+###  http://www.semanticweb.org/ai4s/plan-ontology#ofType
 plan-ontology:ofType rdf:type owl:ObjectProperty ;
                      rdfs:domain plan-ontology:ActionParameter ;
                      rdfs:range plan-ontology:Type .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvedBy
+###  http://www.semanticweb.org/ai4s/plan-ontology#solvedBy
 plan-ontology:solvedBy rdf:type owl:ObjectProperty ;
                        owl:inverseOf plan-ontology:solvesRequirement ;
                        rdfs:domain plan-ontology:DomainRequirement ;
                        rdfs:range plan-ontology:Planner .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#solvesRequirement
+###  http://www.semanticweb.org/ai4s/plan-ontology#solvesRequirement
 plan-ontology:solvesRequirement rdf:type owl:ObjectProperty ;
                                 rdfs:domain plan-ontology:Planner ;
                                 rdfs:range plan-ontology:DomainRequirement .
@@ -189,7 +175,7 @@ plan-ontology:solvesRequirement rdf:type owl:ObjectProperty ;
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Action
+###  http://www.semanticweb.org/ai4s/plan-ontology#Action
 plan-ontology:Action rdf:type owl:Class ;
                      rdfs:subClassOf [ rdf:type owl:Restriction ;
                                        owl:onProperty plan-ontology:hasEffect ;
@@ -205,46 +191,46 @@ plan-ontology:Action rdf:type owl:Class ;
                                      ] .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ActionEffect
+###  http://www.semanticweb.org/ai4s/plan-ontology#ActionEffect
 plan-ontology:ActionEffect rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ActionParameter
+###  http://www.semanticweb.org/ai4s/plan-ontology#ActionParameter
 plan-ontology:ActionParameter rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ActionPrecondition
+###  http://www.semanticweb.org/ai4s/plan-ontology#ActionPrecondition
 plan-ontology:ActionPrecondition rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#DomainConstant
+###  http://www.semanticweb.org/ai4s/plan-ontology#DomainConstant
 plan-ontology:DomainConstant rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#DomainPredicate
+###  http://www.semanticweb.org/ai4s/plan-ontology#DomainPredicate
 plan-ontology:DomainPredicate rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#DomainRequirement
+###  http://www.semanticweb.org/ai4s/plan-ontology#DomainRequirement
 plan-ontology:DomainRequirement rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#GoalState
+###  http://www.semanticweb.org/ai4s/plan-ontology#GoalState
 plan-ontology:GoalState rdf:type owl:Class ;
                         rdfs:subClassOf plan-ontology:State .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#InitialState
+###  http://www.semanticweb.org/ai4s/plan-ontology#InitialState
 plan-ontology:InitialState rdf:type owl:Class ;
                            rdfs:subClassOf plan-ontology:State .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#MacroAction
+###  http://www.semanticweb.org/ai4s/plan-ontology#MacroAction
 plan-ontology:MacroAction rdf:type owl:Class ;
                           rdfs:subClassOf plan-ontology:Action .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Plan
+###  http://www.semanticweb.org/ai4s/plan-ontology#Plan
 plan-ontology:Plan rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
                                      owl:onProperty plan-ontology:hasCost ;
@@ -252,11 +238,11 @@ plan-ontology:Plan rdf:type owl:Class ;
                                    ] .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanCost
+###  http://www.semanticweb.org/ai4s/plan-ontology#PlanCost
 plan-ontology:PlanCost rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Planner
+###  http://www.semanticweb.org/ai4s/plan-ontology#Planner
 plan-ontology:Planner rdf:type owl:Class ;
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                         owl:onProperty plan-ontology:ofPlanningType ;
@@ -264,7 +250,7 @@ plan-ontology:Planner rdf:type owl:Class ;
                                       ] .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanningDomain
+###  http://www.semanticweb.org/ai4s/plan-ontology#PlanningDomain
 plan-ontology:PlanningDomain rdf:type owl:Class ;
                              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                owl:onProperty plan-ontology:hasMove ;
@@ -280,7 +266,7 @@ plan-ontology:PlanningDomain rdf:type owl:Class ;
                                              ] .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanningProblem
+###  http://www.semanticweb.org/ai4s/plan-ontology#PlanningProblem
 plan-ontology:PlanningProblem rdf:type owl:Class ;
                               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                 owl:onProperty plan-ontology:hasGoalState ;
@@ -296,24 +282,24 @@ plan-ontology:PlanningProblem rdf:type owl:Class ;
                                               ] .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#PlanningType
+###  http://www.semanticweb.org/ai4s/plan-ontology#PlanningType
 plan-ontology:PlanningType rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#ProblemObject
+###  http://www.semanticweb.org/ai4s/plan-ontology#ProblemObject
 plan-ontology:ProblemObject rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#State
+###  http://www.semanticweb.org/ai4s/plan-ontology#State
 plan-ontology:State rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#Type
+###  http://www.semanticweb.org/ai4s/plan-ontology#Type
 plan-ontology:Type rdf:type owl:Class ;
                    rdfs:subClassOf plan-ontology:TypeTag .
 
 
-###  http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#TypeTag
+###  http://www.semanticweb.org/ai4s/plan-ontology#TypeTag
 plan-ontology:TypeTag rdf:type owl:Class .
 
 
