@@ -51,15 +51,6 @@
     
 
 
-    <!-- https://purl.org/ai4s/ontology/planning#hasCost -->
-
-    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasCost">
-        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
-        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanCost"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://purl.org/ai4s/ontology/planning#hasEffect -->
 
     <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasEffect">
@@ -226,7 +217,7 @@
 
     <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#ofPlanningType">
         <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
-        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningType"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlannerType"/>
     </owl:ObjectProperty>
     
 
@@ -256,6 +247,26 @@
         <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
         <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#hasPlanCost -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasPlanCost">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -360,17 +371,11 @@
     <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#Plan">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasCost"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#PlanCost"/>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasPlanCost"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
-
-
-    <!-- https://purl.org/ai4s/ontology/planning#PlanCost -->
-
-    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanCost"/>
     
 
 
@@ -380,10 +385,22 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#ofPlanningType"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningType"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#PlannerType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#solvesRequirement"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- https://purl.org/ai4s/ontology/planning#PlannerType -->
+
+    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlannerType"/>
     
 
 
@@ -434,12 +451,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
-
-
-    <!-- https://purl.org/ai4s/ontology/planning#PlanningType -->
-
-    <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanningType"/>
     
 
 

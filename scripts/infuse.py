@@ -215,7 +215,7 @@ def add_problem( class_name, property_name, itemURI, data ):
             add_goal_state( planOntology.goal_state, planOntology.hasGoalState, value_URI, data[problem][item] )
 
 g = Graph().parse('./models/plan-ontology-rdf.owl')
-planOntology = Namespace('http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#')
+planOntology = Namespace('https://purl.org/ai4s/ontology/planning#')
 
 data_file_path = "data/data.json"
 
