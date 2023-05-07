@@ -10,19 +10,19 @@
 <https://purl.org/ai4s/ontology/planning> rdf:type owl:Ontology ;
                                            owl:versionIRI <https://purl.org/ai4s/ontology/planning/v2.0> .
 
-
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix sdo: <https://schema.org/> .
 
 #################################################################
 
 <https://purl.org/ai4s/ontology/planning> rdf:type owl:Ontology ;
-                                            dcterms:contributor "Bharath Muppasani, Vishal Pallagani" ;
+                                            dcterms:contributor "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" ;
                                             dcterms:license "https://www.apache.org/licenses/LICENSE-2.0" ;
                                             rdfs:label "Ontology to model Automated Planning domain" ;
                                             rdfs:seeAlso "https://github.com/BharathMuppasani/AI-Planning-Ontology" ;
                                             owl:versionInfo 2.0 ;
-                                            :Authors "Bharath Muppasani, Vishal Pallagani" .
+                                            :Authors "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" .
+#################################################################
 
 #################################################################
 #    Object Properties
@@ -30,13 +30,13 @@
 
 ###  https://purl.org/ai4s/ontology/planning#addsPredicate
 plan-ontology:addsPredicate rdf:type owl:ObjectProperty ;
-                            rdfs:domain plan-ontology:Action ;
+                            rdfs:domain plan-ontology:DomainAction ;
                             rdfs:range plan-ontology:DomainPredicate .
 
 
 ###  https://purl.org/ai4s/ontology/planning#deletesPredicate
 plan-ontology:deletesPredicate rdf:type owl:ObjectProperty ;
-                               rdfs:domain plan-ontology:Action ;
+                               rdfs:domain plan-ontology:DomainAction ;
                                rdfs:range plan-ontology:DomainPredicate .
 
 
@@ -46,15 +46,9 @@ plan-ontology:hasConstant rdf:type owl:ObjectProperty ;
                           rdfs:range plan-ontology:DomainConstant .
 
 
-###  https://purl.org/ai4s/ontology/planning#hasCost
-plan-ontology:hasCost rdf:type owl:ObjectProperty ;
-                      rdfs:domain plan-ontology:Plan ;
-                      rdfs:range plan-ontology:PlanCost .
-
-
 ###  https://purl.org/ai4s/ontology/planning#hasEffect
 plan-ontology:hasEffect rdf:type owl:ObjectProperty ;
-                        rdfs:domain plan-ontology:Action ;
+                        rdfs:domain plan-ontology:DomainAction ;
                         rdfs:range plan-ontology:ActionEffect .
 
 
@@ -97,7 +91,7 @@ plan-ontology:hasMediumRelevancePlanner rdf:type owl:ObjectProperty ;
 ###  https://purl.org/ai4s/ontology/planning#hasMove
 plan-ontology:hasMove rdf:type owl:ObjectProperty ;
                       rdfs:domain plan-ontology:PlanningDomain ;
-                      rdfs:range plan-ontology:Action .
+                      rdfs:range plan-ontology:DomainAction .
 
 
 ###  https://purl.org/ai4s/ontology/planning#hasObject
@@ -108,7 +102,7 @@ plan-ontology:hasObject rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/ai4s/ontology/planning#hasParameter
 plan-ontology:hasParameter rdf:type owl:ObjectProperty ;
-                           rdfs:domain plan-ontology:Action ;
+                           rdfs:domain plan-ontology:DomainAction ;
                            rdfs:range plan-ontology:ActionParameter .
 
 
@@ -120,7 +114,7 @@ plan-ontology:hasPlan rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/ai4s/ontology/planning#hasPrecondition
 plan-ontology:hasPrecondition rdf:type owl:ObjectProperty ;
-                              rdfs:domain plan-ontology:Action ;
+                              rdfs:domain plan-ontology:DomainAction ;
                               rdfs:range plan-ontology:ActionPrecondition .
 
 
@@ -160,10 +154,10 @@ plan-ontology:hasTypeInstance rdf:type owl:ObjectProperty ;
                               rdfs:range plan-ontology:ProblemObject .
 
 
-###  https://purl.org/ai4s/ontology/planning#ofPlanningType
-plan-ontology:ofPlanningType rdf:type owl:ObjectProperty ;
-                             rdfs:domain plan-ontology:Planner ;
-                             rdfs:range plan-ontology:PlanningType .
+###  https://purl.org/ai4s/ontology/planning#ofPlannerType
+plan-ontology:ofPlannerType rdf:type owl:ObjectProperty ;
+                            rdfs:domain plan-ontology:Planner ;
+                            rdfs:range plan-ontology:PlannerType .
 
 
 ###  https://purl.org/ai4s/ontology/planning#ofType
@@ -186,24 +180,18 @@ plan-ontology:solvesRequirement rdf:type owl:ObjectProperty ;
 
 
 #################################################################
-#    Classes
+#    Data properties
 #################################################################
 
-###  https://purl.org/ai4s/ontology/planning#Action
-plan-ontology:Action rdf:type owl:Class ;
-                     rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                       owl:onProperty plan-ontology:hasEffect ;
-                                       owl:someValuesFrom plan-ontology:ActionEffect
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty plan-ontology:hasParameter ;
-                                       owl:someValuesFrom plan-ontology:ActionParameter
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty plan-ontology:hasPrecondition ;
-                                       owl:someValuesFrom plan-ontology:ActionPrecondition
-                                     ] .
+###  https://purl.org/ai4s/ontology/planning#hasPlanCost
+plan-ontology:hasPlanCost rdf:type owl:DatatypeProperty ;
+                          rdfs:domain plan-ontology:Plan ;
+                          rdfs:range xsd:nonNegativeInteger .
 
+
+#################################################################
+#    Classes
+#################################################################
 
 ###  https://purl.org/ai4s/ontology/planning#ActionEffect
 plan-ontology:ActionEffect rdf:type owl:Class .
@@ -215,6 +203,22 @@ plan-ontology:ActionParameter rdf:type owl:Class .
 
 ###  https://purl.org/ai4s/ontology/planning#ActionPrecondition
 plan-ontology:ActionPrecondition rdf:type owl:Class .
+
+
+###  https://purl.org/ai4s/ontology/planning#DomainAction
+plan-ontology:DomainAction rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty plan-ontology:hasEffect ;
+                                             owl:someValuesFrom plan-ontology:ActionEffect
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty plan-ontology:hasParameter ;
+                                             owl:someValuesFrom plan-ontology:ActionParameter
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty plan-ontology:hasPrecondition ;
+                                             owl:someValuesFrom plan-ontology:ActionPrecondition
+                                           ] .
 
 
 ###  https://purl.org/ai4s/ontology/planning#DomainConstant
@@ -241,34 +245,38 @@ plan-ontology:InitialState rdf:type owl:Class ;
 
 ###  https://purl.org/ai4s/ontology/planning#MacroAction
 plan-ontology:MacroAction rdf:type owl:Class ;
-                          rdfs:subClassOf plan-ontology:Action .
+                          rdfs:subClassOf plan-ontology:DomainAction .
 
 
 ###  https://purl.org/ai4s/ontology/planning#Plan
 plan-ontology:Plan rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty plan-ontology:hasCost ;
-                                     owl:someValuesFrom plan-ontology:PlanCost
+                                     owl:onProperty plan-ontology:hasPlanCost ;
+                                     owl:someValuesFrom xsd:nonNegativeInteger
                                    ] .
-
-
-###  https://purl.org/ai4s/ontology/planning#PlanCost
-plan-ontology:PlanCost rdf:type owl:Class .
 
 
 ###  https://purl.org/ai4s/ontology/planning#Planner
 plan-ontology:Planner rdf:type owl:Class ;
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                        owl:onProperty plan-ontology:ofPlanningType ;
-                                        owl:someValuesFrom plan-ontology:PlanningType
+                                        owl:onProperty plan-ontology:ofPlannerType ;
+                                        owl:someValuesFrom plan-ontology:PlannerType
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty plan-ontology:solvesRequirement ;
+                                        owl:someValuesFrom plan-ontology:DomainRequirement
                                       ] .
+
+
+###  https://purl.org/ai4s/ontology/planning#PlannerType
+plan-ontology:PlannerType rdf:type owl:Class .
 
 
 ###  https://purl.org/ai4s/ontology/planning#PlanningDomain
 plan-ontology:PlanningDomain rdf:type owl:Class ;
                              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                owl:onProperty plan-ontology:hasMove ;
-                                               owl:someValuesFrom plan-ontology:Action
+                                               owl:someValuesFrom plan-ontology:DomainAction
                                              ] ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty plan-ontology:hasPredicate ;
@@ -296,10 +304,6 @@ plan-ontology:PlanningProblem rdf:type owl:Class ;
                                               ] .
 
 
-###  https://purl.org/ai4s/ontology/planning#PlanningType
-plan-ontology:PlanningType rdf:type owl:Class .
-
-
 ###  https://purl.org/ai4s/ontology/planning#ProblemObject
 plan-ontology:ProblemObject rdf:type owl:Class .
 
@@ -317,4 +321,4 @@ plan-ontology:Type rdf:type owl:Class ;
 plan-ontology:TypeTag rdf:type owl:Class .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
