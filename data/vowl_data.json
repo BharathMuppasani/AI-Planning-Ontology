@@ -11,14 +11,14 @@
       "" : "https://purl.org/ai4s/ontology/planning",
       "xml" : "http://www.w3.org/XML/1998/namespace",
       "ontology" : "https://purl.org/ai4s/ontology/",
-      "plan-ontology" : "https://purl.org/ai4s/ontology/planning#",
-      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "planning-ontology" : "https://purl.org/ai4s/ontology/planning#"
+    },
+    "title" : {
+      "undefined" : "Ontology to model Automated Planning domain"
     },
     "iri" : "https://purl.org/ai4s/ontology/planning",
     "version" : "2.0",
-    "labels" : {
-      "undefined" : "Ontology to model Automated Planning domain"
-    },
     "other" : {
       "license" : [ {
         "identifier" : "license",
@@ -32,16 +32,16 @@
         "value" : "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju",
         "type" : "label"
       } ],
-      "Authors" : [ {
-        "identifier" : "Authors",
-        "language" : "undefined",
-        "value" : "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "2.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Ontology to model Automated Planning domain",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -558,7 +558,7 @@
       "IRI-based" : "solvesRequirement"
     },
     "domain" : "2",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "33"
   }, {
     "range" : "27",
@@ -613,7 +613,7 @@
       "IRI-based" : "hasGoalState"
     },
     "domain" : "10",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "40"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasEffect",
@@ -633,7 +633,7 @@
       "IRI-based" : "hasPredicate"
     },
     "domain" : "9",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "42"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasRequirement",
@@ -643,7 +643,7 @@
       "IRI-based" : "hasRequirement"
     },
     "domain" : "9",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "43"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasMove",
@@ -653,7 +653,7 @@
       "IRI-based" : "hasMove"
     },
     "domain" : "9",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "44"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
@@ -663,7 +663,7 @@
       "IRI-based" : "hasPlanCost"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype" ],
     "id" : "45"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
@@ -683,7 +683,7 @@
       "IRI-based" : "hasEffect"
     },
     "domain" : "4",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "48"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#ofPlannerType",
@@ -693,7 +693,7 @@
       "IRI-based" : "ofPlannerType"
     },
     "domain" : "2",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "49"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasObject",
@@ -703,7 +703,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "10",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "50"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasTag",
@@ -723,7 +723,7 @@
       "IRI-based" : "hasInitialState"
     },
     "domain" : "10",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "52"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasInitialState",

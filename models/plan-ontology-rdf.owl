@@ -8,15 +8,16 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontology="https://purl.org/ai4s/ontology/"
-     xmlns:plan-ontology="https://purl.org/ai4s/ontology/planning#">
+     xmlns:planning-ontology="https://purl.org/ai4s/ontology/planning#">
     <owl:Ontology rdf:about="https://purl.org/ai4s/ontology/planning">
         <owl:versionIRI rdf:resource="https://purl.org/ai4s/ontology/planning/v2.0"/>
+        <terms:title>Ontology to model Automated Planning domain</terms:title>
         <terms:contributor>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:contributor>
         <terms:license>https://www.apache.org/licenses/LICENSE-2.0</terms:license>
-        <rdfs:label>Ontology to model Automated Planning domain</rdfs:label>
+        <!-- <rdfs:label>Ontology to model Automated Planning domain</rdfs:label> -->
         <rdfs:seeAlso>https://github.com/BharathMuppasani/AI-Planning-Ontology</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
-        <plan-ontology:Authors>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</plan-ontology:Authors>
+        <!-- <terms:Authors>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:Authors> -->
     </owl:Ontology>
     
 
