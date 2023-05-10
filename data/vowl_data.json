@@ -20,6 +20,9 @@
     "iri" : "https://purl.org/ai4s/ontology/planning",
     "version" : "2.0",
     "author" : [ "Bharath Muppasani" ],
+    "description" : {
+      "undefined" : "This ontology represents the knowledge about automated planning domain. It captures the characteristics, features, and performance of different planners and domains, as well as the relationships between them. The ontology can be used to select suitable planners for a given domain and to improve their performance. The ontology aims to facilitate automated planning research and applications."
+    },
     "other" : {
       "license" : [ {
         "identifier" : "license",
@@ -31,12 +34,6 @@
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Bharath Muppasani",
-        "type" : "label"
-      } ],
-      "Description" : [ {
-        "identifier" : "Description",
-        "language" : "undefined",
-        "value" : "This ontology represents the knowledge about planning domains and planners from the International Planning Competition (IPC). It captures the characteristics, features, and performance of different planners and domains, as well as the relationships between them. The ontology can be used to select suitable planners for a given domain and to improve their performance by generating macros from the ontology. The ontology aims to facilitate automated planning research and applications.",
         "type" : "label"
       } ],
       "contributor" : [ {
