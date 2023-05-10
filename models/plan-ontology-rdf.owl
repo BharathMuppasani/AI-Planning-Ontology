@@ -19,6 +19,7 @@
         <terms:description>This ontology represents the knowledge about automated planning domain. It captures the characteristics, features, and performance of different planners and domains, as well as the relationships between them. The ontology can be used to select suitable planners for a given domain and to improve their performance. The ontology aims to facilitate automated planning research and applications.</terms:description>
         <rdfs:seeAlso>https://github.com/BharathMuppasani/AI-Planning-Ontology</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
+        <terms:language>English</terms:language>
         <!-- <terms:Authors>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:Authors> -->
     </owl:Ontology>
     
