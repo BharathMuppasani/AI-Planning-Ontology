@@ -12,10 +12,11 @@
     <owl:Ontology rdf:about="https://purl.org/ai4s/ontology/planning">
         <owl:versionIRI rdf:resource="https://purl.org/ai4s/ontology/planning/v2.0"/>
         <terms:title>Ontology to model Automated Planning domain</terms:title>
-        <terms:creator>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:creator>
+        <terms:creator>Bharath Muppasani</terms:creator>
         <terms:contributor>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:contributor>
-        <terms:license>https://www.apache.org/licenses/LICENSE-2.0</terms:license>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/legalcode</terms:license>
         <!-- <rdfs:label>Ontology to model Automated Planning domain</rdfs:label> -->
+        <rdf:Description>This ontology represents the knowledge about planning domains and planners from the International Planning Competition (IPC). It captures the characteristics, features, and performance of different planners and domains, as well as the relationships between them. The ontology can be used to select suitable planners for a given domain and to improve their performance by generating macros from the ontology. The ontology aims to facilitate automated planning research and applications.</rdf:Description>
         <rdfs:seeAlso>https://github.com/BharathMuppasani/AI-Planning-Ontology</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
         <!-- <terms:Authors>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:Authors> -->

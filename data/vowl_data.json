@@ -19,18 +19,24 @@
     },
     "iri" : "https://purl.org/ai4s/ontology/planning",
     "version" : "2.0",
-    "author" : [ "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" ],
+    "author" : [ "Bharath Muppasani" ],
     "other" : {
       "license" : [ {
         "identifier" : "license",
         "language" : "undefined",
-        "value" : "https://www.apache.org/licenses/LICENSE-2.0",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode",
         "type" : "label"
       } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju",
+        "value" : "Bharath Muppasani",
+        "type" : "label"
+      } ],
+      "Description" : [ {
+        "identifier" : "Description",
+        "language" : "undefined",
+        "value" : "This ontology represents the knowledge about planning domains and planners from the International Planning Competition (IPC). It captures the characteristics, features, and performance of different planners and domains, as well as the relationships between them. The ontology can be used to select suitable planners for a given domain and to improve their performance by generating macros from the ontology. The ontology aims to facilitate automated planning research and applications.",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -545,17 +551,17 @@
   }, {
     "range" : "17",
     "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "28"
   }, {
     "range" : "17",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
     "range" : "4",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "32"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#solvesRequirement",
@@ -565,12 +571,12 @@
       "IRI-based" : "solvesRequirement"
     },
     "domain" : "2",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "33"
   }, {
     "range" : "27",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasTypeInstance",
@@ -620,7 +626,7 @@
       "IRI-based" : "hasGoalState"
     },
     "domain" : "10",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "40"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasEffect",
@@ -640,7 +646,7 @@
       "IRI-based" : "hasPredicate"
     },
     "domain" : "9",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "42"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasRequirement",
@@ -650,7 +656,7 @@
       "IRI-based" : "hasRequirement"
     },
     "domain" : "9",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "43"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasMove",
@@ -660,7 +666,7 @@
       "IRI-based" : "hasMove"
     },
     "domain" : "9",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "44"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
@@ -670,7 +676,7 @@
       "IRI-based" : "hasPlanCost"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype" ],
     "id" : "45"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
@@ -690,7 +696,7 @@
       "IRI-based" : "hasEffect"
     },
     "domain" : "4",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "48"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#ofPlannerType",
@@ -700,7 +706,7 @@
       "IRI-based" : "ofPlannerType"
     },
     "domain" : "2",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "49"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasObject",
@@ -710,7 +716,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "10",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "50"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasTag",
@@ -730,7 +736,7 @@
       "IRI-based" : "hasInitialState"
     },
     "domain" : "10",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "52"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasInitialState",
