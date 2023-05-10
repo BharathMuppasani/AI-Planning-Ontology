@@ -12,6 +12,7 @@
     <owl:Ontology rdf:about="https://purl.org/ai4s/ontology/planning">
         <owl:versionIRI rdf:resource="https://purl.org/ai4s/ontology/planning/v2.0"/>
         <terms:title>Ontology to model Automated Planning domain</terms:title>
+        <terms:creator>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:creator>
         <terms:contributor>Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju</terms:contributor>
         <terms:license>https://www.apache.org/licenses/LICENSE-2.0</terms:license>
         <!-- <rdfs:label>Ontology to model Automated Planning domain</rdfs:label> -->

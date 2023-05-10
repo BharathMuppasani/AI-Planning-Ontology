@@ -19,11 +19,18 @@
     },
     "iri" : "https://purl.org/ai4s/ontology/planning",
     "version" : "2.0",
+    "author" : [ "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" ],
     "other" : {
       "license" : [ {
         "identifier" : "license",
         "language" : "undefined",
         "value" : "https://www.apache.org/licenses/LICENSE-2.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -558,7 +565,7 @@
       "IRI-based" : "solvesRequirement"
     },
     "domain" : "2",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "33"
   }, {
     "range" : "27",
@@ -613,7 +620,7 @@
       "IRI-based" : "hasGoalState"
     },
     "domain" : "10",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "40"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasEffect",
@@ -633,7 +640,7 @@
       "IRI-based" : "hasPredicate"
     },
     "domain" : "9",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "42"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasRequirement",
@@ -643,7 +650,7 @@
       "IRI-based" : "hasRequirement"
     },
     "domain" : "9",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "43"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasMove",
@@ -653,7 +660,7 @@
       "IRI-based" : "hasMove"
     },
     "domain" : "9",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "44"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
@@ -663,7 +670,7 @@
       "IRI-based" : "hasPlanCost"
     },
     "domain" : "1",
-    "attributes" : [ "someValues", "datatype" ],
+    "attributes" : [ "datatype", "someValues" ],
     "id" : "45"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
@@ -683,7 +690,7 @@
       "IRI-based" : "hasEffect"
     },
     "domain" : "4",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "48"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#ofPlannerType",
@@ -693,7 +700,7 @@
       "IRI-based" : "ofPlannerType"
     },
     "domain" : "2",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "49"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasObject",
@@ -703,7 +710,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "10",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "50"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasTag",
@@ -723,7 +730,7 @@
       "IRI-based" : "hasInitialState"
     },
     "domain" : "10",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "52"
   }, {
     "iri" : "https://purl.org/ai4s/ontology/planning#hasInitialState",
