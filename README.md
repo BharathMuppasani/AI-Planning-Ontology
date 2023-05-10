@@ -3,6 +3,8 @@ A usable planning ontology and its usage in a broad set of planning datasets (IP
 
 PyLODE Documentation of the Ontology - [Click Here](https://raw.githack.com/BharathMuppasani/AI-Planning-Ontology/main/documentation/ontology_documentation.html)
 
+PURL for the ontology - https://purl.org/ai4s/ontology/planning
+
 Contents:
 1. *data* - contains the JSON representation of the IPC2018 domain data.
 2. *images* - contains images of ontology and sample Knowledge Graph (KG).
