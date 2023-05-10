@@ -1,0 +1,131 @@
+INFO     planner time limit: 300s
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299s
+INFO     translator memory limit: None
+INFO     translator command line string: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/bittu/Desktop/GitHub/downward/builds/release/bin/translate/translate.py /Users/bittu/Desktop/ISWC_test/best_planner/data/tidybot/domain.pddl /Users/bittu/Desktop/ISWC_test/best_planner/data/tidybot/instance-1.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.005s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.020s CPU, 0.017s wall-clock]
+Preparing model... [0.000s CPU, 0.005s wall-clock]
+Generated 400 rules.
+Computing model... [0.090s CPU, 0.093s wall-clock]
+4848 relevant atoms
+10230 auxiliary atoms
+15078 final queue length
+26684 total queue pushes
+Completing instantiation... [0.180s CPU, 0.175s wall-clock]
+Instantiating: [0.300s CPU, 0.293s wall-clock]
+Computing fact groups...
+Finding invariants...
+41 initial candidates
+Finding invariants: [0.010s CPU, 0.017s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+135 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.019s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.010s wall-clock]
+Translating task: [0.210s CPU, 0.209s wall-clock]
+8355 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+2 propositions removed
+Detecting unreachable propositions: [0.110s CPU, 0.108s wall-clock]
+Reordering and filtering variables...
+137 of 137 variables necessary.
+1 of 3 mutex groups necessary.
+4591 of 4591 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.060s CPU, 0.061s wall-clock]
+Translator variables: 137
+Translator derived variables: 0
+Translator facts: 277
+Translator goal facts: 4
+Translator mutex groups: 1
+Translator total mutex groups size: 2
+Translator operators: 4591
+Translator axioms: 0
+Translator task size: 48386
+warning: could not determine peak memory
+Writing output... [0.040s CPU, 0.042s wall-clock]
+Done! [0.750s CPU, 0.747s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 299s
+INFO     search memory limit: None
+INFO     search command line string: /Users/bittu/Desktop/GitHub/downward/builds/release/bin/downward --search 'astar(lmcut())' --internal-plan-file /Users/bittu/Desktop/ISWC_test/best_planner/best_policy_results/results/plan-tidybotinstance-1.txt < output.sas
+[t=0.000339083s, 33745664 KB] reading input...
+[t=0.165944s, 33879808 KB] done reading input!
+[t=0.174017s, 34019076 KB] Initializing landmark cut heuristic...
+[t=0.17409s, 34019076 KB] Building successor generator...done!
+[t=0.178582s, 34020100 KB] peak memory difference for successor generator creation: 1024 KB
+[t=0.178592s, 34020100 KB] time for successor generation creation: 0.00446292s
+[t=0.178618s, 34020100 KB] Variables: 137
+[t=0.178628s, 34020100 KB] FactPairs: 277
+[t=0.178634s, 34020100 KB] Bytes per state: 20
+[t=0.178662s, 34020100 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.178805s, 34020100 KB] New best heuristic value for lmcut(): 4
+[t=0.17883s, 34020100 KB] g=0, 1 evaluated, 0 expanded
+[t=0.178839s, 34020100 KB] f = 4, 1 evaluated, 0 expanded
+[t=0.17885s, 34020100 KB] Initial heuristic value for lmcut(): 4
+[t=0.178856s, 34020100 KB] pruning method: none
+[t=0.179216s, 34020100 KB] New best heuristic value for lmcut(): 3
+[t=0.179225s, 34020100 KB] g=1, 5 evaluated, 1 expanded
+[t=0.179747s, 34020100 KB] New best heuristic value for lmcut(): 2
+[t=0.179757s, 34020100 KB] g=2, 12 evaluated, 2 expanded
+[t=0.180099s, 34020100 KB] New best heuristic value for lmcut(): 1
+[t=0.180105s, 34020100 KB] g=3, 18 evaluated, 3 expanded
+[t=0.180308s, 34020100 KB] New best heuristic value for lmcut(): 0
+[t=0.180314s, 34020100 KB] g=4, 23 evaluated, 4 expanded
+[t=0.180322s, 34020100 KB] Solution found!
+[t=0.18033s, 34020100 KB] Actual search time: 0.00147025s
+finish-object object3 x3 y3 (1)
+finish-object object1 x2 y3 (1)
+finish-object object2 x3 y2 (1)
+finish-object object0 x2 y2 (1)
+[t=0.180335s, 34020100 KB] Plan length: 4 step(s).
+[t=0.180335s, 34020100 KB] Plan cost: 4
+[t=0.180335s, 34020100 KB] Expanded 5 state(s).
+[t=0.180335s, 34020100 KB] Reopened 0 state(s).
+[t=0.180335s, 34020100 KB] Evaluated 23 state(s).
+[t=0.180335s, 34020100 KB] Evaluations: 23
+[t=0.180335s, 34020100 KB] Generated 22 state(s).
+[t=0.180335s, 34020100 KB] Dead ends: 0 state(s).
+[t=0.180335s, 34020100 KB] Expanded until last jump: 0 state(s).
+[t=0.180335s, 34020100 KB] Reopened until last jump: 0 state(s).
+[t=0.180335s, 34020100 KB] Evaluated until last jump: 1 state(s).
+[t=0.180335s, 34020100 KB] Generated until last jump: 0 state(s).
+[t=0.180335s, 34020100 KB] Number of registered states: 23
+[t=0.180335s, 34020100 KB] Int hash set load factor: 23/32 = 0.71875
+[t=0.180335s, 34020100 KB] Int hash set resizes: 5
+[t=0.180335s, 34020100 KB] Search time: 0.00167387s
+[t=0.180335s, 34020100 KB] Total time: 0.180335s
+Solution found.
+Peak memory: 34020100 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 1.05s

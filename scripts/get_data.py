@@ -28,7 +28,7 @@ def search_file(file_path,string):
     return -1
 
 
-data_file_path = "data/data.json"
+data_file_path = "data/data_test.json"
 
 f = open(data_file_path)
 data = json.load(f)

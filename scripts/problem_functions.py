@@ -99,6 +99,70 @@ def get_objects(file):
 
     return instances
 
+# def get_objects(file):
+
+#     with open(file) as f:
+#         file_data = f.read()
+#         start_index = file_data.index('(:objects')
+#         closing_ind = find_parens( file_data[start_index:] )[0]
+
+#         file_data = file_data[start_index+10: start_index + closing_ind]
+
+#         # print(file_data)
+#         instances_list = [item for item in file_data.split(' ') if item]
+#         # print(instances_list)
+
+#         if instances_list.count(' - ')>0 or instances_list.count('- ')>0 or instances_list.count(' -')>0:
+#             objectType =  True
+#         else:
+#             objectType =  False
+
+#         if objectType == False:
+#             objects = []
+#             for item in instances_list:
+                
+#                 if '\n' in item:
+#                     objects.append(item.replace('\n',''))
+#                 else:
+#                     objects.append(item)
+
+#             return objects
+#         else:
+#             objects = {}
+#             value_list = []
+#             type_list = []
+#             flag = 0
+#             for item in instances_list:
+
+#                 if len(item.replace('\n','').strip()) == 0:
+#                     continue
+
+#                 if item.strip() == '-':
+#                     flag = 1
+#                     continue
+#                 elif item.strip()[0] == '-':
+#                     flag = 0
+#                     continue
+
+#                 if flag == 1 and (('\n' in item) or (',' in item)):
+#                     flag = 0
+#                     type_list.append(item.replace('\n','').replace(',',''))
+#                     continue
+#                 elif flag == 1:
+#                     type_list.append(item.replace('\n',''))
+#                     flag = 0
+#                     continue
+
+#                 if flag == 0:
+#                     if '\n' in item:
+#                         value_list.append(item.replace('\n',''))
+#                     else:
+#                         value_list.append(item)
+#             objects['values'] = value_list
+#             objects['types'] = type_list
+
+#             return objects
+
 def get_initialState(file):
     with open(file) as f:
         file_data = f.read()
@@ -120,6 +184,9 @@ def get_initialState(file):
             if ind > previoud_ind:
                 states.append( file_data[ ind: index_dict[ind]+1] )
                 previoud_ind = index_dict[ind]
+
+        for idx in range(len(states)):
+            states[idx] = re.sub(r'\(\s+|\s+\)', lambda m: m.group().strip(), states[idx])
 
         return states
 
@@ -144,6 +211,9 @@ def get_goalState(file):
             if ind > previoud_ind:
                 states.append( file_data[ ind: index_dict[ind]+1] )
                 previoud_ind = index_dict[ind]
+
+        for idx in range(len(states)):
+            states[idx] = re.sub(r'\(\s+|\s+\)', lambda m: m.group().strip(), states[idx])
 
         return states
 

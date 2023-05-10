@@ -1,0 +1,702 @@
+###### Random Policy Results ######
+
+------------------scanalyzer----------------------
+
+Domain: scanalyzer
+Problem: instance-3.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 23650
+Evaluated States: 36978
+Generated States: 236490
+Search Time: 0.155998
+Total Time: 0.37591
+Plan Cost: 26
+
+----------------------------------------
+
+Domain: scanalyzer
+Problem: instance-2.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 2463
+Evaluated States: 12419
+Generated States: 29544
+Search Time: 0.953968
+Total Time: 0.960674
+Plan Cost: 22
+
+----------------------------------------
+
+Domain: scanalyzer
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 6
+Evaluated States: 10
+Generated States: 10
+Search Time: 0.0
+Total Time: 0.023998
+Plan Cost: 13
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 8706.333333333334
+Average Evaluated States: 16469.0
+Average Generated States: 88681.33333333333
+Average Total Time: 0.45352733333333334
+Average Plan Cost: 20.333333333333332
+
+----------------------------------------
+
+------------------elevators----------------------
+
+Domain: elevators
+Problem: instance-3.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 165230
+Evaluated States: 956353
+Generated States: 3550120
+Search Time: 2.67146
+Total Time: 3.88861
+Plan Cost: 54
+
+----------------------------------------
+
+Domain: elevators
+Problem: instance-2.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 2172
+Evaluated States: 20200
+Generated States: 42953
+Search Time: 2.05528
+Total Time: 2.05928
+Plan Cost: 48
+
+----------------------------------------
+
+Domain: elevators
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 26222
+Evaluated States: 119286
+Generated States: 464427
+Search Time: 0.311966
+Total Time: 2.71906
+Plan Cost: 56
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 64541.333333333336
+Average Evaluated States: 365279.6666666667
+Average Generated States: 1352500.0
+Average Total Time: 2.8889833333333335
+Average Plan Cost: 52.666666666666664
+
+----------------------------------------
+
+------------------transport----------------------
+
+Domain: transport
+Problem: instance-3.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 14874
+Evaluated States: 24421
+Generated States: 99698
+Search Time: 0.104129
+Total Time: 0.125513
+Plan Cost: 594
+
+----------------------------------------
+
+Domain: transport
+Problem: instance-2.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 380568
+Evaluated States: 597566
+Generated States: 2830031
+Search Time: 2.10521
+Total Time: 2.12921
+Plan Cost: 250
+
+----------------------------------------
+
+Domain: transport
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 1659
+Evaluated States: 5224
+Generated States: 11194
+Search Time: 2.0235
+Total Time: 2.0315
+Plan Cost: 630
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 132367.0
+Average Evaluated States: 209070.33333333334
+Average Generated States: 980307.6666666666
+Average Total Time: 1.4287409999999998
+Average Plan Cost: 491.3333333333333
+
+----------------------------------------
+
+------------------parking----------------------
+
+Domain: parking
+Problem: instance-3.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 0
+Evaluated States: 0
+Generated States: 32
+Search Time: 300
+Total Time: 300
+Plan Cost: 0
+
+----------------------------------------
+
+Domain: parking
+Problem: instance-2.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 954283
+Evaluated States: 5108191
+Generated States: 11332324
+Search Time: 18.5036
+Total Time: 28.5578
+Plan Cost: 20
+
+----------------------------------------
+
+Domain: parking
+Problem: instance-1.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 23377
+Evaluated States: 211269
+Generated States: 361012
+Search Time: 6.77864
+Total Time: 6.92946
+Plan Cost: 14
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 325886.6666666667
+Average Evaluated States: 1773153.3333333333
+Average Generated States: 3897789.3333333335
+Average Total Time: 111.82908666666667
+Average Plan Cost: 11.333333333333334
+
+----------------------------------------
+
+------------------woodworking----------------------
+
+Domain: woodworking
+Problem: instance-3.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 59504
+Evaluated States: 383869
+Generated States: 1182922
+Search Time: 4.32097
+Total Time: 4.34096
+Plan Cost: 215
+
+----------------------------------------
+
+Domain: woodworking
+Problem: instance-2.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 13
+Evaluated States: 159
+Generated States: 189
+Search Time: 0.016
+Total Time: 0.028
+Plan Cost: 225
+
+----------------------------------------
+
+Domain: woodworking
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 15
+Evaluated States: 167
+Generated States: 190
+Search Time: 0.01198
+Total Time: 0.023978
+Plan Cost: 195
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 19844.0
+Average Evaluated States: 128065.0
+Average Generated States: 394433.6666666667
+Average Total Time: 1.4643126666666664
+Average Plan Cost: 211.66666666666666
+
+----------------------------------------
+
+------------------floortile----------------------
+
+Domain: floortile
+Problem: instance-3.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 0
+Evaluated States: 0
+Generated States: 50
+Search Time: 300
+Total Time: 300
+Plan Cost: 0
+
+----------------------------------------
+
+Domain: floortile
+Problem: instance-2.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 0
+Evaluated States: 0
+Generated States: 50
+Search Time: 300
+Total Time: 300
+Plan Cost: 0
+
+----------------------------------------
+
+Domain: floortile
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 2101
+Evaluated States: 13438
+Generated States: 18698
+Search Time: 0.036002
+Total Time: 7.66169
+Plan Cost: 49
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 700.3333333333334
+Average Evaluated States: 4479.333333333333
+Average Generated States: 6266.0
+Average Total Time: 202.55389666666667
+Average Plan Cost: 16.333333333333332
+
+----------------------------------------
+
+------------------barman----------------------
+
+Domain: barman
+Problem: instance-3.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 5810070
+Evaluated States: 5939869
+Generated States: 25370517
+Search Time: 28.6136
+Total Time: 29.7973
+Plan Cost: 90
+
+----------------------------------------
+
+Domain: barman
+Problem: instance-2.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 5810070
+Evaluated States: 5939869
+Generated States: 25370517
+Search Time: 29.061
+Total Time: 30.2434
+Plan Cost: 90
+
+----------------------------------------
+
+Domain: barman
+Problem: instance-1.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 5829288
+Evaluated States: 5958740
+Generated States: 25458859
+Search Time: 28.9942
+Total Time: 30.2861
+Plan Cost: 90
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 5816476.0
+Average Evaluated States: 5946159.333333333
+Average Generated States: 25399964.333333332
+Average Total Time: 30.108933333333336
+Average Plan Cost: 90.0
+
+----------------------------------------
+
+------------------openstacks----------------------
+
+Domain: openstacks
+Problem: instance-3.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 219149
+Evaluated States: 414322
+Generated States: 1335819
+Search Time: 1.32399
+Total Time: 10.9026
+Plan Cost: 5
+
+----------------------------------------
+
+Domain: openstacks
+Problem: instance-2.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 197662
+Evaluated States: 356727
+Generated States: 1171883
+Search Time: 1.18752
+Total Time: 9.8624
+Plan Cost: 5
+
+----------------------------------------
+
+Domain: openstacks
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 2762
+Evaluated States: 6274
+Generated States: 9314
+Search Time: 0.05593
+Total Time: 0.059932
+Plan Cost: 2
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 139857.66666666666
+Average Evaluated States: 259107.66666666666
+Average Generated States: 839005.3333333334
+Average Total Time: 6.941644
+Average Plan Cost: 4.0
+
+----------------------------------------
+
+------------------nomystery----------------------
+
+Domain: nomystery
+Problem: instance-3.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 2235
+Evaluated States: 6008
+Generated States: 10105
+Search Time: 0.016024
+Total Time: 0.030823
+Plan Cost: 15
+
+----------------------------------------
+
+Domain: nomystery
+Problem: instance-2.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 2410
+Evaluated States: 6995
+Generated States: 11208
+Search Time: 0.011997
+Total Time: 0.031972
+Plan Cost: 14
+
+----------------------------------------
+
+Domain: nomystery
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 427
+Evaluated States: 828
+Generated States: 1482
+Search Time: 0.00391
+Total Time: 0.023582
+Plan Cost: 11
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 1690.6666666666667
+Average Evaluated States: 4610.333333333333
+Average Generated States: 7598.333333333333
+Average Total Time: 0.028792333333333336
+Average Plan Cost: 13.333333333333334
+
+----------------------------------------
+
+------------------pegsol----------------------
+
+Domain: pegsol
+Problem: instance-3.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 4975
+Evaluated States: 8462
+Generated States: 11413
+Search Time: 0.036001
+Total Time: 24.6461
+Plan Cost: 7
+
+----------------------------------------
+
+Domain: pegsol
+Problem: instance-2.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 299253
+Evaluated States: 300041
+Generated States: 603659
+Search Time: 2.94371
+Total Time: 2.95971
+Plan Cost: 10
+
+----------------------------------------
+
+Domain: pegsol
+Problem: instance-1.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 246
+Evaluated States: 296
+Generated States: 416
+Search Time: 0.00403
+Total Time: 0.019885
+Plan Cost: 3
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 101491.33333333333
+Average Evaluated States: 102933.0
+Average Generated States: 205162.66666666666
+Average Total Time: 9.208565
+Average Plan Cost: 6.666666666666667
+
+----------------------------------------
+
+------------------visitall----------------------
+
+Domain: visitall
+Problem: instance-3.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 9
+Evaluated States: 23
+Generated States: 22
+Search Time: 0.0
+Total Time: 0.008001
+Plan Cost: 8
+
+----------------------------------------
+
+Domain: visitall
+Problem: instance-2.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 2
+Evaluated States: 3
+Generated States: 2
+Search Time: 0.0
+Total Time: 0.003813
+Plan Cost: 1
+
+----------------------------------------
+
+Domain: visitall
+Problem: instance-1.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 4
+Evaluated States: 7
+Generated States: 6
+Search Time: 0.0
+Total Time: 0.01123
+Plan Cost: 3
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 5.0
+Average Evaluated States: 11.0
+Average Generated States: 10.0
+Average Total Time: 0.007681333333333334
+Average Plan Cost: 4.0
+
+----------------------------------------
+
+------------------tidybot----------------------
+
+Domain: tidybot
+Problem: instance-3.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 0
+Evaluated States: 0
+Generated States: 400
+Search Time: 300
+Total Time: 300
+Plan Cost: 0
+
+----------------------------------------
+
+Domain: tidybot
+Problem: instance-2.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 3371
+Evaluated States: 5766
+Generated States: 11310
+Search Time: 12.9836
+Total Time: 13.0994
+Plan Cost: 33
+
+----------------------------------------
+
+Domain: tidybot
+Problem: instance-1.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 0
+Evaluated States: 0
+Generated States: 400
+Search Time: 300
+Total Time: 300
+Plan Cost: 0
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 1123.6666666666667
+Average Evaluated States: 1922.0
+Average Generated States: 4036.6666666666665
+Average Total Time: 204.3664666666667
+Average Plan Cost: 11.0
+
+----------------------------------------
+
+------------------parcprinter----------------------
+
+Domain: parcprinter
+Problem: instance-3.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 1216
+Evaluated States: 1938
+Generated States: 3813
+Search Time: 0.027968
+Total Time: 0.207269
+Plan Cost: 510256
+
+----------------------------------------
+
+Domain: parcprinter
+Problem: instance-2.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 19
+Evaluated States: 43
+Generated States: 42
+Search Time: 0.008
+Total Time: 0.011129
+Plan Cost: 438047
+
+----------------------------------------
+
+Domain: parcprinter
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 16
+Evaluated States: 34
+Generated States: 42
+Search Time: 0.003835
+Total Time: 0.007837
+Plan Cost: 375821
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 417.0
+Average Evaluated States: 671.6666666666666
+Average Generated States: 1299.0
+Average Total Time: 0.07541166666666667
+Average Plan Cost: 441374.6666666667
+
+----------------------------------------
+
+------------------sokoban----------------------
+
+Domain: sokoban
+Problem: instance-3.pddl
+Selected Config: seq-opt-merge-and-shrink
+
+Expanded States: 214145
+Evaluated States: 215396
+Generated States: 531844
+Search Time: 1.27195
+Total Time: 6.34869
+Plan Cost: 29
+
+----------------------------------------
+
+Domain: sokoban
+Problem: instance-2.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 255230
+Evaluated States: 256713
+Generated States: 625886
+Search Time: 3.04571
+Total Time: 3.06571
+Plan Cost: 37
+
+----------------------------------------
+
+Domain: sokoban
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 426
+Evaluated States: 526
+Generated States: 1116
+Search Time: 0.023863
+Total Time: 0.031846
+Plan Cost: 9
+
+----------------------------------------
+
+-------------- Averages --------------
+Average Expanded States: 156600.33333333334
+Average Evaluated States: 157545.0
+Average Generated States: 386282.0
+Average Total Time: 3.1487486666666666
+Average Plan Cost: 25.0
+
+----------------------------------------
+

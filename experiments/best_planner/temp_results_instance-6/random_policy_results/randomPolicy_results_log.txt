@@ -1,0 +1,145 @@
+###### Random Policy Results ######
+Domain: tidybot
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 5456
+Evaluated States: 8028
+Generated States: 15870
+Search Time: 0.1096
+Total Time: 0.865237
+
+----------------------------------------
+
+Domain: transport
+Problem: instance-6.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 119985
+Evaluated States: 391988
+Generated States: 852221
+Search Time: 2.82868
+Total Time: 2.86819
+
+----------------------------------------
+
+Domain: visitall
+Problem: instance-6.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 27
+Evaluated States: 52
+Generated States: 73
+Search Time: 0.000503
+Total Time: 0.007559
+
+----------------------------------------
+
+Domain: woodworking
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 24740
+Evaluated States: 325164
+Generated States: 693003
+Search Time: 1.03129
+Total Time: 4.06226
+
+----------------------------------------
+
+Domain: pegsol
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 159385
+Evaluated States: 198875
+Generated States: 320609
+Search Time: 0.785828
+Total Time: 14.5362
+
+----------------------------------------
+
+Domain: floortile
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 2965967
+Evaluated States: 14128032
+Generated States: 23940960
+Search Time: 44.6458
+Total Time: 54.7964
+
+----------------------------------------
+
+Domain: scanalyzer
+Problem: instance-6.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 9523798
+Evaluated States: 10207728
+Generated States: 190475940
+Search Time: 182.4
+Total Time: 182.437
+
+----------------------------------------
+
+Domain: nomystery
+Problem: instance-6.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 781
+Evaluated States: 4256
+Generated States: 5650
+Search Time: 2.64622
+Total Time: 2.76413
+
+----------------------------------------
+
+Domain: barman
+Problem: instance-6.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: None
+Evaluated States: None
+Generated States: 115
+Search Time: None
+Total Time: None
+
+----------------------------------------
+
+Domain: parking
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: None
+Evaluated States: None
+Generated States: 32
+Search Time: None
+Total Time: None
+
+----------------------------------------
+
+Domain: elevator
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 1033026
+Evaluated States: 4990731
+Generated States: 19676785
+Search Time: 15.2784
+Total Time: 15.8289
+
+----------------------------------------
+
+Domain: sokoban
+Problem: instance-6.pddl
+Selected Config: seq-opt-bjolp
+
+Expanded States: 350166
+Evaluated States: 352018
+Generated States: 776906
+Search Time: 2.49234
+Total Time: 2.51296
+
+----------------------------------------
+

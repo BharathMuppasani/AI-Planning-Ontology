@@ -1,0 +1,6 @@
+(pick-move robot1 ball2 room1 lgripper1 room2)
+(drop robot1 ball2 room2 lgripper1)
+(move robot1 room2 room3)
+(pick-move robot1 ball4 room3 lgripper1 room1)
+(drop robot1 ball4 room1 lgripper1)
+; cost = 5 (unit cost)

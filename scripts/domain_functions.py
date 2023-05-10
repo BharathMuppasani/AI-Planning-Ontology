@@ -171,6 +171,26 @@ def get_predicates(file):
                 # print(ind,file_data[ind])
                 closing_ind = find_parens( file_data[ind:] )[0]
                 present_text = file_data[ ind : ind + closing_ind+1 ]
+                temp = present_text.split(' ')
+                flag = 0
+                temp_list = []
+                for item in temp:
+                    if '?' in item:
+                        flag = 1
+                        temp_list.append(item)
+                        continue
+
+                    if flag == 0:
+                        temp_list.append(item)
+
+                    if flag == 1 and '?' in item:
+                        temp_list.append(item)
+
+                present_text = ' '.join(temp_list)
+
+                if present_text[-1] != ')':
+                    present_text += ')'
+
                 predicates_list.append(present_text)
 
         return predicates_list
@@ -184,7 +204,7 @@ def get_params(data):
     start_ind = list(index_dict.keys())[0]
     closing_ind = index_dict[start_ind]
 
-    data_string = re.split(" +", data[start_ind+1:closing_ind].replace('-',''))
+    data_string = re.split(" +", data[start_ind+1:closing_ind])
 
     values = []
     types = []
@@ -198,7 +218,8 @@ def get_params(data):
             flag = 0
         else:
             for c in range(count):
-                types.append(i)
+                if len(i.replace('-', '').strip()) > 0:
+                    types.append(i)
             flag = 1
 
     return_dict = dict()
@@ -216,7 +237,7 @@ def get_preconditions(data):
 
     ind_list = sorted(list(index_dict.keys()))
     
-    if "and" in data[ind_list[0]:ind_list[0]+4]:
+    if "(and" in data[ind_list[0]:ind_list[0]+4]:
         ind_list = ind_list[1:]
         
     preconditions = []
@@ -234,9 +255,9 @@ def get_effect(data):
     index_dict = find_parens( data[index:] )
     data = data[index:]
 
-    ind_list = sorted(list(index_dict.keys()))[1:]
-    
-    if "and" in data[ind_list[0]:ind_list[0]+4]:
+    ind_list = sorted(list(index_dict.keys()))
+    # print(ind_list)
+    if "(and" in data[ind_list[0]:ind_list[0]+4]:
         ind_list = ind_list[1:]
 
     effect = []
@@ -260,7 +281,7 @@ def get_actions(file):
             action_closing_ind = find_parens( file_data[action_index:] )[0]
             temp_data = file_data[action_index: action_index + action_closing_ind+1]
 
-            action_name = str(temp_data.split('\n')[0]).split(' ')[-1]
+            action_name = str(temp_data.split('\n')[0]).split(' ')[-1].lower()
             parameters = get_params(temp_data)
             preconditions = get_preconditions(temp_data)
             effect = get_effect(temp_data)

@@ -1,0 +1,145 @@
+###### Best Policy Results ######
+Domain: tidybot
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 5456
+Evaluated States: 8028
+Generated States: 15870
+Search Time: 0.106125
+Total Time: 0.843378
+
+----------------------------------------
+
+Domain: transport
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 3527592
+Evaluated States: 7438126
+Generated States: 26696443
+Search Time: 25.2713
+Total Time: 25.3338
+
+----------------------------------------
+
+Domain: visitall
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 108
+Evaluated States: 193
+Generated States: 313
+Search Time: 0.000786
+Total Time: 0.02001
+
+----------------------------------------
+
+Domain: woodworking
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 24740
+Evaluated States: 325164
+Generated States: 693003
+Search Time: 1.12574
+Total Time: 4.14283
+
+----------------------------------------
+
+Domain: pegsol
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 159385
+Evaluated States: 198875
+Generated States: 320609
+Search Time: 0.852679
+Total Time: 14.6271
+
+----------------------------------------
+
+Domain: elevators
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 1033026
+Evaluated States: 4990731
+Generated States: 19676785
+Search Time: 15.4083
+Total Time: 15.9369
+
+----------------------------------------
+
+Domain: floortile
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 2965967
+Evaluated States: 14128032
+Generated States: 23940960
+Search Time: 44.1284
+Total Time: 54.0814
+
+----------------------------------------
+
+Domain: scanalyzer
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 2534012
+Evaluated States: 6135592
+Generated States: 50680220
+Search Time: 26.3618
+Total Time: 38.0195
+
+----------------------------------------
+
+Domain: nomystery
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 299
+Evaluated States: 1793
+Generated States: 2215
+Search Time: 0.004402
+Total Time: 5.72388
+
+----------------------------------------
+
+Domain: barman
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: None
+Evaluated States: None
+Generated States: 115
+Search Time: None
+Total Time: None
+
+----------------------------------------
+
+Domain: parking
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: None
+Evaluated States: None
+Generated States: 32
+Search Time: None
+Total Time: None
+
+----------------------------------------
+
+Domain: sokoban
+Problem: instance-6.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 404261
+Evaluated States: 406091
+Generated States: 896128
+Search Time: 2.33978
+Total Time: 14.104
+
+----------------------------------------
+

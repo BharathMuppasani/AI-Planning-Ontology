@@ -1,0 +1,339 @@
+INFO     planner time limit: 300s
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299s
+INFO     translator memory limit: None
+INFO     translator command line string: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/bittu/Desktop/GitHub/downward/builds/release/bin/translate/translate.py /Users/bittu/Desktop/ISWC_test/best_planner/data/tidybot/domain.pddl /Users/bittu/Desktop/ISWC_test/best_planner/data/tidybot/instance-6.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.006s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.020s CPU, 0.017s wall-clock]
+Preparing model... [0.010s CPU, 0.005s wall-clock]
+Generated 400 rules.
+Computing model... [0.220s CPU, 0.231s wall-clock]
+12732 relevant atoms
+19456 auxiliary atoms
+32188 final queue length
+69274 total queue pushes
+Completing instantiation... [0.580s CPU, 0.570s wall-clock]
+Instantiating: [0.830s CPU, 0.832s wall-clock]
+Computing fact groups...
+Finding invariants...
+41 initial candidates
+Finding invariants: [0.030s CPU, 0.029s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+231 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.030s CPU, 0.031s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.030s CPU, 0.032s wall-clock]
+Translating task: [0.660s CPU, 0.658s wall-clock]
+29495 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+2 propositions removed
+Detecting unreachable propositions: [0.340s CPU, 0.339s wall-clock]
+Reordering and filtering variables...
+233 of 233 variables necessary.
+1 of 3 mutex groups necessary.
+12351 of 12351 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.200s CPU, 0.200s wall-clock]
+Translator variables: 233
+Translator derived variables: 0
+Translator facts: 469
+Translator goal facts: 4
+Translator mutex groups: 1
+Translator total mutex groups size: 2
+Translator operators: 12351
+Translator axioms: 0
+Translator task size: 141918
+warning: could not determine peak memory
+Writing output... [0.120s CPU, 0.122s wall-clock]
+Done! [2.200s CPU, 2.218s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search portfolio: /Users/bittu/Desktop/GitHub/downward/driver/portfolios/seq_opt_fdss_1.py
+remaining time: 297.0
+config 0: relative time 175, remaining 1631
+args: ['/Users/bittu/Desktop/GitHub/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))', '--internal-plan-file', '/Users/bittu/Desktop/ISWC_test/best_planner/best_policy_results/results/plan-tidybotinstance-1.txt']
+INFO     search stdin: output.sas
+INFO     search time limit: 31s
+INFO     search memory limit: None
+INFO     search command line string: /Users/bittu/Desktop/GitHub/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))' --internal-plan-file /Users/bittu/Desktop/ISWC_test/best_planner/best_policy_results/results/plan-tidybotinstance-1.txt < output.sas
+[t=0.00033725s, 33745664 KB] reading input...
+[t=0.471509s, 33883904 KB] done reading input!
+[t=0.486767s, 33892100 KB] Initializing merge-and-shrink heuristic...
+[t=0.486788s, 33892100 KB] Running merge-and-shrink algorithm...
+[t=0.486797s, 33892100 KB] Merge strategy options:
+[t=0.486803s, 33892100 KB] Type: precomputed
+[t=0.486809s, 33892100 KB] Merge tree options: 
+[t=0.486814s, 33892100 KB] Type: linear
+[t=0.486819s, 33892100 KB] Update option: use random
+[t=0.486823s, 33892100 KB] Variable order type: by reverse level
+
+[t=0.486833s, 33892100 KB] Options related to size limits and shrinking: 
+[t=0.486838s, 33892100 KB] Transition system size limit: 2147483647
+[t=0.486843s, 33892100 KB] Transition system size limit right before merge: 2147483647
+[t=0.486849s, 33892100 KB] Threshold to trigger shrinking right before merge: 1
+
+[t=0.486855s, 33892100 KB] Shrink strategy options: 
+[t=0.486859s, 33892100 KB] Type: bisimulation
+[t=0.486865s, 33892100 KB] Bisimulation type: greedy
+[t=0.48687s, 33892100 KB] At limit: return
+
+[t=0.486877s, 33892100 KB] Pruning unreachable states: yes
+[t=0.486881s, 33892100 KB] Pruning irrelevant states: yes
+
+[t=0.486888s, 33892100 KB] Label reduction options:
+[t=0.486892s, 33892100 KB] Before merging: disabled
+[t=0.486896s, 33892100 KB] Before shrinking: enabled
+[t=0.4869s, 33892100 KB] Method: all transition systems with fixpoint computation
+[t=0.486906s, 33892100 KB] System order: random
+
+[t=0.486912s, 33892100 KB] Main loop max time in seconds: inf
+
+
+[t=0.486925s, 33892100 KB] Building atomic transition systems... 
+[t=0.542129s, 34023172 KB] M&S algorithm timer: 0.0553621s (after computation of atomic factors)
+
+[t=0.542302s, 34023172 KB] Starting main loop without a time limit.
+[t=0.542338s, 34023172 KB] building causal graph...done! [t=0.026844s]
+[t=0.578996s, 34025220 KB] Next pair of indices: (0, 1)
+[t=0.579012s, 34025220 KB] M&S algorithm main loop timer: 0.0367125s (after computation of next merge)
+Peak memory: 34716432 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+exitcode: 23
+
+remaining time: 265.95
+config 1: relative time 432, remaining 1456
+args: ['/Users/bittu/Desktop/GitHub/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))', '--internal-plan-file', '/Users/bittu/Desktop/ISWC_test/best_planner/best_policy_results/results/plan-tidybotinstance-1.txt']
+INFO     search stdin: output.sas
+INFO     search time limit: 78s
+INFO     search memory limit: None
+INFO     search command line string: /Users/bittu/Desktop/GitHub/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))' --internal-plan-file /Users/bittu/Desktop/ISWC_test/best_planner/best_policy_results/results/plan-tidybotinstance-1.txt < output.sas
+[t=0.00034625s, 33745664 KB] reading input...
+[t=0.497264s, 33883904 KB] done reading input!
+[t=0.511017s, 33900292 KB] Initializing merge-and-shrink heuristic...
+[t=0.511051s, 33900292 KB] Running merge-and-shrink algorithm...
+[t=0.51106s, 33900292 KB] Merge strategy options:
+[t=0.511067s, 33900292 KB] Type: precomputed
+[t=0.511075s, 33900292 KB] Merge tree options: 
+[t=0.511081s, 33900292 KB] Type: linear
+[t=0.511087s, 33900292 KB] Update option: use random
+[t=0.511093s, 33900292 KB] Variable order type: by reverse level
+
+[t=0.511105s, 33900292 KB] Options related to size limits and shrinking: 
+[t=0.511111s, 33900292 KB] Transition system size limit: 200000
+[t=0.511119s, 33900292 KB] Transition system size limit right before merge: 200000
+[t=0.511136s, 33900292 KB] Threshold to trigger shrinking right before merge: 200000
+
+[t=0.511143s, 33900292 KB] Shrink strategy options: 
+[t=0.511147s, 33900292 KB] Type: bisimulation
+[t=0.511156s, 33900292 KB] Bisimulation type: exact
+[t=0.511161s, 33900292 KB] At limit: return
+
+[t=0.511168s, 33900292 KB] Pruning unreachable states: yes
+[t=0.511173s, 33900292 KB] Pruning irrelevant states: yes
+
+[t=0.51118s, 33900292 KB] Label reduction options:
+[t=0.511184s, 33900292 KB] Before merging: disabled
+[t=0.511189s, 33900292 KB] Before shrinking: enabled
+[t=0.511193s, 33900292 KB] Method: all transition systems with fixpoint computation
+[t=0.511198s, 33900292 KB] System order: random
+
+[t=0.511205s, 33900292 KB] Main loop max time in seconds: inf
+
+
+[t=0.511219s, 33900292 KB] Building atomic transition systems... 
+[t=0.571777s, 34162436 KB] M&S algorithm timer: 0.0607493s (after computation of atomic factors)
+
+[t=0.571971s, 34162436 KB] Starting main loop without a time limit.
+[t=0.572011s, 34162436 KB] building causal graph...done! [t=0.0294521s]
+[t=0.612547s, 34164484 KB] Next pair of indices: (0, 1)
+[t=0.612568s, 34164484 KB] M&S algorithm main loop timer: 0.0406012s (after computation of next merge)
+[t=77.3673s, 34585360 KB] M&S algorithm main loop timer: 76.7953s (after merging)
+
+[t=77.3676s, 34585360 KB] Next pair of indices: (233, 2)
+[t=77.3677s, 34585360 KB] M&S algorithm main loop timer: 76.7957s (after computation of next merge)
+Peak memory: 34585364 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+exitcode: 23
+
+remaining time: 187.79000000000002
+config 2: relative time 455, remaining 1024
+args: ['/Users/bittu/Desktop/GitHub/downward/builds/release/bin/downward', '--search', 'let(lmc, landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])),astar(lmc,lazy_evaluator=lmc))', '--internal-plan-file', '/Users/bittu/Desktop/ISWC_test/best_planner/best_policy_results/results/plan-tidybotinstance-1.txt']
+INFO     search stdin: output.sas
+INFO     search time limit: 83s
+INFO     search memory limit: None
+INFO     search command line string: /Users/bittu/Desktop/GitHub/downward/builds/release/bin/downward --search 'let(lmc, landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])),astar(lmc,lazy_evaluator=lmc))' --internal-plan-file /Users/bittu/Desktop/ISWC_test/best_planner/best_policy_results/results/plan-tidybotinstance-1.txt < output.sas
+[t=0.000351291s, 33745664 KB] reading input...
+[t=0.49285s, 33883904 KB] done reading input!
+[t=0.497996s, 33892100 KB] Initializing landmark cost partitioning heuristic...
+[t=0.498244s, 33892100 KB] Generating landmark graph...
+[t=0.49918s, 33892100 KB] Merging 2 landmark graphs
+[t=0.500162s, 33892100 KB] Initializing Exploration...
+[t=0.521053s, 34023172 KB] Generating landmarks using the RPG/SAS+ approach
+[t=0.6062s, 34031364 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.60631s, 34031364 KB] Landmarks generation time: 0.107121s
+[t=0.606325s, 34031364 KB] Discovered 34 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.606335s, 34031364 KB] 64 edges
+[t=0.607258s, 34031364 KB] h^m landmarks m=1
+[t=0.607461s, 34162436 KB] Using 469 P^m fluents.
+[t=0.710718s, 34164484 KB] h^m landmarks computed.
+[t=0.714894s, 34164484 KB] Calculating achievers.
+[t=0.722467s, 34164484 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.722489s, 34164484 KB] Landmarks generation time: 0.11615s
+[t=0.722498s, 34164484 KB] Discovered 40 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.722507s, 34164484 KB] 119 edges
+[t=0.722516s, 34164484 KB] Adding simple landmarks
+[t=0.723176s, 34164484 KB] Adding disjunctive landmarks
+[t=0.723184s, 34164484 KB] Adding orderings
+[t=0.723253s, 34164484 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.723266s, 34164484 KB] Landmarks generation time: 0.225015s
+[t=0.723273s, 34164484 KB] Discovered 48 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.723281s, 34164484 KB] 135 edges
+[t=0.723288s, 34164484 KB] Landmark graph generation time: 0.225047s
+[t=0.723303s, 34164484 KB] Landmark graph contains 48 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.723311s, 34164484 KB] Landmark graph contains 135 orderings.
+[t=0.7249s, 34164484 KB] Building successor generator...done!
+[t=0.737137s, 34165508 KB] peak memory difference for successor generator creation: 1024 KB
+[t=0.737144s, 34165508 KB] time for successor generation creation: 0.0122046s
+[t=0.737191s, 34165508 KB] Variables: 233
+[t=0.737197s, 34165508 KB] FactPairs: 469
+[t=0.737202s, 34165508 KB] Bytes per state: 32
+[t=0.737254s, 34165508 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.737285s, 34165508 KB] 26 initial landmarks, 4 goal landmarks
+[t=0.737316s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 18
+[t=0.737324s, 34165508 KB] g=0, 1 evaluated, 0 expanded
+[t=0.737331s, 34165508 KB] f = 18, 1 evaluated, 0 expanded
+[t=0.737343s, 34165508 KB] Initial heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 18
+[t=0.737349s, 34165508 KB] pruning method: none
+[t=0.737404s, 34165508 KB] f = 19, 4 evaluated, 1 expanded
+[t=0.737434s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 17
+[t=0.73744s, 34165508 KB] g=2, 6 evaluated, 2 expanded
+[t=0.73747s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 16
+[t=0.737476s, 34165508 KB] g=3, 8 evaluated, 3 expanded
+[t=0.737504s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 15
+[t=0.737511s, 34165508 KB] g=4, 10 evaluated, 4 expanded
+[t=0.737538s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 14
+[t=0.737544s, 34165508 KB] g=5, 12 evaluated, 5 expanded
+[t=0.73757s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 13
+[t=0.737576s, 34165508 KB] g=6, 14 evaluated, 6 expanded
+[t=0.737593s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 12
+[t=0.737598s, 34165508 KB] g=7, 15 evaluated, 7 expanded
+[t=0.737652s, 34165508 KB] f = 20, 20 evaluated, 8 expanded
+[t=0.737903s, 34165508 KB] f = 21, 41 evaluated, 22 expanded
+[t=0.73834s, 34165508 KB] f = 22, 80 evaluated, 49 expanded
+[t=0.738849s, 34165508 KB] f = 23, 120 evaluated, 82 expanded
+[t=0.739785s, 34165508 KB] f = 24, 206 evaluated, 136 expanded
+[t=0.741035s, 34165508 KB] f = 25, 317 evaluated, 214 expanded
+[t=0.743367s, 34165508 KB] f = 26, 537 evaluated, 348 expanded
+[t=0.746737s, 34165508 KB] f = 27, 839 evaluated, 564 expanded
+[t=0.747113s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 10
+[t=0.747122s, 34165508 KB] g=16, 851 evaluated, 594 expanded
+[t=0.752716s, 34165508 KB] f = 28, 1350 evaluated, 899 expanded
+[t=0.76201s, 34165508 KB] f = 29, 2090 evaluated, 1424 expanded
+[t=0.762543s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 8
+[t=0.762549s, 34165508 KB] g=20, 2103 evaluated, 1440 expanded
+[t=0.762641s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 7
+[t=0.762647s, 34165508 KB] g=21, 2107 evaluated, 1441 expanded
+[t=0.776954s, 34165508 KB] f = 30, 3277 evaluated, 2227 expanded
+[t=0.799939s, 34165508 KB] f = 31, 5051 evaluated, 3475 expanded
+[t=0.800137s, 34165508 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 6
+[t=0.800143s, 34165508 KB] g=25, 5058 evaluated, 3479 expanded
+[t=0.842999s, 34304772 KB] f = 32, 8007 evaluated, 5446 expanded
+[t=0.843066s, 34304772 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 5
+[t=0.843077s, 34304772 KB] g=27, 8008 evaluated, 5447 expanded
+[t=0.843152s, 34304772 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 4
+[t=0.843176s, 34304772 KB] g=28, 8012 evaluated, 5449 expanded
+[t=0.843216s, 34304772 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 3
+[t=0.843223s, 34304772 KB] g=29, 8016 evaluated, 5450 expanded
+[t=0.843274s, 34304772 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 2
+[t=0.843279s, 34304772 KB] g=30, 8022 evaluated, 5453 expanded
+[t=0.843309s, 34304772 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 1
+[t=0.843315s, 34304772 KB] g=31, 8025 evaluated, 5454 expanded
+[t=0.84334s, 34304772 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 0
+[t=0.843346s, 34304772 KB] g=32, 8028 evaluated, 5455 expanded
+[t=0.843355s, 34304772 KB] Solution found!
+[t=0.843372s, 34304772 KB] Actual search time: 0.10602s
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x0 x1 y0 (1)
+base-right pr2 x1 x2 y0 (1)
+base-right pr2 x2 x3 y0 (1)
+base-right pr2 x3 x4 y0 (1)
+base-right pr2 x4 x5 y0 (1)
+base-down pr2 x5 y0 y1 (1)
+base-down pr2 x5 y1 y2 (1)
+base-down pr2 x5 y2 y3 (1)
+base-down pr2 x5 y3 y4 (1)
+base-down pr2 x5 y4 y5 (1)
+base-left pr2 x5 x4 y5 (1)
+base-left pr2 x4 x3 y5 (1)
+base-up pr2 x3 y5 y4 (1)
+base-up pr2 x3 y4 y3 (1)
+park pr2 (1)
+get-up pr2 x3 y3 xrel0 x3 yrel0 y3 object3 y2 (1)
+gripper-up pr2 x3 y3 xrel0 x3 yrel0 yrel-1 y3 y2 (1)
+put-down pr2 x3 y3 xrel0 x3 yrel-1 y2 object3 y3 (1)
+get-left pr2 x3 y3 xrel0 x3 yrel-1 y2 object2 x2 (1)
+finish-object object3 x3 y3 (1)
+gripper-left pr2 x3 y3 xrel0 xrel-1 x3 x2 yrel-1 y2 (1)
+put-right pr2 x3 y3 xrel-1 x2 yrel-1 y2 object2 x3 (1)
+get-down pr2 x3 y3 xrel-1 x2 yrel-1 y2 object0 y3 (1)
+finish-object object2 x3 y2 (1)
+gripper-down pr2 x3 y3 xrel-1 x2 yrel-1 yrel0 y2 y3 (1)
+put-up pr2 x3 y3 xrel-1 x2 yrel0 y3 object0 y2 (1)
+get-right pr2 x3 y3 xrel-1 x2 yrel0 y3 object1 x3 (1)
+gripper-down pr2 x3 y3 xrel-1 x2 yrel0 yrel1 y3 y4 (1)
+put-up pr2 x3 y3 xrel-1 x2 yrel1 y4 object1 y3 (1)
+finish-object object0 x2 y2 (1)
+finish-object object1 x2 y3 (1)
+[t=0.843378s, 34304772 KB] Plan length: 32 step(s).
+[t=0.843378s, 34304772 KB] Plan cost: 32
+[t=0.843378s, 34304772 KB] Expanded 5456 state(s).
+[t=0.843378s, 34304772 KB] Reopened 0 state(s).
+[t=0.843378s, 34304772 KB] Evaluated 8028 state(s).
+[t=0.843378s, 34304772 KB] Evaluations: 9343
+[t=0.843378s, 34304772 KB] Generated 15870 state(s).
+[t=0.843378s, 34304772 KB] Dead ends: 0 state(s).
+[t=0.843378s, 34304772 KB] Expanded until last jump: 5446 state(s).
+[t=0.843378s, 34304772 KB] Reopened until last jump: 0 state(s).
+[t=0.843378s, 34304772 KB] Evaluated until last jump: 8007 state(s).
+[t=0.843378s, 34304772 KB] Generated until last jump: 15840 state(s).
+[t=0.843378s, 34304772 KB] Number of registered states: 8028
+[t=0.843378s, 34304772 KB] Int hash set load factor: 8028/16384 = 0.48999
+[t=0.843378s, 34304772 KB] Int hash set resizes: 14
+[t=0.843378s, 34304772 KB] Search time: 0.106125s
+[t=0.843378s, 34304772 KB] Total time: 0.843378s
+Solution found.
+Peak memory: 34304836 KB
+exitcode: 0
+
+Exit codes: [23, 23, 0]
+Remove intermediate file output.sas
+search exit code: 2
+
+INFO     Planner time: 112.43s

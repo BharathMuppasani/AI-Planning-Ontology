@@ -64,8 +64,8 @@
     <!-- https://purl.org/ai4s/ontology/planning#addsPredicate -->
 
     <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#addsPredicate">
-        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
-        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
     </owl:ObjectProperty>
     
 
@@ -73,8 +73,8 @@
     <!-- https://purl.org/ai4s/ontology/planning#deletesPredicate -->
 
     <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#deletesPredicate">
-        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
-        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
     </owl:ObjectProperty>
     
 
@@ -250,6 +250,15 @@
     
 
 
+    <!-- https://purl.org/ai4s/ontology/planning#isGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#isGeneratedBy">
+        <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://purl.org/ai4s/ontology/planning#ofPlannerType -->
 
     <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#ofPlannerType">
@@ -343,18 +352,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasEffect"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasParameter"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasPrecondition"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>

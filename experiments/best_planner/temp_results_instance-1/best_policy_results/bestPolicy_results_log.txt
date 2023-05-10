@@ -1,0 +1,145 @@
+###### Best Policy Results ######
+Domain: tidybot
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 5
+Evaluated States: 23
+Generated States: 22
+Search Time: 0.001674
+Total Time: 0.180335
+
+----------------------------------------
+
+Domain: transport
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 100348
+Evaluated States: 220580
+Generated States: 680998
+Search Time: 0.67493
+Total Time: 0.717568
+
+----------------------------------------
+
+Domain: visitall
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 4
+Evaluated States: 7
+Generated States: 6
+Search Time: 0.000147
+Total Time: 0.017252
+
+----------------------------------------
+
+Domain: woodworking
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 15
+Evaluated States: 167
+Generated States: 190
+Search Time: 0.004718
+Total Time: 0.016289
+
+----------------------------------------
+
+Domain: pegsol
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 49
+Evaluated States: 77
+Generated States: 99
+Search Time: 0.000666
+Total Time: 13.3921
+
+----------------------------------------
+
+Domain: elevators
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 717
+Evaluated States: 6564
+Generated States: 12589
+Search Time: 0.250603
+Total Time: 0.260208
+
+----------------------------------------
+
+Domain: floortile
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 59715
+Evaluated States: 287460
+Generated States: 549842
+Search Time: 7.49013
+Total Time: 7.49746
+
+----------------------------------------
+
+Domain: scanalyzer
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 6
+Evaluated States: 10
+Generated States: 10
+Search Time: 0.000177
+Total Time: 0.043379
+
+----------------------------------------
+
+Domain: nomystery
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 427
+Evaluated States: 828
+Generated States: 1482
+Search Time: 0.002261
+Total Time: 0.027118
+
+----------------------------------------
+
+Domain: barman
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 1354207
+Evaluated States: 1679994
+Generated States: 6109990
+Search Time: 101.694
+Total Time: 101.71
+
+----------------------------------------
+
+Domain: parking
+Problem: instance-1.pddl
+Selected Config: seq-opt-fdss-1
+
+Expanded States: 6007
+Evaluated States: 42908
+Generated States: 71412
+Search Time: 0.136058
+Total Time: 16.1745
+
+----------------------------------------
+
+Domain: sokoban
+Problem: instance-1.pddl
+Selected Config: seq-opt-lmcut
+
+Expanded States: 426
+Evaluated States: 526
+Generated States: 1116
+Search Time: 0.007508
+Total Time: 0.01486
+
+----------------------------------------
+

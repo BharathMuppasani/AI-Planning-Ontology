@@ -1,0 +1,181 @@
+INFO     planner time limit: 1800s
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1799s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /home/bharath/Desktop/GitHub/downward/builds/release/bin/translate/translate.py /home/bharath/Desktop/ISWC_test/best_planner/data/openstacks/domain-1.pddl /home/bharath/Desktop/ISWC_test/best_planner/data/openstacks/instance-1.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.008s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 92 rules.
+Computing model... [0.010s CPU, 0.008s wall-clock]
+400 relevant atoms
+372 auxiliary atoms
+772 final queue length
+1152 total queue pushes
+Completing instantiation... [0.010s CPU, 0.017s wall-clock]
+Instantiating: [0.030s CPU, 0.033s wall-clock]
+Computing fact groups...
+Finding invariants...
+12 initial candidates
+Finding invariants: [0.030s CPU, 0.017s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+0 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.030s CPU, 0.020s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.020s CPU, 0.014s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+21 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.009s wall-clock]
+Reordering and filtering variables...
+21 of 21 variables necessary.
+0 of 31 mutex groups necessary.
+220 of 220 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.003s wall-clock]
+Translator variables: 21
+Translator derived variables: 0
+Translator facts: 61
+Translator goal facts: 10
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 220
+Translator axioms: 0
+Translator task size: 1317
+Translator peak memory: 35188 KB
+Writing output... [0.000s CPU, 0.004s wall-clock]
+Done! [0.100s CPU, 0.092s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1799s
+INFO     search memory limit: None
+INFO     search command line string: /home/bharath/Desktop/GitHub/downward/builds/release/bin/downward --search 'let(lmc,landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])),astar(lmc,lazy_evaluator=lmc))' --internal-plan-file /home/bharath/Desktop/ISWC_test/best_planner/random_policy_results/results/plan-openstacks-instance-1.txt < output.sas
+[t=0.0028599s, 10980 KB] reading input...
+[t=0.00686053s, 10980 KB] done reading input!
+[t=0.0108605s, 11236 KB] Initializing landmark cost partitioning heuristic...
+[t=0.0108605s, 11236 KB] Generating landmark graph...
+[t=0.0108605s, 11236 KB] Merging 2 landmark graphs
+[t=0.0108605s, 11236 KB] Initializing Exploration...
+[t=0.0108605s, 11236 KB] Generating landmarks using the RPG/SAS+ approach
+[t=0.0148611s, 11236 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0148611s, 11236 KB] Landmarks generation time: 0.00400064s
+[t=0.0148611s, 11236 KB] Discovered 50 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0148611s, 11236 KB] 80 edges
+[t=0.0148611s, 11236 KB] h^m landmarks m=1
+[t=0.0148611s, 11236 KB] Using 61 P^m fluents.
+[t=0.0148611s, 11376 KB] h^m landmarks computed.
+[t=0.0148611s, 11376 KB] Calculating achievers.
+[t=0.0174208s, 11376 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0174208s, 11376 KB] Landmarks generation time: 0.0025597s
+[t=0.0174208s, 11376 KB] Discovered 52 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0174208s, 11376 KB] 111 edges
+[t=0.0174208s, 11376 KB] Adding simple landmarks
+[t=0.0174208s, 11376 KB] Adding disjunctive landmarks
+[t=0.0174208s, 11376 KB] Adding orderings
+[t=0.0174208s, 11376 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0174208s, 11376 KB] Landmarks generation time: 0.00656033s
+[t=0.0174208s, 11376 KB] Discovered 52 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0174208s, 11376 KB] 121 edges
+[t=0.0174208s, 11376 KB] Landmark graph generation time: 0.00656033s
+[t=0.0174208s, 11376 KB] Landmark graph contains 52 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0174208s, 11376 KB] Landmark graph contains 121 orderings.
+[t=0.0187042s, 11376 KB] Building successor generator...done!
+[t=0.0187042s, 11376 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0187042s, 11376 KB] time for successor generation creation: 0s
+[t=0.0187042s, 11376 KB] Variables: 21
+[t=0.0187042s, 11376 KB] FactPairs: 61
+[t=0.0187042s, 11376 KB] Bytes per state: 8
+[t=0.0187042s, 11376 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.0187042s, 11376 KB] 21 initial landmarks, 10 goal landmarks
+[t=0.0187042s, 11376 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 1
+[t=0.0187042s, 11376 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0187042s, 11376 KB] f = 1, 1 evaluated, 0 expanded
+[t=0.0187042s, 11376 KB] Initial heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 1
+[t=0.0187042s, 11376 KB] pruning method: none
+[t=0.0187042s, 11376 KB] New best heuristic value for landmark_cost_partitioning(lm_merged([lm_rhw(),lm_hm(m=1)])): 0
+[t=0.0187042s, 11376 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0187042s, 11376 KB] f = 2, 65 evaluated, 33 expanded
+[t=0.138491s, 11624 KB] Solution found!
+[t=0.138491s, 11624 KB] Actual search time: 0.119787s
+open-new-stack n0 n1 (1)
+start-order o4 n1 n0 (0)
+make-product-p4  (0)
+ship-order-o4 n0 n1 (0)
+start-order o3 n1 n0 (0)
+make-product-p7  (0)
+make-product-p8  (0)
+open-new-stack n0 n1 (1)
+start-order o9 n1 n0 (0)
+make-product-p1  (0)
+ship-order-o3 n0 n1 (0)
+ship-order-o9 n1 n2 (0)
+start-order o10 n2 n1 (0)
+start-order o1 n1 n0 (0)
+make-product-p6  (0)
+make-product-p9  (0)
+ship-order-o10 n0 n1 (0)
+start-order o2 n1 n0 (0)
+make-product-p2  (0)
+make-product-p10  (0)
+ship-order-o2 n0 n1 (0)
+ship-order-o1 n1 n2 (0)
+start-order o5 n2 n1 (0)
+start-order o8 n1 n0 (0)
+make-product-p3  (0)
+ship-order-o5 n0 n1 (0)
+ship-order-o8 n1 n2 (0)
+start-order o6 n2 n1 (0)
+start-order o7 n1 n0 (0)
+make-product-p5  (0)
+ship-order-o6 n0 n1 (0)
+ship-order-o7 n1 n2 (0)
+[t=0.138491s, 11624 KB] Plan length: 32 step(s).
+[t=0.138491s, 11624 KB] Plan cost: 2
+[t=0.138491s, 11624 KB] Expanded 3658 state(s).
+[t=0.138491s, 11624 KB] Reopened 0 state(s).
+[t=0.138491s, 11624 KB] Evaluated 7294 state(s).
+[t=0.138491s, 11624 KB] Evaluations: 9615
+[t=0.138491s, 11624 KB] Generated 10934 state(s).
+[t=0.138491s, 11624 KB] Dead ends: 0 state(s).
+[t=0.138491s, 11624 KB] Expanded until last jump: 33 state(s).
+[t=0.138491s, 11624 KB] Reopened until last jump: 0 state(s).
+[t=0.138491s, 11624 KB] Evaluated until last jump: 65 state(s).
+[t=0.138491s, 11624 KB] Generated until last jump: 66 state(s).
+[t=0.138491s, 11624 KB] Number of registered states: 7294
+[t=0.138491s, 11624 KB] Int hash set load factor: 7294/8192 = 0.890381
+[t=0.138491s, 11624 KB] Int hash set resizes: 13
+[t=0.138491s, 11624 KB] Search time: 0.119787s
+[t=0.138491s, 11624 KB] Total time: 0.138491s
+Solution found.
+Peak memory: 11624 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 0.36s

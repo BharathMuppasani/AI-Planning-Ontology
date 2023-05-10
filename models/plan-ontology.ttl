@@ -4,25 +4,35 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ontology: <https://purl.org/ai4s/ontology/> .
 @prefix plan-ontology: <https://purl.org/ai4s/ontology/planning#> .
 @base <https://purl.org/ai4s/ontology/planning> .
 
 <https://purl.org/ai4s/ontology/planning> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://purl.org/ai4s/ontology/planning/v2.0> .
-
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix sdo: <https://schema.org/> .
+                                           owl:versionIRI <https://purl.org/ai4s/ontology/planning/v2.0> ;
+                                           terms:contributor "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" ;
+                                           terms:license "https://www.apache.org/licenses/LICENSE-2.0" ;
+                                           rdfs:label "Ontology to model Automated Planning domain" ;
+                                           rdfs:seeAlso "https://github.com/BharathMuppasani/AI-Planning-Ontology" ;
+                                           owl:versionInfo 2.0 ;
+                                           plan-ontology:Authors "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" .
 
 #################################################################
-
-<https://purl.org/ai4s/ontology/planning> rdf:type owl:Ontology ;
-                                            dcterms:contributor "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" ;
-                                            dcterms:license "https://www.apache.org/licenses/LICENSE-2.0" ;
-                                            rdfs:label "Ontology to model Automated Planning domain" ;
-                                            rdfs:seeAlso "https://github.com/BharathMuppasani/AI-Planning-Ontology" ;
-                                            owl:versionInfo 2.0 ;
-                                            :Authors "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" .
+#    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/ai4s/ontology/planning#Authors
+plan-ontology:Authors rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -30,14 +40,14 @@
 
 ###  https://purl.org/ai4s/ontology/planning#addsPredicate
 plan-ontology:addsPredicate rdf:type owl:ObjectProperty ;
-                            rdfs:domain plan-ontology:DomainAction ;
-                            rdfs:range plan-ontology:DomainPredicate .
+                            rdfs:domain plan-ontology:ActionEffect ;
+                            rdfs:range plan-ontology:State .
 
 
 ###  https://purl.org/ai4s/ontology/planning#deletesPredicate
 plan-ontology:deletesPredicate rdf:type owl:ObjectProperty ;
-                               rdfs:domain plan-ontology:DomainAction ;
-                               rdfs:range plan-ontology:DomainPredicate .
+                               rdfs:domain plan-ontology:ActionEffect ;
+                               rdfs:range plan-ontology:State .
 
 
 ###  https://purl.org/ai4s/ontology/planning#hasConstant
@@ -154,6 +164,12 @@ plan-ontology:hasTypeInstance rdf:type owl:ObjectProperty ;
                               rdfs:range plan-ontology:ProblemObject .
 
 
+###  https://purl.org/ai4s/ontology/planning#isGeneratedBy
+plan-ontology:isGeneratedBy rdf:type owl:ObjectProperty ;
+                            rdfs:domain plan-ontology:Plan ;
+                            rdfs:range plan-ontology:Planner .
+
+
 ###  https://purl.org/ai4s/ontology/planning#ofPlannerType
 plan-ontology:ofPlannerType rdf:type owl:ObjectProperty ;
                             rdfs:domain plan-ontology:Planner ;
@@ -210,14 +226,6 @@ plan-ontology:DomainAction rdf:type owl:Class ;
                            rdfs:subClassOf [ rdf:type owl:Restriction ;
                                              owl:onProperty plan-ontology:hasEffect ;
                                              owl:someValuesFrom plan-ontology:ActionEffect
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty plan-ontology:hasParameter ;
-                                             owl:someValuesFrom plan-ontology:ActionParameter
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty plan-ontology:hasPrecondition ;
-                                             owl:someValuesFrom plan-ontology:ActionPrecondition
                                            ] .
 
 

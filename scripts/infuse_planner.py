@@ -23,32 +23,32 @@ class color:
 
 
 
-g = Graph().parse('./models/plan-ontology-rdf-instances.owl')
-planOntology = Namespace('http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#')
+g = Graph().parse('./models/plan-ontology-rdf-instances_test.owl')
+planningOntology = Namespace('https://purl.org/ai4s/ontology/planning#')
 
-data_file_path = "data/planner_data.json"
+data_file_path = "data/planner_data_test.json"
 
 f = open(data_file_path)
 data = json.load(f)
 
 
 for domain_instance in data.keys():
-   domain_URI = URIRef(planOntology + domain_instance.replace(' ','-'))
+   domain_URI = URIRef(planningOntology + domain_instance.replace(' ','-'))
    for relevance in data[domain_instance].keys():
       if relevance == 'high':
-         property_URI = URIRef(planOntology + 'hasHighRelevancePlanner')
+         property_URI = URIRef(planningOntology + 'hasHighRelevancePlanner')
       elif relevance == 'medium':
-         property_URI = URIRef(planOntology + 'hasMediumRelevancePlanner')
+         property_URI = URIRef(planningOntology + 'hasMediumRelevancePlanner')
       elif relevance == 'low':
-         property_URI = URIRef(planOntology + 'hasLowRelevancePlanner')
+         property_URI = URIRef(planningOntology + 'hasLowRelevancePlanner')
          
       for planner_instance in data[domain_instance][relevance]:
          planner_instance = planner_instance.replace(' ', '_')
-         planner_URI = URIRef( planOntology + planner_instance )
-         g.add((planner_URI, RDF.type, planOntology.planner))
+         planner_URI = URIRef( planningOntology + planner_instance )
+         g.add((planner_URI, RDF.type, planningOntology.Planner))
          g.add((planner_URI, RDFS.label, Literal(planner_instance)))
          g.add((domain_URI, property_URI, planner_URI))
    
 
-g.serialize(destination="./models/plan-ontology-rdf-instances-planner-info.owl", format="xml")
+g.serialize(destination="./models/plan-ontology-rdf-instances-planner-info_test.owl", format="xml")
 

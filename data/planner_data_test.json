@@ -1,0 +1,15 @@
+{
+    "blocksworld": {
+        "high": [
+            "FF",
+            "FastDownward"
+        ],
+        "medium": [
+            "LPG"
+        ],
+        "low": [
+            "CPT4",
+            "SHOP2"
+        ]
+    }
+}

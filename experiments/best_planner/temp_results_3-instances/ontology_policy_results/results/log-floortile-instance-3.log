@@ -1,0 +1,688 @@
+INFO     planner time limit: 1800s
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1799s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /home/bharath/Desktop/GitHub/downward/builds/release/bin/translate/translate.py /home/bharath/Desktop/ISWC_test/best_planner/data/floortile/domain.pddl /home/bharath/Desktop/ISWC_test/best_planner/data/floortile/instance-3.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.004s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.010s CPU, 0.002s wall-clock]
+Generated 50 rules.
+Computing model... [0.020s CPU, 0.020s wall-clock]
+453 relevant atoms
+548 auxiliary atoms
+1001 final queue length
+1271 total queue pushes
+Completing instantiation... [0.010s CPU, 0.015s wall-clock]
+Instantiating: [0.040s CPU, 0.041s wall-clock]
+Computing fact groups...
+Finding invariants...
+11 initial candidates
+Finding invariants: [0.010s CPU, 0.010s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.010s CPU, 0.003s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+0 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.020s CPU, 0.016s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.010s CPU, 0.017s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+4 propositions removed
+Detecting unreachable propositions: [0.020s CPU, 0.012s wall-clock]
+Reordering and filtering variables...
+22 of 22 variables necessary.
+36 of 40 mutex groups necessary.
+232 of 232 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.004s wall-clock]
+Translator variables: 22
+Translator derived variables: 0
+Translator facts: 112
+Translator goal facts: 15
+Translator mutex groups: 36
+Translator total mutex groups size: 144
+Translator operators: 232
+Translator axioms: 0
+Translator task size: 1553
+Translator peak memory: 35184 KB
+Writing output... [0.010s CPU, 0.003s wall-clock]
+Done! [0.100s CPU, 0.100s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search portfolio: /home/bharath/Desktop/GitHub/downward/driver/portfolios/seq_opt_fdss_1.py
+remaining time: 1799.0
+config 0: relative time 175, remaining 1631
+args: ['/home/bharath/Desktop/GitHub/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))', '--internal-plan-file', '/home/bharath/Desktop/ISWC_test/best_planner/ontology_policy_results/results/plan-floortile-instance-3.txt']
+INFO     search stdin: output.sas
+INFO     search time limit: 193s
+INFO     search memory limit: None
+INFO     search command line string: /home/bharath/Desktop/GitHub/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))' --internal-plan-file /home/bharath/Desktop/ISWC_test/best_planner/ontology_policy_results/results/plan-floortile-instance-3.txt < output.sas
+[t=0.00380197s, 10980 KB] reading input...
+[t=0.00777724s, 10980 KB] done reading input!
+[t=0.0118336s, 11368 KB] Initializing merge-and-shrink heuristic...
+[t=0.0118336s, 11368 KB] Running merge-and-shrink algorithm...
+[t=0.0118336s, 11368 KB] Merge strategy options:
+[t=0.0118336s, 11368 KB] Type: precomputed
+[t=0.0118336s, 11368 KB] Merge tree options: 
+[t=0.0118336s, 11368 KB] Type: linear
+[t=0.0118336s, 11368 KB] Update option: use random
+[t=0.0118336s, 11368 KB] Variable order type: by reverse level
+
+[t=0.0118336s, 11368 KB] Options related to size limits and shrinking: 
+[t=0.0118336s, 11368 KB] Transition system size limit: 2147483647
+[t=0.0118336s, 11368 KB] Transition system size limit right before merge: 2147483647
+[t=0.0118336s, 11368 KB] Threshold to trigger shrinking right before merge: 1
+
+[t=0.0118336s, 11368 KB] Shrink strategy options: 
+[t=0.0118336s, 11368 KB] Type: bisimulation
+[t=0.0118336s, 11368 KB] Bisimulation type: greedy
+[t=0.0118336s, 11368 KB] At limit: return
+
+[t=0.0118336s, 11368 KB] Pruning unreachable states: yes
+[t=0.0118336s, 11368 KB] Pruning irrelevant states: yes
+
+[t=0.0118336s, 11368 KB] Label reduction options:
+[t=0.0118336s, 11368 KB] Before merging: disabled
+[t=0.0118336s, 11368 KB] Before shrinking: enabled
+[t=0.0118336s, 11368 KB] Method: all transition systems with fixpoint computation
+[t=0.0118336s, 11368 KB] System order: random
+
+[t=0.0118336s, 11368 KB] Main loop max time in seconds: inf
+
+
+[t=0.0118336s, 11368 KB] Building atomic transition systems... 
+[t=0.0157294s, 11368 KB] M&S algorithm timer: 0.00389574s (after computation of atomic factors)
+
+[t=0.0157294s, 11368 KB] Starting main loop without a time limit.
+[t=0.0157294s, 11368 KB] building causal graph...done! [t=0s]
+[t=0.0157294s, 11368 KB] Next pair of indices: (0, 1)
+[t=0.0157294s, 11368 KB] M&S algorithm main loop timer: 0s (after computation of next merge)
+[t=0.0437289s, 11368 KB] M&S algorithm main loop timer: 0.0279995s (after label reduction)
+[t=0.0437289s, 11368 KB] M&S algorithm main loop timer: 0.0279995s (after shrinking)
+[t=0.0437289s, 11368 KB] M&S algorithm main loop timer: 0.0279995s (after merging)
+
+[t=0.0437289s, 11368 KB] Next pair of indices: (22, 2)
+[t=0.0437289s, 11368 KB] M&S algorithm main loop timer: 0.0279995s (after computation of next merge)
+[t=0.0597301s, 11368 KB] M&S algorithm main loop timer: 0.0440008s (after label reduction)
+[t=0.0597301s, 11368 KB] M&S algorithm main loop timer: 0.0440008s (after shrinking)
+[t=0.0597301s, 11368 KB] M&S algorithm main loop timer: 0.0440008s (after merging)
+
+[t=0.0597301s, 11368 KB] Next pair of indices: (23, 3)
+[t=0.0597301s, 11368 KB] M&S algorithm main loop timer: 0.0440008s (after computation of next merge)
+[t=0.0637331s, 11368 KB] M&S algorithm main loop timer: 0.0480037s (after shrinking)
+[t=0.0637331s, 11368 KB] M&S algorithm main loop timer: 0.0480037s (after merging)
+
+[t=0.0637331s, 11368 KB] Next pair of indices: (24, 4)
+[t=0.0637331s, 11368 KB] M&S algorithm main loop timer: 0.0480037s (after computation of next merge)
+[t=0.0717317s, 11368 KB] M&S algorithm main loop timer: 0.0560023s (after label reduction)
+[t=0.0717317s, 11368 KB] M&S algorithm main loop timer: 0.0560023s (after shrinking)
+[t=0.0717317s, 11368 KB] M&S algorithm main loop timer: 0.0560023s (after merging)
+
+[t=0.0717317s, 11368 KB] Next pair of indices: (25, 5)
+[t=0.0717317s, 11368 KB] M&S algorithm main loop timer: 0.0560023s (after computation of next merge)
+[t=0.0797317s, 11368 KB] M&S algorithm main loop timer: 0.0640024s (after label reduction)
+[t=0.0797317s, 11368 KB] M&S algorithm main loop timer: 0.0640024s (after shrinking)
+[t=0.0797317s, 11368 KB] M&S algorithm main loop timer: 0.0640024s (after merging)
+
+[t=0.0797317s, 11368 KB] Next pair of indices: (26, 6)
+[t=0.0797317s, 11368 KB] M&S algorithm main loop timer: 0.0640024s (after computation of next merge)
+[t=0.083731s, 11368 KB] M&S algorithm main loop timer: 0.0680016s (after label reduction)
+[t=0.083731s, 11368 KB] M&S algorithm main loop timer: 0.0680016s (after shrinking)
+[t=0.083731s, 11368 KB] M&S algorithm main loop timer: 0.0680016s (after merging)
+
+[t=0.083731s, 11368 KB] Next pair of indices: (27, 7)
+[t=0.083731s, 11368 KB] M&S algorithm main loop timer: 0.0680016s (after computation of next merge)
+[t=0.0877318s, 11368 KB] M&S algorithm main loop timer: 0.0720024s (after label reduction)
+[t=0.0877318s, 11368 KB] M&S algorithm main loop timer: 0.0720024s (after shrinking)
+[t=0.0877318s, 11368 KB] M&S algorithm main loop timer: 0.0720024s (after merging)
+
+[t=0.0877318s, 11368 KB] Next pair of indices: (28, 8)
+[t=0.0877318s, 11368 KB] M&S algorithm main loop timer: 0.0720024s (after computation of next merge)
+[t=0.0917323s, 11368 KB] M&S algorithm main loop timer: 0.076003s (after shrinking)
+[t=0.0917323s, 11368 KB] M&S algorithm main loop timer: 0.076003s (after merging)
+
+[t=0.0917323s, 11368 KB] Next pair of indices: (29, 9)
+[t=0.0917323s, 11368 KB] M&S algorithm main loop timer: 0.076003s (after computation of next merge)
+[t=0.0957335s, 11368 KB] M&S algorithm main loop timer: 0.0800041s (after label reduction)
+[t=0.0957335s, 11368 KB] M&S algorithm main loop timer: 0.0800041s (after shrinking)
+[t=0.0957335s, 11368 KB] M&S algorithm main loop timer: 0.0800041s (after merging)
+
+[t=0.0957335s, 11368 KB] Next pair of indices: (30, 10)
+[t=0.0957335s, 11368 KB] M&S algorithm main loop timer: 0.0800041s (after computation of next merge)
+[t=0.0957335s, 11368 KB] M&S algorithm main loop timer: 0.0800041s (after label reduction)
+[t=0.099732s, 11368 KB] M&S algorithm main loop timer: 0.0840026s (after shrinking)
+[t=0.099732s, 11368 KB] M&S algorithm main loop timer: 0.0840026s (after merging)
+
+[t=0.099732s, 11368 KB] Next pair of indices: (31, 11)
+[t=0.099732s, 11368 KB] M&S algorithm main loop timer: 0.0840026s (after computation of next merge)
+[t=0.099732s, 11368 KB] M&S algorithm main loop timer: 0.0840026s (after label reduction)
+[t=0.099732s, 11368 KB] M&S algorithm main loop timer: 0.0840026s (after shrinking)
+[t=0.099732s, 11368 KB] M&S algorithm main loop timer: 0.0840026s (after merging)
+
+[t=0.099732s, 11368 KB] Next pair of indices: (32, 12)
+[t=0.099732s, 11368 KB] M&S algorithm main loop timer: 0.0840026s (after computation of next merge)
+[t=0.103732s, 11368 KB] M&S algorithm main loop timer: 0.0880024s (after label reduction)
+[t=0.103732s, 11368 KB] M&S algorithm main loop timer: 0.0880024s (after shrinking)
+[t=0.107732s, 11368 KB] M&S algorithm main loop timer: 0.092003s (after merging)
+
+[t=0.107732s, 11368 KB] Next pair of indices: (33, 13)
+[t=0.107732s, 11368 KB] M&S algorithm main loop timer: 0.092003s (after computation of next merge)
+[t=0.107732s, 11368 KB] M&S algorithm main loop timer: 0.092003s (after label reduction)
+[t=0.111734s, 11368 KB] M&S algorithm main loop timer: 0.0960049s (after shrinking)
+[t=0.111734s, 11768 KB] M&S algorithm main loop timer: 0.0960049s (after merging)
+
+[t=0.115738s, 11768 KB] Next pair of indices: (34, 14)
+[t=0.115738s, 11768 KB] M&S algorithm main loop timer: 0.100009s (after computation of next merge)
+[t=0.115738s, 11768 KB] M&S algorithm main loop timer: 0.100009s (after label reduction)
+[t=0.123733s, 11900 KB] M&S algorithm main loop timer: 0.108003s (after shrinking)
+[t=0.127731s, 12764 KB] M&S algorithm main loop timer: 0.112002s (after merging)
+
+[t=0.131736s, 12764 KB] Next pair of indices: (35, 15)
+[t=0.131736s, 12764 KB] M&S algorithm main loop timer: 0.116007s (after computation of next merge)
+[t=0.135732s, 12764 KB] M&S algorithm main loop timer: 0.120003s (after label reduction)
+[t=0.15173s, 12764 KB] M&S algorithm main loop timer: 0.136001s (after shrinking)
+[t=0.171731s, 15704 KB] M&S algorithm main loop timer: 0.156002s (after merging)
+
+[t=0.171731s, 15704 KB] Next pair of indices: (36, 16)
+[t=0.171731s, 15704 KB] M&S algorithm main loop timer: 0.156002s (after computation of next merge)
+[t=0.18373s, 16012 KB] M&S algorithm main loop timer: 0.172001s (after label reduction)
+[t=0.251731s, 16012 KB] M&S algorithm main loop timer: 0.236002s (after shrinking)
+[t=0.311731s, 21984 KB] M&S algorithm main loop timer: 0.296002s (after merging)
+
+[t=0.311731s, 21984 KB] Next pair of indices: (37, 17)
+[t=0.311731s, 21984 KB] M&S algorithm main loop timer: 0.296002s (after computation of next merge)
+[t=0.347714s, 22712 KB] M&S algorithm main loop timer: 0.331985s (after label reduction)
+[t=0.503703s, 22712 KB] M&S algorithm main loop timer: 0.487974s (after shrinking)
+[t=0.611706s, 31788 KB] M&S algorithm main loop timer: 0.595977s (after merging)
+
+[t=0.611706s, 31788 KB] Next pair of indices: (38, 18)
+[t=0.611706s, 31788 KB] M&S algorithm main loop timer: 0.599975s (after computation of next merge)
+[t=0.69567s, 31788 KB] M&S algorithm main loop timer: 0.679941s (after label reduction)
+[t=1.06731s, 32636 KB] M&S algorithm main loop timer: 1.05158s (after shrinking)
+[t=1.22729s, 41492 KB] M&S algorithm main loop timer: 1.21156s (after merging)
+
+[t=1.22729s, 41492 KB] Next pair of indices: (39, 19)
+[t=1.22729s, 41492 KB] M&S algorithm main loop timer: 1.21156s (after computation of next merge)
+[t=1.33914s, 46652 KB] M&S algorithm main loop timer: 1.32342s (after label reduction)
+[t=1.89433s, 48136 KB] M&S algorithm main loop timer: 1.8786s (after shrinking)
+[t=2.16234s, 58712 KB] M&S algorithm main loop timer: 2.14661s (after merging)
+
+[t=2.16634s, 58712 KB] Next pair of indices: (40, 20)
+[t=2.16634s, 58712 KB] M&S algorithm main loop timer: 2.15061s (after computation of next merge)
+[t=2.41834s, 64940 KB] M&S algorithm main loop timer: 2.40261s (after label reduction)
+[t=3.61029s, 72416 KB] M&S algorithm main loop timer: 3.59456s (after shrinking)
+[t=4.51743s, 141232 KB] M&S algorithm main loop timer: 4.50171s (after merging)
+
+[t=4.53343s, 141232 KB] Next pair of indices: (41, 21)
+[t=4.53343s, 141232 KB] M&S algorithm main loop timer: 4.5217s (after computation of next merge)
+[t=5.34135s, 169560 KB] M&S algorithm main loop timer: 5.32962s (after label reduction)
+[t=9.04961s, 186728 KB] M&S algorithm main loop timer: 9.03388s (after shrinking)
+[t=11.6161s, 381108 KB] M&S algorithm main loop timer: 11.6004s (after merging)
+
+[t=11.6568s, 381108 KB] End of merge-and-shrink algorithm, statistics:
+[t=11.6568s, 381108 KB] Main loop runtime: 11.6411s
+[t=11.6568s, 381108 KB] Maximum intermediate abstraction size: 469572
+[t=11.6568s, 381108 KB] Final peak memory increase of merge-and-shrink algorithm: 369740 KB
+[t=11.6568s, 381108 KB] Merge-and-shrink algorithm runtime: 11.645s
+
+[t=11.6568s, 381108 KB] Number of remaining factors: 1
+[t=11.6598s, 381108 KB] Number of factors kept: 1
+[t=11.6598s, 381108 KB] Done initializing merge-and-shrink heuristic.
+
+[t=11.6718s, 381108 KB] Building successor generator...done!
+[t=11.6718s, 381108 KB] peak memory difference for successor generator creation: 0 KB
+[t=11.6718s, 381108 KB] time for successor generation creation: 0s
+[t=11.6718s, 381108 KB] Variables: 22
+[t=11.6718s, 381108 KB] FactPairs: 112
+[t=11.6718s, 381108 KB] Bytes per state: 8
+[t=11.6718s, 381108 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 37
+[t=11.6718s, 381108 KB] g=0, 1 evaluated, 0 expanded
+[t=11.6718s, 381108 KB] f = 37, 1 evaluated, 0 expanded
+[t=11.6718s, 381108 KB] Initial heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 37
+[t=11.6718s, 381108 KB] pruning method: none
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 35
+[t=11.6718s, 381108 KB] g=2, 3 evaluated, 1 expanded
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 33
+[t=11.6718s, 381108 KB] g=4, 14 evaluated, 2 expanded
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 32
+[t=11.6718s, 381108 KB] g=5, 25 evaluated, 3 expanded
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 30
+[t=11.6718s, 381108 KB] g=7, 31 evaluated, 4 expanded
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 28
+[t=11.6718s, 381108 KB] g=9, 57 evaluated, 8 expanded
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 27
+[t=11.6718s, 381108 KB] g=10, 64 evaluated, 9 expanded
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 26
+[t=11.6718s, 381108 KB] g=11, 83 evaluated, 12 expanded
+[t=11.6718s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 24
+[t=11.6757s, 381108 KB] g=13, 89 evaluated, 13 expanded
+[t=11.6757s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 22
+[t=11.6757s, 381108 KB] g=15, 108 evaluated, 17 expanded
+[t=11.6757s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 20
+[t=11.6757s, 381108 KB] g=17, 710 evaluated, 106 expanded
+[t=11.6797s, 381108 KB] f = 38, 2212 evaluated, 330 expanded
+[t=11.6797s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 19
+[t=11.6797s, 381108 KB] g=19, 2232 evaluated, 335 expanded
+[t=11.6797s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 18
+[t=11.6797s, 381108 KB] g=20, 2238 evaluated, 336 expanded
+[t=11.7037s, 381108 KB] f = 39, 9282 evaluated, 1614 expanded
+[t=11.7037s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 16
+[t=11.7037s, 381108 KB] g=23, 9413 evaluated, 1647 expanded
+[t=11.8077s, 381108 KB] f = 40, 36589 evaluated, 6304 expanded
+[t=11.8077s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 15
+[t=11.8077s, 381108 KB] g=25, 36753 evaluated, 6346 expanded
+[t=11.8077s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 14
+[t=11.8077s, 381108 KB] g=26, 36759 evaluated, 6347 expanded
+[t=11.9437s, 381108 KB] f = 41, 93905 evaluated, 18070 expanded
+[t=11.9477s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 12
+[t=11.9477s, 381108 KB] g=29, 94225 evaluated, 18164 expanded
+[t=12.2277s, 381108 KB] f = 42, 199524 evaluated, 38952 expanded
+[t=12.6357s, 381108 KB] f = 43, 365125 evaluated, 76908 expanded
+[t=12.6357s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 10
+[t=12.6357s, 381108 KB] g=33, 365544 evaluated, 77051 expanded
+[t=13.3876s, 381108 KB] f = 44, 672963 evaluated, 144839 expanded
+[t=14.7449s, 381108 KB] f = 45, 1199354 evaluated, 275199 expanded
+[t=14.7449s, 381108 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 8
+[t=14.7449s, 381108 KB] g=37, 1199712 evaluated, 275316 expanded
+[t=17.2393s, 381108 KB] f = 46, 2127033 evaluated, 505938 expanded
+[t=21.2701s, 381108 KB] f = 47, 3521693 evaluated, 883489 expanded
+[t=27.1695s, 381108 KB] f = 48, 5754264 evaluated, 1487958 expanded
+[t=36.6259s, 468020 KB] f = 49, 9050183 evaluated, 2443886 expanded
+[t=36.6259s, 468020 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1): 6
+[t=36.6259s, 468020 KB] g=43, 9050582 evaluated, 2444052 expanded
+[t=51.6569s, 834336 KB] f = 50, 14084881 evaluated, 3933470 expanded
+[t=72.6015s, 939948 KB] f = 51, 21302199 evaluated, 6201196 expanded
+[t=105.232s, 1621912 KB] f = 52, 31855556 evaluated, 9579478 expanded
+[t=148.458s, 1962572 KB] f = 53, 46258089 evaluated, 14476966 expanded
+Peak memory: 3196672 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+exitcode: 23
+
+remaining time: 1605.79
+config 1: relative time 432, remaining 1456
+args: ['/home/bharath/Desktop/GitHub/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))', '--internal-plan-file', '/home/bharath/Desktop/ISWC_test/best_planner/ontology_policy_results/results/plan-floortile-instance-3.txt']
+INFO     search stdin: output.sas
+INFO     search time limit: 476s
+INFO     search memory limit: None
+INFO     search command line string: /home/bharath/Desktop/GitHub/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))' --internal-plan-file /home/bharath/Desktop/ISWC_test/best_planner/ontology_policy_results/results/plan-floortile-instance-3.txt < output.sas
+[t=0.0039888s, 10980 KB] reading input...
+[t=0.0039888s, 10980 KB] done reading input!
+[t=0.00785613s, 11368 KB] Initializing merge-and-shrink heuristic...
+[t=0.00785613s, 11368 KB] Running merge-and-shrink algorithm...
+[t=0.00785613s, 11368 KB] Merge strategy options:
+[t=0.00785613s, 11368 KB] Type: precomputed
+[t=0.00785613s, 11368 KB] Merge tree options: 
+[t=0.00785613s, 11368 KB] Type: linear
+[t=0.00785613s, 11368 KB] Update option: use random
+[t=0.00785613s, 11368 KB] Variable order type: by reverse level
+
+[t=0.00785613s, 11368 KB] Options related to size limits and shrinking: 
+[t=0.00785613s, 11368 KB] Transition system size limit: 200000
+[t=0.00785613s, 11368 KB] Transition system size limit right before merge: 200000
+[t=0.00785613s, 11368 KB] Threshold to trigger shrinking right before merge: 200000
+
+[t=0.00785613s, 11368 KB] Shrink strategy options: 
+[t=0.00785613s, 11368 KB] Type: bisimulation
+[t=0.00785613s, 11368 KB] Bisimulation type: exact
+[t=0.00785613s, 11368 KB] At limit: return
+
+[t=0.00785613s, 11368 KB] Pruning unreachable states: yes
+[t=0.00785613s, 11368 KB] Pruning irrelevant states: yes
+
+[t=0.00785613s, 11368 KB] Label reduction options:
+[t=0.00785613s, 11368 KB] Before merging: disabled
+[t=0.00785613s, 11368 KB] Before shrinking: enabled
+[t=0.00785613s, 11368 KB] Method: all transition systems with fixpoint computation
+[t=0.00785613s, 11368 KB] System order: random
+
+[t=0.00785613s, 11368 KB] Main loop max time in seconds: inf
+
+
+[t=0.00785613s, 11368 KB] Building atomic transition systems... 
+[t=0.00785613s, 11368 KB] M&S algorithm timer: 0s (after computation of atomic factors)
+
+[t=0.00785613s, 11368 KB] Starting main loop without a time limit.
+[t=0.00785613s, 11368 KB] building causal graph...done! [t=0s]
+[t=0.00785613s, 11368 KB] Next pair of indices: (0, 1)
+[t=0.00785613s, 11368 KB] M&S algorithm main loop timer: 0s (after computation of next merge)
+[t=0.0278546s, 11368 KB] M&S algorithm main loop timer: 0.0199985s (after label reduction)
+[t=0.0278546s, 11368 KB] M&S algorithm main loop timer: 0.0199985s (after merging)
+
+[t=0.0278546s, 11368 KB] Next pair of indices: (22, 2)
+[t=0.0278546s, 11368 KB] M&S algorithm main loop timer: 0.0199985s (after computation of next merge)
+[t=0.0398551s, 11368 KB] M&S algorithm main loop timer: 0.0319989s (after label reduction)
+[t=0.0398551s, 11368 KB] M&S algorithm main loop timer: 0.0319989s (after merging)
+
+[t=0.0398551s, 11368 KB] Next pair of indices: (23, 3)
+[t=0.0398551s, 11368 KB] M&S algorithm main loop timer: 0.0319989s (after computation of next merge)
+[t=0.0518553s, 11368 KB] M&S algorithm main loop timer: 0.0439992s (after label reduction)
+[t=0.0518553s, 11368 KB] M&S algorithm main loop timer: 0.0439992s (after merging)
+
+[t=0.0518553s, 11368 KB] Next pair of indices: (24, 4)
+[t=0.0518553s, 11368 KB] M&S algorithm main loop timer: 0.0439992s (after computation of next merge)
+[t=0.0598546s, 11368 KB] M&S algorithm main loop timer: 0.0519985s (after label reduction)
+[t=0.0598546s, 11368 KB] M&S algorithm main loop timer: 0.0519985s (after merging)
+
+[t=0.0638559s, 11368 KB] Next pair of indices: (25, 5)
+[t=0.0638559s, 11368 KB] M&S algorithm main loop timer: 0.0559998s (after computation of next merge)
+[t=0.0718554s, 11368 KB] M&S algorithm main loop timer: 0.0639993s (after label reduction)
+[t=0.0798562s, 13012 KB] M&S algorithm main loop timer: 0.0720001s (after merging)
+
+[t=0.0798562s, 13012 KB] Next pair of indices: (26, 6)
+[t=0.0798562s, 13012 KB] M&S algorithm main loop timer: 0.0720001s (after computation of next merge)
+[t=0.0878568s, 13012 KB] M&S algorithm main loop timer: 0.0800006s (after label reduction)
+[t=0.235655s, 34008 KB] M&S algorithm main loop timer: 0.227799s (after merging)
+[t=0.243652s, 34008 KB] M&S algorithm main loop timer: 0.235795s (after pruning)
+
+[t=0.243652s, 34008 KB] Next pair of indices: (27, 7)
+[t=0.243652s, 34008 KB] M&S algorithm main loop timer: 0.235795s (after computation of next merge)
+[t=0.26365s, 34008 KB] M&S algorithm main loop timer: 0.255794s (after label reduction)
+[t=0.443317s, 42124 KB] M&S algorithm main loop timer: 0.435461s (after merging)
+[t=0.463315s, 42124 KB] M&S algorithm main loop timer: 0.455459s (after pruning)
+
+[t=0.463315s, 42124 KB] Next pair of indices: (28, 8)
+[t=0.463315s, 42124 KB] M&S algorithm main loop timer: 0.455459s (after computation of next merge)
+[t=0.467315s, 42124 KB] M&S algorithm main loop timer: 0.459459s (after label reduction)
+[t=0.947299s, 42124 KB] M&S algorithm main loop timer: 0.939443s (after shrinking)
+[t=0.987302s, 42124 KB] M&S algorithm main loop timer: 0.979446s (after merging)
+[t=0.9913s, 42124 KB] M&S algorithm main loop timer: 0.983444s (after pruning)
+
+[t=0.9913s, 42124 KB] Next pair of indices: (29, 9)
+[t=0.9913s, 42124 KB] M&S algorithm main loop timer: 0.983444s (after computation of next merge)
+[t=0.995299s, 42124 KB] M&S algorithm main loop timer: 0.987443s (after label reduction)
+[t=1.0713s, 42124 KB] M&S algorithm main loop timer: 1.06345s (after merging)
+[t=1.0833s, 42124 KB] M&S algorithm main loop timer: 1.07544s (after pruning)
+
+[t=1.0833s, 42124 KB] Next pair of indices: (30, 10)
+[t=1.0833s, 42124 KB] M&S algorithm main loop timer: 1.07544s (after computation of next merge)
+[t=1.0833s, 42124 KB] M&S algorithm main loop timer: 1.07544s (after label reduction)
+[t=1.25131s, 44960 KB] M&S algorithm main loop timer: 1.24345s (after merging)
+[t=1.2713s, 44960 KB] M&S algorithm main loop timer: 1.26345s (after pruning)
+
+[t=1.2713s, 44960 KB] Next pair of indices: (31, 11)
+[t=1.2713s, 44960 KB] M&S algorithm main loop timer: 1.26345s (after computation of next merge)
+[t=1.2753s, 44960 KB] M&S algorithm main loop timer: 1.26745s (after label reduction)
+[t=1.77128s, 44960 KB] M&S algorithm main loop timer: 1.76343s (after shrinking)
+[t=2.09529s, 66028 KB] M&S algorithm main loop timer: 2.08743s (after merging)
+[t=2.13129s, 66028 KB] M&S algorithm main loop timer: 2.12343s (after pruning)
+
+[t=2.13129s, 66028 KB] Next pair of indices: (32, 12)
+[t=2.13129s, 66028 KB] M&S algorithm main loop timer: 2.12343s (after computation of next merge)
+[t=2.13928s, 66028 KB] M&S algorithm main loop timer: 2.13143s (after label reduction)
+[t=2.57524s, 66028 KB] M&S algorithm main loop timer: 2.56739s (after shrinking)
+[t=2.89924s, 71692 KB] M&S algorithm main loop timer: 2.89139s (after merging)
+[t=2.93924s, 71692 KB] M&S algorithm main loop timer: 2.93139s (after pruning)
+
+[t=2.93924s, 71692 KB] Next pair of indices: (33, 13)
+[t=2.93924s, 71692 KB] M&S algorithm main loop timer: 2.93139s (after computation of next merge)
+[t=2.95124s, 71692 KB] M&S algorithm main loop timer: 2.94338s (after label reduction)
+[t=3.24725s, 71692 KB] M&S algorithm main loop timer: 3.23939s (after shrinking)
+[t=3.60703s, 75812 KB] M&S algorithm main loop timer: 3.59917s (after merging)
+[t=3.68303s, 75812 KB] M&S algorithm main loop timer: 3.67517s (after pruning)
+
+[t=3.68303s, 75812 KB] Next pair of indices: (34, 14)
+[t=3.68303s, 75812 KB] M&S algorithm main loop timer: 3.67517s (after computation of next merge)
+[t=3.7149s, 75812 KB] M&S algorithm main loop timer: 3.70704s (after label reduction)
+[t=4.23485s, 77924 KB] M&S algorithm main loop timer: 4.22699s (after shrinking)
+[t=4.57837s, 77924 KB] M&S algorithm main loop timer: 4.57452s (after merging)
+[t=4.65437s, 77924 KB] M&S algorithm main loop timer: 4.64652s (after pruning)
+
+[t=4.65437s, 77924 KB] Next pair of indices: (35, 15)
+[t=4.65437s, 77924 KB] M&S algorithm main loop timer: 4.64652s (after computation of next merge)
+[t=4.68637s, 77924 KB] M&S algorithm main loop timer: 4.67852s (after label reduction)
+[t=5.17382s, 78772 KB] M&S algorithm main loop timer: 5.16596s (after shrinking)
+[t=5.50567s, 78772 KB] M&S algorithm main loop timer: 5.49782s (after merging)
+[t=5.58154s, 78772 KB] M&S algorithm main loop timer: 5.57368s (after pruning)
+
+[t=5.58154s, 78772 KB] Next pair of indices: (36, 16)
+[t=5.58154s, 78772 KB] M&S algorithm main loop timer: 5.57368s (after computation of next merge)
+[t=5.61353s, 78772 KB] M&S algorithm main loop timer: 5.60568s (after label reduction)
+[t=6.10847s, 79684 KB] M&S algorithm main loop timer: 6.10062s (after shrinking)
+[t=6.43984s, 80072 KB] M&S algorithm main loop timer: 6.43199s (after merging)
+[t=6.51984s, 80072 KB] M&S algorithm main loop timer: 6.51199s (after pruning)
+
+[t=6.51984s, 80072 KB] Next pair of indices: (37, 17)
+[t=6.51984s, 80072 KB] M&S algorithm main loop timer: 6.51199s (after computation of next merge)
+[t=6.57171s, 80072 KB] M&S algorithm main loop timer: 6.56385s (after label reduction)
+[t=7.06736s, 87112 KB] M&S algorithm main loop timer: 7.0595s (after shrinking)
+[t=7.35111s, 87112 KB] M&S algorithm main loop timer: 7.34325s (after merging)
+[t=7.41491s, 87112 KB] M&S algorithm main loop timer: 7.40705s (after pruning)
+
+[t=7.41491s, 87112 KB] Next pair of indices: (38, 18)
+[t=7.41491s, 87112 KB] M&S algorithm main loop timer: 7.40705s (after computation of next merge)
+[t=7.4669s, 87112 KB] M&S algorithm main loop timer: 7.45905s (after label reduction)
+[t=7.93864s, 87112 KB] M&S algorithm main loop timer: 7.93079s (after shrinking)
+[t=8.29815s, 88200 KB] M&S algorithm main loop timer: 8.29029s (after merging)
+[t=8.38212s, 88200 KB] M&S algorithm main loop timer: 8.37426s (after pruning)
+
+[t=8.38212s, 88200 KB] Next pair of indices: (39, 19)
+[t=8.38212s, 88200 KB] M&S algorithm main loop timer: 8.37426s (after computation of next merge)
+[t=8.47012s, 88200 KB] M&S algorithm main loop timer: 8.46226s (after label reduction)
+[t=9.0261s, 95752 KB] M&S algorithm main loop timer: 9.01825s (after shrinking)
+[t=9.33809s, 95752 KB] M&S algorithm main loop timer: 9.33023s (after merging)
+[t=9.41407s, 95752 KB] M&S algorithm main loop timer: 9.40621s (after pruning)
+
+[t=9.41407s, 95752 KB] Next pair of indices: (40, 20)
+[t=9.41407s, 95752 KB] M&S algorithm main loop timer: 9.40621s (after computation of next merge)
+[t=9.51796s, 95752 KB] M&S algorithm main loop timer: 9.5101s (after label reduction)
+[t=10.0499s, 95752 KB] M&S algorithm main loop timer: 10.0421s (after shrinking)
+[t=10.3259s, 95752 KB] M&S algorithm main loop timer: 10.318s (after merging)
+[t=10.4099s, 95752 KB] M&S algorithm main loop timer: 10.402s (after pruning)
+
+[t=10.4099s, 95752 KB] Next pair of indices: (41, 21)
+[t=10.4099s, 95752 KB] M&S algorithm main loop timer: 10.402s (after computation of next merge)
+[t=10.5139s, 95752 KB] M&S algorithm main loop timer: 10.506s (after label reduction)
+[t=10.9939s, 95752 KB] M&S algorithm main loop timer: 10.986s (after shrinking)
+[t=11.2379s, 95752 KB] M&S algorithm main loop timer: 11.23s (after merging)
+[t=11.3059s, 95752 KB] M&S algorithm main loop timer: 11.298s (after pruning)
+
+[t=11.3059s, 95752 KB] End of merge-and-shrink algorithm, statistics:
+[t=11.3059s, 95752 KB] Main loop runtime: 11.298s
+[t=11.3059s, 95752 KB] Maximum intermediate abstraction size: 198128
+[t=11.3059s, 95752 KB] Final peak memory increase of merge-and-shrink algorithm: 84384 KB
+[t=11.3059s, 95752 KB] Merge-and-shrink algorithm runtime: 11.298s
+
+[t=11.3059s, 95752 KB] Number of remaining factors: 1
+[t=11.3059s, 95752 KB] Number of factors kept: 1
+[t=11.3059s, 95752 KB] Done initializing merge-and-shrink heuristic.
+
+[t=11.3059s, 95752 KB] Building successor generator...done!
+[t=11.3059s, 95752 KB] peak memory difference for successor generator creation: 0 KB
+[t=11.3059s, 95752 KB] time for successor generation creation: 0s
+[t=11.3059s, 95752 KB] Variables: 22
+[t=11.3059s, 95752 KB] FactPairs: 112
+[t=11.3059s, 95752 KB] Bytes per state: 8
+[t=11.3059s, 95752 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 47
+[t=11.3059s, 95752 KB] g=0, 1 evaluated, 0 expanded
+[t=11.3059s, 95752 KB] f = 47, 1 evaluated, 0 expanded
+[t=11.3059s, 95752 KB] Initial heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 47
+[t=11.3059s, 95752 KB] pruning method: none
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 46
+[t=11.3059s, 95752 KB] g=5, 2 evaluated, 1 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 45
+[t=11.3059s, 95752 KB] g=2, 3 evaluated, 1 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 44
+[t=11.3059s, 95752 KB] g=3, 12 evaluated, 1 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 43
+[t=11.3059s, 95752 KB] g=4, 19 evaluated, 2 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 41
+[t=11.3059s, 95752 KB] g=6, 22 evaluated, 2 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 39
+[t=11.3059s, 95752 KB] g=8, 24 evaluated, 3 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 37
+[t=11.3059s, 95752 KB] g=10, 34 evaluated, 4 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 36
+[t=11.3059s, 95752 KB] g=11, 44 evaluated, 5 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 34
+[t=11.3059s, 95752 KB] g=13, 49 evaluated, 6 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 32
+[t=11.3059s, 95752 KB] g=15, 55 evaluated, 7 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 31
+[t=11.3059s, 95752 KB] g=16, 60 evaluated, 8 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 30
+[t=11.3059s, 95752 KB] g=17, 65 evaluated, 9 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 29
+[t=11.3059s, 95752 KB] g=18, 73 evaluated, 10 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 28
+[t=11.3059s, 95752 KB] g=20, 76 evaluated, 11 expanded
+[t=11.3059s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 27
+[t=11.3059s, 95752 KB] g=21, 81 evaluated, 12 expanded
+[t=11.3099s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 26
+[t=11.3099s, 95752 KB] g=21, 551 evaluated, 82 expanded
+[t=11.3099s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 25
+[t=11.3099s, 95752 KB] g=22, 873 evaluated, 132 expanded
+[t=11.3099s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 24
+[t=11.3099s, 95752 KB] g=23, 1849 evaluated, 273 expanded
+[t=11.3179s, 95752 KB] f = 48, 4531 evaluated, 708 expanded
+[t=11.3179s, 95752 KB] f = 49, 4910 evaluated, 768 expanded
+[t=11.3179s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 23
+[t=11.3179s, 95752 KB] g=26, 4913 evaluated, 769 expanded
+[t=11.3259s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 22
+[t=11.3259s, 95752 KB] g=27, 7497 evaluated, 1199 expanded
+[t=11.3859s, 95752 KB] f = 50, 31974 evaluated, 5309 expanded
+[t=11.3899s, 95752 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 21
+[t=11.3899s, 95752 KB] g=30, 33056 evaluated, 5508 expanded
+[t=11.3899s, 95752 KB] f = 51, 34352 evaluated, 5738 expanded
+[t=11.6219s, 95752 KB] f = 52, 122379 evaluated, 22232 expanded
+[t=11.6659s, 95752 KB] f = 53, 139187 evaluated, 25429 expanded
+[t=12.4338s, 95752 KB] f = 54, 415225 evaluated, 81334 expanded
+[t=12.6778s, 95752 KB] f = 55, 491963 evaluated, 97329 expanded
+[t=14.9213s, 110508 KB] f = 56, 1248642 evaluated, 260041 expanded
+[t=15.6492s, 110508 KB] f = 57, 1503019 evaluated, 316809 expanded
+[t=21.5074s, 179484 KB] f = 58, 3353224 evaluated, 744017 expanded
+[t=21.5074s, 179484 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 20
+[t=21.5074s, 179484 KB] g=38, 3353665 evaluated, 744123 expanded
+[t=21.5074s, 179484 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 19
+[t=21.5074s, 179484 KB] g=39, 3353671 evaluated, 744124 expanded
+[t=23.7293s, 249704 KB] f = 59, 3991884 evaluated, 896623 expanded
+[t=37.9481s, 442972 KB] f = 60, 8219243 evaluated, 1952399 expanded
+[t=37.9481s, 442972 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 18
+[t=37.9481s, 442972 KB] g=42, 8219250 evaluated, 1952401 expanded
+[t=37.9481s, 442972 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 16
+[t=37.9481s, 442972 KB] g=44, 8219254 evaluated, 1952402 expanded
+[t=42.6197s, 469760 KB] f = 61, 9643646 evaluated, 2319431 expanded
+[t=42.6357s, 469892 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 15
+[t=42.6357s, 469892 KB] g=46, 9649004 evaluated, 2320853 expanded
+[t=42.6357s, 469892 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 14
+[t=42.6397s, 469892 KB] g=47, 9649018 evaluated, 2320854 expanded
+[t=42.6397s, 469892 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 12
+[t=42.6397s, 469892 KB] g=49, 9649024 evaluated, 2320855 expanded
+[t=42.6397s, 469892 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 11
+[t=42.6397s, 469892 KB] g=50, 9649032 evaluated, 2320856 expanded
+[t=42.6397s, 469892 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 10
+[t=42.6397s, 469892 KB] g=51, 9649037 evaluated, 2320857 expanded
+[t=42.6397s, 469892 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 9
+[t=42.6397s, 469892 KB] g=52, 9649043 evaluated, 2320858 expanded
+[t=74.1855s, 871912 KB] f = 62, 18543505 evaluated, 4711321 expanded
+[t=84.7168s, 965756 KB] f = 63, 21641325 evaluated, 5564392 expanded
+[t=84.7168s, 965756 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 7
+[t=84.7168s, 965756 KB] g=56, 21641696 evaluated, 5564465 expanded
+[t=84.7168s, 965756 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 6
+[t=84.7168s, 965756 KB] g=57, 21641704 evaluated, 5564466 expanded
+[t=84.7168s, 965756 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 5
+[t=84.7168s, 965756 KB] g=58, 21641709 evaluated, 5564467 expanded
+[t=84.7168s, 965756 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 3
+[t=84.7168s, 965756 KB] g=60, 21641714 evaluated, 5564468 expanded
+[t=84.7168s, 965756 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 2
+[t=84.7168s, 965756 KB] g=61, 21641722 evaluated, 5564469 expanded
+[t=84.7168s, 965756 KB] New best heuristic value for merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000): 0
+[t=84.7168s, 965756 KB] g=63, 21641724 evaluated, 5564470 expanded
+[t=84.7168s, 965756 KB] Solution found!
+[t=84.7168s, 965756 KB] Actual search time: 73.4109s
+up robot2 tile_2-2 tile_3-2 (3)
+down robot1 tile_5-1 tile_4-1 (1)
+paint-up robot1 tile_5-1 tile_4-1 white (2)
+right robot1 tile_4-1 tile_4-2 (1)
+right robot1 tile_4-2 tile_4-3 (1)
+up robot2 tile_3-2 tile_4-2 (3)
+paint-up robot2 tile_5-2 tile_4-2 black (2)
+paint-up robot1 tile_5-3 tile_4-3 white (2)
+down robot1 tile_4-3 tile_3-3 (1)
+left robot1 tile_3-3 tile_3-2 (1)
+right robot2 tile_4-2 tile_4-3 (1)
+paint-up robot1 tile_4-2 tile_3-2 white (2)
+down robot1 tile_3-2 tile_2-2 (1)
+down robot2 tile_4-3 tile_3-3 (1)
+paint-up robot2 tile_4-3 tile_3-3 black (2)
+left robot2 tile_3-3 tile_3-2 (1)
+right robot1 tile_2-2 tile_2-3 (1)
+paint-up robot1 tile_3-3 tile_2-3 white (2)
+left robot1 tile_2-3 tile_2-2 (1)
+left robot2 tile_3-2 tile_3-1 (1)
+left robot1 tile_2-2 tile_2-1 (1)
+paint-up robot2 tile_4-1 tile_3-1 black (2)
+right robot2 tile_3-1 tile_3-2 (1)
+down robot2 tile_3-2 tile_2-2 (1)
+paint-up robot2 tile_3-2 tile_2-2 black (2)
+paint-up robot1 tile_3-1 tile_2-1 white (2)
+right robot2 tile_2-2 tile_2-3 (1)
+down robot2 tile_2-3 tile_1-3 (1)
+paint-up robot2 tile_2-3 tile_1-3 black (2)
+down robot1 tile_2-1 tile_1-1 (1)
+right robot1 tile_1-1 tile_1-2 (1)
+paint-up robot1 tile_2-2 tile_1-2 white (2)
+down robot1 tile_1-2 tile_0-2 (1)
+left robot1 tile_0-2 tile_0-1 (1)
+left robot2 tile_1-3 tile_1-2 (1)
+left robot2 tile_1-2 tile_1-1 (1)
+paint-up robot2 tile_2-1 tile_1-1 black (2)
+right robot2 tile_1-1 tile_1-2 (1)
+paint-up robot1 tile_1-1 tile_0-1 white (2)
+right robot1 tile_0-1 tile_0-2 (1)
+right robot1 tile_0-2 tile_0-3 (1)
+paint-up robot1 tile_1-3 tile_0-3 white (2)
+down robot2 tile_1-2 tile_0-2 (1)
+paint-up robot2 tile_1-2 tile_0-2 black (2)
+[t=84.7168s, 965756 KB] Plan length: 44 step(s).
+[t=84.7168s, 965756 KB] Plan cost: 63
+[t=84.7168s, 965756 KB] Expanded 5564471 state(s).
+[t=84.7168s, 965756 KB] Reopened 0 state(s).
+[t=84.7168s, 965756 KB] Evaluated 21641726 state(s).
+[t=84.7168s, 965756 KB] Evaluations: 21641726
+[t=84.7168s, 965756 KB] Generated 42382272 state(s).
+[t=84.7168s, 965756 KB] Dead ends: 1596180 state(s).
+[t=84.7168s, 965756 KB] Expanded until last jump: 5564392 state(s).
+[t=84.7168s, 965756 KB] Reopened until last jump: 0 state(s).
+[t=84.7168s, 965756 KB] Evaluated until last jump: 21641325 state(s).
+[t=84.7168s, 965756 KB] Generated until last jump: 42381703 state(s).
+[t=84.7168s, 965756 KB] Number of registered states: 21641726
+[t=84.7168s, 965756 KB] Int hash set load factor: 21641726/33554432 = 0.644974
+[t=84.7168s, 965756 KB] Int hash set resizes: 25
+[t=84.7168s, 965756 KB] Search time: 73.4109s
+[t=84.7168s, 965756 KB] Total time: 84.7168s
+Solution found.
+Peak memory: 965756 KB
+exitcode: 0
+
+Exit codes: [23, 0]
+Remove intermediate file output.sas
+search exit code: 2
+
+INFO     Planner time: 278.32s

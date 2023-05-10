@@ -1,0 +1,76 @@
+C1: What are the different types of planners used in automated planning?
+SPARQL Query: PREFIX plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?planner WHERE { ?planner a plan-ontology:planner. }
+
+C2: What is the relevance of a planner in a given problem domain? SPARQL
+Query: PREFIX plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?domain ?relevance ?planner WHERE { ?domain a
+plan-ontology:domain; rdfs:label "caldera". ?planner a
+plan-ontology:planner. ?domain ?relevance ?planner. }
+
+C3: What is the cost associated with generating a plan for a given
+problem? SPARQL Query: PREFIX plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?plan ?cost WHERE { ?problem a plan-ontology:problem;
+rdfs:label "problem-01". ?problem plan-ontology:hasPlan ?plan. ?plan
+plan-ontology:hasCost ?cost. }
+
+C4: What are the available actions for a given domain? SPARQL Query:
+PREFIX plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?domain ?action WHERE { ?domain a plan-ontology:domain;
+rdfs:label "caldera". ?domain plan-ontology:hasMove ?action. }
+
+C5: How many parameters does a specific action has? SPARQL Query PREFIX
+plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(?parameter) AS ?parameterCount) WHERE { ?action a
+plan-ontology:action; rdfs:label "get_domain". \# action of domain
+cladera ?action plan-ontology:hasParameter ?parameter. }
+
+C6: What are the different types present in a domain? SPARQL Query
+PREFIX plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?domain ?type WHERE { ?domain a plan-ontology:domain;
+rdfs:label "caldera". ?domain plan-ontology:hasType ?type. }
+
+C7: What are all requirements a given domain has? SPARQL Query PREFIX
+plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?domain ?requirement WHERE { ?domain a
+plan-ontology:domain; rdfs:label "caldera". ?domain
+plan-ontology:hasRequirement ?requirement. }
+
+C8: What planning type a specific planner belongs to? SPARQL Query
+PREFIX plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?planner ?planningType WHERE { ?planner a
+plan-ontology:planner. rdfs:label "Delfi1". ?planner
+plan-ontology:ofPlanningType ?planningType. }
+
+C9: What requirements does a given planner support? SPARQL Query PREFIX
+plan-ontology:
+<http://www.semanticweb.org/muppa/ontologies/2022/4/plan-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?planner ?requirement WHERE { ?planner a
+plan-ontology:planner. rdfs:label "Delfi1". ?planner
+plan-ontology:solvesRequirement ?requirement. }

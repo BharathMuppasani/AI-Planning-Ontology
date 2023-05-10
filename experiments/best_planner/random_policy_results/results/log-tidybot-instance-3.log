@@ -1,0 +1,257 @@
+INFO     planner time limit: 300s
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 299s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /home/bharath/Desktop/GitHub/downward/builds/release/bin/translate/translate.py /home/bharath/Desktop/ISWC_test/best_planner/data/tidybot/domain.pddl /home/bharath/Desktop/ISWC_test/best_planner/data/tidybot/instance-3.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.009s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.020s CPU, 0.027s wall-clock]
+Preparing model... [0.000s CPU, 0.008s wall-clock]
+Generated 400 rules.
+Computing model... [0.260s CPU, 0.257s wall-clock]
+8002 relevant atoms
+14467 auxiliary atoms
+22469 final queue length
+43835 total queue pushes
+Completing instantiation... [0.590s CPU, 0.588s wall-clock]
+Instantiating: [0.890s CPU, 0.890s wall-clock]
+Computing fact groups...
+Finding invariants...
+41 initial candidates
+Finding invariants: [0.050s CPU, 0.044s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+179 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.050s CPU, 0.046s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.040s CPU, 0.039s wall-clock]
+Translating task: [0.790s CPU, 0.795s wall-clock]
+16333 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+2 propositions removed
+Detecting unreachable propositions: [0.300s CPU, 0.302s wall-clock]
+Reordering and filtering variables...
+181 of 181 variables necessary.
+1 of 3 mutex groups necessary.
+7687 of 7687 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.160s CPU, 0.162s wall-clock]
+Translator variables: 181
+Translator derived variables: 0
+Translator facts: 365
+Translator goal facts: 4
+Translator mutex groups: 1
+Translator total mutex groups size: 2
+Translator operators: 7687
+Translator axioms: 0
+Translator task size: 84888
+Translator peak memory: 82128 KB
+Writing output... [0.120s CPU, 0.120s wall-clock]
+Done! [2.350s CPU, 2.349s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search portfolio: /home/bharath/Desktop/GitHub/downward/driver/portfolios/seq_opt_merge_and_shrink.py
+remaining time: 297.0
+config 0: relative time 800, remaining 1800
+args: ['/home/bharath/Desktop/GitHub/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))', '--internal-plan-file', '/home/bharath/Desktop/ISWC_test/best_planner/random_policy_results/results/plan-tidybot-instance-3.txt']
+INFO     search stdin: output.sas
+INFO     search time limit: 132s
+INFO     search memory limit: None
+INFO     search command line string: /home/bharath/Desktop/GitHub/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))' --internal-plan-file /home/bharath/Desktop/ISWC_test/best_planner/random_policy_results/results/plan-tidybot-instance-3.txt < output.sas
+[t=0s, 10980 KB] reading input...
+[t=0.0837723s, 14204 KB] done reading input!
+[t=0.0877739s, 14468 KB] Initializing merge-and-shrink heuristic...
+[t=0.0877739s, 14468 KB] Running merge-and-shrink algorithm...
+[t=0.0877739s, 14468 KB] Merge strategy options:
+[t=0.0877739s, 14468 KB] Type: precomputed
+[t=0.0877739s, 14468 KB] Merge tree options: 
+[t=0.0877739s, 14468 KB] Type: linear
+[t=0.0877739s, 14468 KB] Update option: use random
+[t=0.0877739s, 14468 KB] Variable order type: by reverse level
+
+[t=0.0877739s, 14468 KB] Options related to size limits and shrinking: 
+[t=0.0877739s, 14468 KB] Transition system size limit: 2147483647
+[t=0.0877739s, 14468 KB] Transition system size limit right before merge: 2147483647
+[t=0.0877739s, 14468 KB] Threshold to trigger shrinking right before merge: 1
+
+[t=0.0877739s, 14468 KB] Shrink strategy options: 
+[t=0.0877739s, 14468 KB] Type: bisimulation
+[t=0.0877739s, 14468 KB] Bisimulation type: greedy
+[t=0.0877739s, 14468 KB] At limit: return
+
+[t=0.0877739s, 14468 KB] Pruning unreachable states: yes
+[t=0.0877739s, 14468 KB] Pruning irrelevant states: yes
+
+[t=0.0877739s, 14468 KB] Label reduction options:
+[t=0.0877739s, 14468 KB] Before merging: disabled
+[t=0.0877739s, 14468 KB] Before shrinking: enabled
+[t=0.0877739s, 14468 KB] Method: all transition systems with fixpoint computation
+[t=0.0877739s, 14468 KB] System order: random
+
+[t=0.0877739s, 14468 KB] Main loop max time in seconds: inf
+
+
+[t=0.0877739s, 14468 KB] Building atomic transition systems... 
+[t=0.143779s, 31688 KB] M&S algorithm timer: 0.0560048s (after computation of atomic factors)
+
+[t=0.143779s, 31688 KB] Starting main loop without a time limit.
+[t=0.143779s, 31688 KB] building causal graph...done! [t=0.0519885s]
+[t=0.203769s, 34196 KB] Next pair of indices: (0, 1)
+[t=0.203769s, 34196 KB] M&S algorithm main loop timer: 0.0599901s (after computation of next merge)
+[t=19.0224s, 34196 KB] M&S algorithm main loop timer: 18.8786s (after shrinking)
+[t=19.0224s, 34196 KB] M&S algorithm main loop timer: 18.8786s (after merging)
+
+[t=19.0224s, 34196 KB] Next pair of indices: (181, 2)
+[t=19.0224s, 34196 KB] M&S algorithm main loop timer: 18.8786s (after computation of next merge)
+[t=37.5151s, 34196 KB] M&S algorithm main loop timer: 37.3714s (after shrinking)
+[t=37.5151s, 34196 KB] M&S algorithm main loop timer: 37.3714s (after merging)
+
+[t=37.5174s, 34196 KB] Next pair of indices: (182, 3)
+[t=37.5174s, 34196 KB] M&S algorithm main loop timer: 37.3736s (after computation of next merge)
+[t=55.6475s, 34196 KB] M&S algorithm main loop timer: 55.5037s (after shrinking)
+[t=55.6475s, 34196 KB] M&S algorithm main loop timer: 55.5037s (after merging)
+
+[t=55.6475s, 34196 KB] Next pair of indices: (183, 4)
+[t=55.6475s, 34196 KB] M&S algorithm main loop timer: 55.5037s (after computation of next merge)
+[t=73.5018s, 34196 KB] M&S algorithm main loop timer: 73.358s (after shrinking)
+[t=73.5018s, 34196 KB] M&S algorithm main loop timer: 73.358s (after merging)
+
+[t=73.5018s, 34196 KB] Next pair of indices: (184, 5)
+[t=73.5018s, 34196 KB] M&S algorithm main loop timer: 73.358s (after computation of next merge)
+[t=91.1812s, 34196 KB] M&S algorithm main loop timer: 91.0374s (after shrinking)
+[t=91.1812s, 34196 KB] M&S algorithm main loop timer: 91.0374s (after merging)
+
+[t=91.1812s, 34196 KB] Next pair of indices: (185, 6)
+[t=91.1812s, 34196 KB] M&S algorithm main loop timer: 91.0374s (after computation of next merge)
+[t=108.806s, 34196 KB] M&S algorithm main loop timer: 108.663s (after shrinking)
+[t=108.806s, 34196 KB] M&S algorithm main loop timer: 108.663s (after merging)
+
+[t=108.806s, 34196 KB] Next pair of indices: (186, 7)
+[t=108.806s, 34196 KB] M&S algorithm main loop timer: 108.663s (after computation of next merge)
+[t=126.056s, 34196 KB] M&S algorithm main loop timer: 125.912s (after shrinking)
+[t=126.056s, 34196 KB] M&S algorithm main loop timer: 125.912s (after merging)
+
+[t=126.056s, 34196 KB] Next pair of indices: (187, 8)
+[t=126.056s, 34196 KB] M&S algorithm main loop timer: 125.912s (after computation of next merge)
+Peak memory: 34196 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+exitcode: 23
+
+remaining time: 165.01999999999995
+config 1: relative time 1000, remaining 1000
+args: ['/home/bharath/Desktop/GitHub/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))', '--internal-plan-file', '/home/bharath/Desktop/ISWC_test/best_planner/random_policy_results/results/plan-tidybot-instance-3.txt']
+INFO     search stdin: output.sas
+INFO     search time limit: 165s
+INFO     search memory limit: None
+INFO     search command line string: /home/bharath/Desktop/GitHub/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))' --internal-plan-file /home/bharath/Desktop/ISWC_test/best_planner/random_policy_results/results/plan-tidybot-instance-3.txt < output.sas
+[t=0s, 10980 KB] reading input...
+[t=0.0639913s, 14204 KB] done reading input!
+[t=0.0679925s, 14468 KB] Initializing merge-and-shrink heuristic...
+[t=0.0679925s, 14468 KB] Running merge-and-shrink algorithm...
+[t=0.0679925s, 14468 KB] Merge strategy options:
+[t=0.0679925s, 14468 KB] Type: precomputed
+[t=0.0679925s, 14468 KB] Merge tree options: 
+[t=0.0679925s, 14468 KB] Type: linear
+[t=0.0679925s, 14468 KB] Update option: use random
+[t=0.0679925s, 14468 KB] Variable order type: by reverse level
+
+[t=0.0679925s, 14468 KB] Options related to size limits and shrinking: 
+[t=0.0679925s, 14468 KB] Transition system size limit: 200000
+[t=0.0679925s, 14468 KB] Transition system size limit right before merge: 200000
+[t=0.0679925s, 14468 KB] Threshold to trigger shrinking right before merge: 200000
+
+[t=0.0679925s, 14468 KB] Shrink strategy options: 
+[t=0.0679925s, 14468 KB] Type: bisimulation
+[t=0.0679925s, 14468 KB] Bisimulation type: exact
+[t=0.0679925s, 14468 KB] At limit: return
+
+[t=0.0679925s, 14468 KB] Pruning unreachable states: yes
+[t=0.0679925s, 14468 KB] Pruning irrelevant states: yes
+
+[t=0.0679925s, 14468 KB] Label reduction options:
+[t=0.0679925s, 14468 KB] Before merging: disabled
+[t=0.0679925s, 14468 KB] Before shrinking: enabled
+[t=0.0679925s, 14468 KB] Method: all transition systems with fixpoint computation
+[t=0.0679925s, 14468 KB] System order: random
+
+[t=0.0679925s, 14468 KB] Main loop max time in seconds: inf
+
+
+[t=0.0679925s, 14468 KB] Building atomic transition systems... 
+[t=0.115996s, 31692 KB] M&S algorithm timer: 0.0480035s (after computation of atomic factors)
+
+[t=0.115996s, 31692 KB] Starting main loop without a time limit.
+[t=0.115996s, 31692 KB] building causal graph...done! [t=0.0360021s]
+[t=0.156002s, 34200 KB] Next pair of indices: (0, 1)
+[t=0.156002s, 34200 KB] M&S algorithm main loop timer: 0.0400058s (after computation of next merge)
+[t=18.241s, 34200 KB] M&S algorithm main loop timer: 18.125s (after merging)
+
+[t=18.241s, 34200 KB] Next pair of indices: (181, 2)
+[t=18.241s, 34200 KB] M&S algorithm main loop timer: 18.125s (after computation of next merge)
+[t=36.5172s, 34200 KB] M&S algorithm main loop timer: 36.4012s (after merging)
+
+[t=36.5172s, 34200 KB] Next pair of indices: (182, 3)
+[t=36.5172s, 34200 KB] M&S algorithm main loop timer: 36.4012s (after computation of next merge)
+[t=54.3992s, 34200 KB] M&S algorithm main loop timer: 54.2832s (after merging)
+
+[t=54.3992s, 34200 KB] Next pair of indices: (183, 4)
+[t=54.3992s, 34200 KB] M&S algorithm main loop timer: 54.2832s (after computation of next merge)
+[t=72.4363s, 34200 KB] M&S algorithm main loop timer: 72.3203s (after merging)
+
+[t=72.4363s, 34200 KB] Next pair of indices: (184, 5)
+[t=72.4363s, 34200 KB] M&S algorithm main loop timer: 72.3203s (after computation of next merge)
+[t=90.09s, 34200 KB] M&S algorithm main loop timer: 89.974s (after merging)
+
+[t=90.09s, 34200 KB] Next pair of indices: (185, 6)
+[t=90.09s, 34200 KB] M&S algorithm main loop timer: 89.974s (after computation of next merge)
+[t=107.566s, 34200 KB] M&S algorithm main loop timer: 107.45s (after merging)
+
+[t=107.566s, 34200 KB] Next pair of indices: (186, 7)
+[t=107.566s, 34200 KB] M&S algorithm main loop timer: 107.45s (after computation of next merge)
+[t=124.78s, 34200 KB] M&S algorithm main loop timer: 124.664s (after merging)
+
+[t=124.78s, 34200 KB] Next pair of indices: (187, 8)
+[t=124.78s, 34200 KB] M&S algorithm main loop timer: 124.664s (after computation of next merge)
+[t=142.027s, 34200 KB] M&S algorithm main loop timer: 141.915s (after merging)
+
+[t=142.031s, 34200 KB] Next pair of indices: (188, 9)
+[t=142.031s, 34200 KB] M&S algorithm main loop timer: 141.915s (after computation of next merge)
+[t=159.099s, 34200 KB] M&S algorithm main loop timer: 158.983s (after merging)
+
+[t=159.099s, 34200 KB] Next pair of indices: (189, 10)
+[t=159.099s, 34200 KB] M&S algorithm main loop timer: 158.983s (after computation of next merge)
+Peak memory: 34200 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+exitcode: 23
+
+Exit codes: [23, 23]
+Remove intermediate file output.sas
+search exit code: 23
+
+Driver aborting after search
+INFO     Planner time: 299.48s
