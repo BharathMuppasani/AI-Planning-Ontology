@@ -1,0 +1,422 @@
+@prefix : <https://purl.org/ai4s/ontology/planning> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ontology: <https://purl.org/ai4s/ontology/> .
+@prefix planning-ontology: <https://purl.org/ai4s/ontology/planning#> .
+@base <https://purl.org/ai4s/ontology/planning> .
+
+<https://purl.org/ai4s/ontology/planning> rdf:type owl:Ontology ;
+                                           owl:versionIRI <https://purl.org/ai4s/ontology/planning/v2.0> ;
+                                           terms:contributor "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju" ;
+                                           terms:creator "Bharath Muppasani" ;
+                                           terms:description "This ontology represents the knowledge about automated planning domain. It captures the characteristics, features, and performance of different planners and domains, as well as the relationships between them. The ontology can be used to select suitable planners for a given domain and to improve their performance. The ontology aims to facilitate automated planning research and applications." ;
+                                           terms:language "English" ;
+                                           terms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                           terms:title "Ontology to model Automated Planning domain" ;
+                                           rdfs:seeAlso "https://github.com/BharathMuppasani/AI-Planning-Ontology" ;
+                                           owl:versionInfo 2.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+terms:language rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/ai4s/ontology/planning#Authors
+planning-ontology:Authors rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://purl.org/ai4s/ontology/planning#addsPredicate
+planning-ontology:addsPredicate rdf:type owl:ObjectProperty ;
+                                rdfs:domain planning-ontology:ActionEffect ;
+                                rdfs:range <http://purl.org/vocab/lifecycle/schema#State> ;
+                                rdfs:comment "a property that relates an effect to a state that adds a predicate to it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#deletesPredicate
+planning-ontology:deletesPredicate rdf:type owl:ObjectProperty ;
+                                   rdfs:domain planning-ontology:ActionEffect ;
+                                   rdfs:range <http://purl.org/vocab/lifecycle/schema#State> ;
+                                   rdfs:comment "a property that relates an effect to a state that deletes a predicate from it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasAction
+planning-ontology:hasAction rdf:type owl:ObjectProperty ;
+                            rdfs:domain planning-ontology:PlanningDomain ;
+                            rdfs:range <http://caressesrobot.org/ontology#Action> ;
+                            rdfs:comment "a property that relates a planning domain to a domain action that is available in it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasConstant
+planning-ontology:hasConstant rdf:type owl:ObjectProperty ;
+                              rdfs:domain planning-ontology:PlanningDomain ;
+                              rdfs:range planning-ontology:DomainConstant ;
+                              rdfs:comment "a property that relates a planning domain to a domain constant that is defined in it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasEffect
+planning-ontology:hasEffect rdf:type owl:ObjectProperty ;
+                            rdfs:domain <http://caressesrobot.org/ontology#Action> ;
+                            rdfs:range planning-ontology:ActionEffect ;
+                            rdfs:comment "a property that relates an action to an action effect that results from it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasExtractedAction
+planning-ontology:hasExtractedAction rdf:type owl:ObjectProperty ;
+                                     rdfs:domain planning-ontology:PlanningDomain ;
+                                     rdfs:range planning-ontology:MacroAction ;
+                                     rdfs:comment "a property that relates a planning domain to an action that is extracted from its plan" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasGoalState
+planning-ontology:hasGoalState rdf:type owl:ObjectProperty ;
+                               rdfs:domain planning-ontology:PlanningProblem ;
+                               rdfs:range planning-ontology:GoalState ;
+                               rdfs:comment "a property that relates a planning problem to a goal state that is desired for it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner
+planning-ontology:hasHighRelevancePlanner rdf:type owl:ObjectProperty ;
+                                          rdfs:domain planning-ontology:PlanningDomain ;
+                                          rdfs:range planning-ontology:Planner ;
+                                          rdfs:comment "a property that relates a planning domain to a planner that has a high relevance score for it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasInitialState
+planning-ontology:hasInitialState rdf:type owl:ObjectProperty ;
+                                  rdfs:domain planning-ontology:PlanningProblem ;
+                                  rdfs:range planning-ontology:InitialState ;
+                                  rdfs:comment "a property that relates a planning problem to an initial state that is given for it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner
+planning-ontology:hasLowRelevancePlanner rdf:type owl:ObjectProperty ;
+                                         rdfs:domain planning-ontology:PlanningDomain ;
+                                         rdfs:range planning-ontology:Planner ;
+                                         rdfs:comment "a property that relates a planning domain to a planner that has a low relevance score for it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner
+planning-ontology:hasMediumRelevancePlanner rdf:type owl:ObjectProperty ;
+                                            rdfs:domain planning-ontology:PlanningDomain ;
+                                            rdfs:range planning-ontology:Planner ;
+                                            rdfs:comment "a property that relates a planning domain to a planner that has a medium relevance score for it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasObject
+planning-ontology:hasObject rdf:type owl:ObjectProperty ;
+                            rdfs:domain planning-ontology:PlanningProblem ;
+                            rdfs:range planning-ontology:ProblemObject ;
+                            rdfs:comment "a property that relates a planning problem to a problem object that is involved in it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasPDDLTypeInstance
+planning-ontology:hasPDDLTypeInstance rdf:type owl:ObjectProperty ;
+                                      rdfs:domain planning-ontology:ParameterType ;
+                                      rdfs:range planning-ontology:ProblemObject ;
+                                      rdfs:comment "a property that relates a type to a problem object that is an instance of it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasParameter
+planning-ontology:hasParameter rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://caressesrobot.org/ontology#Action> ;
+                               rdfs:range <http://caressesrobot.org/ontology#Parameter> ;
+                               rdfs:comment "a property that relates an action to an action parameter that is involved in it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasParameterType
+planning-ontology:hasParameterType rdf:type owl:ObjectProperty ;
+                                   rdfs:domain planning-ontology:PlanningDomain ;
+                                   rdfs:range planning-ontology:ParameterType ;
+                                   rdfs:comment "a property that relates a planning domain to a type" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasPlan
+planning-ontology:hasPlan rdf:type owl:ObjectProperty ;
+                          rdfs:domain planning-ontology:PlanningProblem ;
+                          rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan> ;
+                          rdfs:comment "a property that relates a planning problem to a plan that solves it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasPrecondition
+planning-ontology:hasPrecondition rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <http://caressesrobot.org/ontology#Action> ;
+                                  rdfs:range planning-ontology:ActionPrecondition ;
+                                  rdfs:comment "a property that relates an action to an action precondition that is required for it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasPredicate
+planning-ontology:hasPredicate rdf:type owl:ObjectProperty ;
+                               rdfs:domain planning-ontology:PlanningDomain ;
+                               rdfs:range planning-ontology:DomainPredicate ;
+                               rdfs:comment "a property that relates a planning domain to a domain predicate that is defined in it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasProblem
+planning-ontology:hasProblem rdf:type owl:ObjectProperty ;
+                             rdfs:domain planning-ontology:PlanningDomain ;
+                             rdfs:range planning-ontology:PlanningProblem ;
+                             rdfs:comment "a property that relates a planning domain to a planning problem that is defined in it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasRequirement
+planning-ontology:hasRequirement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain planning-ontology:PlanningDomain ;
+                                 rdfs:range planning-ontology:DomainRequirement ;
+                                 rdfs:comment "a property that relates a planning domain or problem to a domain requirement that is required or supported by it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasTag
+planning-ontology:hasTag rdf:type owl:ObjectProperty ;
+                         rdfs:domain planning-ontology:ParameterType ;
+                         rdfs:comment "a property that relates a type to a type tag that labels it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#isGeneratedBy
+planning-ontology:isGeneratedBy rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan> ;
+                                rdfs:range planning-ontology:Planner ;
+                                rdfs:comment "a property that relates a plan to a planner that generates it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#ofParameterType
+planning-ontology:ofParameterType rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <http://caressesrobot.org/ontology#Parameter> ;
+                                  rdfs:range planning-ontology:ParameterType ;
+                                  rdfs:comment "a property that relates an action parameter to a type that classifies it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#ofPlannerType
+planning-ontology:ofPlannerType rdf:type owl:ObjectProperty ;
+                                rdfs:domain planning-ontology:Planner ;
+                                rdfs:range planning-ontology:PlannerType ;
+                                rdfs:comment "a property that relates a planner to a planner type that categorizes it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#solvedBy
+planning-ontology:solvedBy rdf:type owl:ObjectProperty ;
+                           owl:inverseOf planning-ontology:solvesRequirement ;
+                           rdfs:domain planning-ontology:DomainRequirement ;
+                           rdfs:range planning-ontology:Planner ;
+                           rdfs:comment "a property that relates a domain requirement to a planner that solves it" .
+
+
+###  https://purl.org/ai4s/ontology/planning#solvesRequirement
+planning-ontology:solvesRequirement rdf:type owl:ObjectProperty ;
+                                    rdfs:domain planning-ontology:Planner ;
+                                    rdfs:range planning-ontology:DomainRequirement ;
+                                    rdfs:comment "a property that relates a planner to a domain requirement that it can handle or satisfy"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://purl.org/ai4s/ontology/planning#hasActionExplanation
+planning-ontology:hasActionExplanation rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://caressesrobot.org/ontology#Action> ;
+                                       rdfs:range xsd:string .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasModelReconciliationExplanation
+planning-ontology:hasModelReconciliationExplanation rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain planning-ontology:PlanningDomain ;
+                                                    rdfs:range xsd:string .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasPlanCost
+planning-ontology:hasPlanCost rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan> ;
+                              rdfs:range xsd:nonNegativeInteger .
+
+
+###  https://purl.org/ai4s/ontology/planning#hasPlanExplanation
+planning-ontology:hasPlanExplanation rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan> ;
+                                     rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://caressesrobot.org/ontology#Action
+<http://caressesrobot.org/ontology#Action> rdf:type owl:Class ;
+                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                             owl:onProperty planning-ontology:hasEffect ;
+                                                             owl:someValuesFrom planning-ontology:ActionEffect
+                                                           ] ;
+                                           rdfs:comment "a class that represents a type of action that can be performed in a planning domain"@en .
+
+
+###  http://caressesrobot.org/ontology#Parameter
+<http://caressesrobot.org/ontology#Parameter> rdf:type owl:Class ;
+                                              rdfs:comment "a class that represents what is involved in an action"@en .
+
+
+###  http://purl.org/vocab/lifecycle/schema#State
+<http://purl.org/vocab/lifecycle/schema#State> rdf:type owl:Class ;
+                                               rdfs:comment "represents a situation or a configuration of the world in a planning problem"@en .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan> rdf:type owl:Class ;
+                                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty planning-ontology:isGeneratedBy ;
+                                                                               owl:someValuesFrom planning-ontology:Planner
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty planning-ontology:hasPlanCost ;
+                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                               owl:onDataRange xsd:nonNegativeInteger
+                                                                             ] .
+
+
+###  https://purl.org/ai4s/ontology/planning#ActionEffect
+planning-ontology:ActionEffect rdf:type owl:Class ;
+                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty planning-ontology:addsPredicate ;
+                                                 owl:someValuesFrom <http://purl.org/vocab/lifecycle/schema#State>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty planning-ontology:deletesPredicate ;
+                                                 owl:someValuesFrom <http://purl.org/vocab/lifecycle/schema#State>
+                                               ] ;
+                               rdfs:comment "a class that represents what happens after an action is done"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#ActionPrecondition
+planning-ontology:ActionPrecondition rdf:type owl:Class ;
+                                     rdfs:comment "a class that represents what needs to be true before an action can be done"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#DomainConstant
+planning-ontology:DomainConstant rdf:type owl:Class ;
+                                 rdfs:comment "represents a fixed entity in a planning domain"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#DomainPredicate
+planning-ontology:DomainPredicate rdf:type owl:Class ;
+                                  rdfs:comment "a class that represents a condition or a fact that can be true or false in a planning domain"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#DomainRequirement
+planning-ontology:DomainRequirement rdf:type owl:Class ;
+                                    rdfs:comment "A feature that a planning domain requires or supports"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#GoalState
+planning-ontology:GoalState rdf:type owl:Class ;
+                            rdfs:subClassOf <http://purl.org/vocab/lifecycle/schema#State> ;
+                            rdfs:comment "represents a desired or a target state defined in a task that a plan should achieve"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#InitialState
+planning-ontology:InitialState rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.org/vocab/lifecycle/schema#State> ;
+                               rdfs:comment "represents the starting or the given state of a planning problem"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#MacroAction
+planning-ontology:MacroAction rdf:type owl:Class ;
+                              rdfs:subClassOf <http://caressesrobot.org/ontology#Action> ;
+                              rdfs:comment "Extracted macro action, which is a combination of multiple actions of a planning domain"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#ParameterType
+planning-ontology:ParameterType rdf:type owl:Class ;
+                                rdfs:comment "represents a kind of entity in a planning domain"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#Planner
+planning-ontology:Planner rdf:type owl:Class ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty planning-ontology:ofPlannerType ;
+                                            owl:someValuesFrom planning-ontology:PlannerType
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty planning-ontology:solvesRequirement ;
+                                            owl:someValuesFrom planning-ontology:DomainRequirement
+                                          ] ;
+                          rdfs:comment "a system that can generate plans for a given planning domain and problem"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#PlannerType
+planning-ontology:PlannerType rdf:type owl:Class ;
+                              rdfs:comment "a category or classification of planners based on their characteristics or features"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#PlanningDomain
+planning-ontology:PlanningDomain rdf:type owl:Class ;
+                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                   owl:onProperty planning-ontology:hasAction ;
+                                                   owl:someValuesFrom <http://caressesrobot.org/ontology#Action>
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty planning-ontology:hasPredicate ;
+                                                   owl:someValuesFrom planning-ontology:DomainPredicate
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty planning-ontology:hasRequirement ;
+                                                   owl:someValuesFrom planning-ontology:DomainRequirement
+                                                 ] ;
+                                 rdfs:comment "a class that represents a problem setting for automated planning"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#PlanningProblem
+planning-ontology:PlanningProblem rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty planning-ontology:hasGoalState ;
+                                                    owl:someValuesFrom planning-ontology:GoalState
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty planning-ontology:hasInitialState ;
+                                                    owl:someValuesFrom planning-ontology:InitialState
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty planning-ontology:hasObject ;
+                                                    owl:someValuesFrom planning-ontology:ProblemObject
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty planning-ontology:hasPlan ;
+                                                    owl:someValuesFrom <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan>
+                                                  ] ;
+                                  rdfs:comment "represents a task of the planning domain that requires a plan to be solved"@en .
+
+
+###  https://purl.org/ai4s/ontology/planning#ProblemObject
+planning-ontology:ProblemObject rdf:type owl:Class ;
+                                rdfs:comment "represents an entity or a constant that is involved in a planning problem"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
